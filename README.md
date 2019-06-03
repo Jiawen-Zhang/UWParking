@@ -1,1 +1,1 @@
-Real-Time Parking Information in UW.
+Real Time Parking Information in UW.
