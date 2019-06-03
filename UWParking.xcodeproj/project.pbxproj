@@ -12,7 +12,49 @@
 		F56EF14022A4F4400020114C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56EF13E22A4F4400020114C /* Main.storyboard */; };
 		F56EF14222A4F4410020114C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EF14122A4F4410020114C /* Assets.xcassets */; };
 		F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56EF14322A4F4410020114C /* LaunchScreen.storyboard */; };
+		F591FF3922A50073008EB467 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F591FF3822A50073008EB467 /* WatSwift */; };
+		F591FF3B22A50084008EB467 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F591FF3522A50073008EB467 /* WatSwift.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		F591FF3C22A5017D008EB467 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F591FF3522A50073008EB467 /* WatSwift.framework */; };
+		F591FF3D22A5017D008EB467 /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F591FF3522A50073008EB467 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F591FF3422A50073008EB467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1C857EB1D3CDE7100CA77C7;
+			remoteInfo = WatSwift;
+		};
+		F591FF3622A50073008EB467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1C857F41D3CDE7100CA77C7;
+			remoteInfo = WatSwiftTests;
+		};
+		F591FF3E22A5017D008EB467 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A1C857EA1D3CDE7100CA77C7;
+			remoteInfo = WatSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F591FF4022A5017D008EB467 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F591FF3D22A5017D008EB467 /* WatSwift.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +64,10 @@
 		F56EF14122A4F4410020114C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56EF14422A4F4410020114C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56EF14622A4F4410020114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F591FF2D22A5001B008EB467 /* WatSwift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "WatSwift-master"; path = "../WatSwift-master"; sourceTree = "<group>"; };
+		F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../WatSwift-master/WatSwift.xcodeproj"; sourceTree = "<group>"; };
+		F591FF3822A50073008EB467 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
+		F6EEDCA3F6A9E184B3E3ADE4 /* libPods-UWParking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UWParking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +75,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F591FF3B22A50084008EB467 /* WatSwift.framework in Frameworks */,
+				F591FF3C22A5017D008EB467 /* WatSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +86,12 @@
 		F56EF12E22A4F4400020114C = {
 			isa = PBXGroup;
 			children = (
+				F591FF3822A50073008EB467 /* WatSwift */,
+				F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */,
+				F591FF2D22A5001B008EB467 /* WatSwift-master */,
 				F56EF13922A4F4400020114C /* UWParking */,
 				F56EF13822A4F4400020114C /* Products */,
+				F591FF3A22A50084008EB467 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +116,23 @@
 			path = UWParking;
 			sourceTree = "<group>";
 		};
+		F591FF3022A50073008EB467 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F591FF3522A50073008EB467 /* WatSwift.framework */,
+				F591FF3722A50073008EB467 /* WatSwiftTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F591FF3A22A50084008EB467 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F6EEDCA3F6A9E184B3E3ADE4 /* libPods-UWParking.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,10 +143,12 @@
 				F56EF13322A4F4400020114C /* Sources */,
 				F56EF13422A4F4400020114C /* Frameworks */,
 				F56EF13522A4F4400020114C /* Resources */,
+				F591FF4022A5017D008EB467 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F591FF3F22A5017D008EB467 /* PBXTargetDependency */,
 			);
 			name = UWParking;
 			productName = UWParking;
@@ -110,6 +181,12 @@
 			mainGroup = F56EF12E22A4F4400020114C;
 			productRefGroup = F56EF13822A4F4400020114C /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F591FF3022A50073008EB467 /* Products */;
+					ProjectRef = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F56EF13622A4F4400020114C /* UWParking */,
@@ -117,12 +194,30 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		F591FF3522A50073008EB467 /* WatSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WatSwift.framework;
+			remoteRef = F591FF3422A50073008EB467 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F591FF3722A50073008EB467 /* WatSwiftTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WatSwiftTests.xctest;
+			remoteRef = F591FF3622A50073008EB467 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		F56EF13522A4F4400020114C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */,
+				F591FF3922A50073008EB467 /* WatSwift in Resources */,
 				F56EF14222A4F4410020114C /* Assets.xcassets in Resources */,
 				F56EF14022A4F4400020114C /* Main.storyboard in Resources */,
 			);
@@ -141,6 +236,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F591FF3F22A5017D008EB467 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = WatSwift;
+			targetProxy = F591FF3E22A5017D008EB467 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F56EF13E22A4F4400020114C /* Main.storyboard */ = {
@@ -281,6 +384,7 @@
 		F56EF14A22A4F4410020114C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PBBSU5BL3;
@@ -299,6 +403,7 @@
 		F56EF14B22A4F4410020114C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PBBSU5BL3;
