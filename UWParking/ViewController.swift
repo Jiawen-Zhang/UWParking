@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         
+        super.viewDidLoad()
+        // Do any additional setup after loading the view, typically from a nib.
+        
         WatSwift.apiKey = "532bfebea989a4a5bc40da4fc7d6b1d4";
         
         WatSwift.FoodServices.menu{ response in
@@ -24,8 +27,6 @@ class ViewController: UIViewController {
             }
         }
         
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
 
