@@ -21,17 +21,25 @@ class result{
 
 class MyHomeViewController: UIViewController{
     //private let DataResult = UpdateCurrentCapability();
+    @IBOutlet weak var capacity: UILabel!
+    @IBOutlet weak var current: UILabel!
     
-    @IBOutlet weak var LotC: UILabel!
-    
+    @IBOutlet weak var LotName: UILabel!
+    @IBOutlet weak var LotC_capacity: UILabel!
+    @IBOutlet weak var LotC_current: UILabel!
     //let Lot_C = result()
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
         
+        WatSwift.apiKey = "532bfebea989a4a5bc40da4fc7d6b1d4"
+        
         WatSwift.Parking.watpark{ response in
+            let metadata = response.metadata
             let data: JSON = response.data
+            print(metadata)
+            print(data)
             /*if let loc_c = data[0]["lot_name"].string{
              print(lot_name_1)
              }*/
@@ -39,12 +47,19 @@ class MyHomeViewController: UIViewController{
                 //set Lot_C name
                 self.Lot_C.lot_name = lot_C_name
             }*/
-            if let lot_C_name = data[0]["lot_name"].string{
+            if let lot_C_name = data[3]["lot_name"].string{
                 print(lot_C_name)
+                self.LotName.text=lot_C_name
+            }
+            if let lot_C_capacity = data[3]["capacity"].integer{
+                print(lot_C_capacity)
+                self.LotC_capacity.text = String(lot_C_capacity)
+            }
+            if let lot_C_current = data[3]["current_count"].integer{
+                print(lot_C_current)
+                self.LotC_current.text = String(lot_C_current)
             }
         }
-        
-        //self.LotC.text = Lot_C.lot_name
     }
 }
 

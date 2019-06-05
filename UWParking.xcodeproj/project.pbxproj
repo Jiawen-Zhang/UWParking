@@ -18,6 +18,7 @@
 		F591FF3D22A5017D008EB467 /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F591FF3522A50073008EB467 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964322A766E800B69732 /* MyTabBarController.swift */; };
 		F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964622A76DF800B69732 /* MyListViewController.swift */; };
+		F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +72,7 @@
 		F591FF3822A50073008EB467 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
 		F5BA964322A766E800B69732 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		F5BA964622A76DF800B69732 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
+		F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
 		F6EEDCA3F6A9E184B3E3ADE4 /* libPods-UWParking.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-UWParking.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -118,6 +120,7 @@
 				F56EF14622A4F4410020114C /* Info.plist */,
 				F5BA964322A766E800B69732 /* MyTabBarController.swift */,
 				F5BA964622A76DF800B69732 /* MyListViewController.swift */,
+				F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */,
 			);
 			path = UWParking;
 			sourceTree = "<group>";
@@ -239,6 +242,7 @@
 				F56EF13D22A4F4400020114C /* ViewController.swift in Sources */,
 				F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */,
 				F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */,
+				F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */,
 				F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
