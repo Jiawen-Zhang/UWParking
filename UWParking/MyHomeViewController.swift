@@ -9,25 +9,17 @@
 import UIKit
 import WatSwift
 
-class result{
-    var lot_name = ""
-    var latitude = 0.0
-    var longitude = 0.0
-    var capacity = 0
-    var current_count = 0
-    var percent_filled = 0
-    var last_updated = ""
-}
 
 class MyHomeViewController: UIViewController{
-    //private let DataResult = UpdateCurrentCapability();
-    @IBOutlet weak var capacity: UILabel!
-    @IBOutlet weak var current: UILabel!
     
-    @IBOutlet weak var LotName: UILabel!
-    @IBOutlet weak var LotC_capacity: UILabel!
-    @IBOutlet weak var LotC_current: UILabel!
-    //let Lot_C = result()
+    
+    @IBOutlet weak var NumC: UILabel!
+    
+    @IBOutlet weak var NumN: UILabel!
+    
+    @IBOutlet weak var NumW: UILabel!
+    
+    @IBOutlet weak var NumX: UILabel!
     
     override func viewDidLoad() {
         
@@ -40,25 +32,49 @@ class MyHomeViewController: UIViewController{
             let data: JSON = response.data
             print(metadata)
             print(data)
-            /*if let loc_c = data[0]["lot_name"].string{
-             print(lot_name_1)
-             }*/
-            /*if let lot_C_name = data[0]["lot_name"].string{
-                //set Lot_C name
-                self.Lot_C.lot_name = lot_C_name
-            }*/
-            if let lot_C_name = data[3]["lot_name"].string{
-                print(lot_C_name)
-                self.LotName.text=lot_C_name
+            
+            //get the parking lot C data from UW Open Data API
+            var AvailableC = 0
+            if let lot_C_capacity = data[0]["capacity"].integer{
+                AvailableC += lot_C_capacity
             }
-            if let lot_C_capacity = data[3]["capacity"].integer{
-                print(lot_C_capacity)
-                self.LotC_capacity.text = String(lot_C_capacity)
+            if let lot_C_current = data[0]["current_count"].integer{
+                AvailableC -= lot_C_current
             }
-            if let lot_C_current = data[3]["current_count"].integer{
-                print(lot_C_current)
-                self.LotC_current.text = String(lot_C_current)
+            
+            //get the parking lot N data from UW Open Data API
+            var AvailableN = 0
+            if let lot_N_capacity = data[1]["capacity"].integer{
+                AvailableN += lot_N_capacity
             }
+            if let lot_N_current = data[1]["current_count"].integer{
+                AvailableN -= lot_N_current
+            }
+            
+            //get the parking lot W data from UW Open Data API
+            var AvailableW = 0
+            if let lot_W_capacity = data[2]["capacity"].integer{
+                AvailableW += lot_W_capacity
+            }
+            if let lot_W_current = data[2]["current_count"].integer{
+                AvailableW -= lot_W_current
+            }
+            
+            //get the parking lot X data from UW Open Data API
+            var AvailableX = 0
+            if let lot_X_capacity = data[3]["capacity"].integer{
+                AvailableX += lot_X_capacity
+            }
+            if let lot_X_current = data[3]["current_count"].integer{
+                AvailableX -= lot_X_current
+            }
+            
+            //update the data on HomeView
+            self.NumC.text = String(AvailableC)
+            self.NumN.text = String(AvailableN)
+            self.NumW.text = String(AvailableW)
+            self.NumX.text = String(AvailableX)
+            
         }
     }
 }
