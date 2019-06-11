@@ -14,17 +14,32 @@ class MyHomeViewController: UIViewController{
     
     
     @IBOutlet weak var NumC: UILabel!
-    
     @IBOutlet weak var NumN: UILabel!
-    
     @IBOutlet weak var NumW: UILabel!
-    
     @IBOutlet weak var NumX: UILabel!
     
+    @IBAction func RefreshButton(_ sender: Any) {
+        print("Refreshing")
+        self.NumC.text = ""
+        self.NumN.text = ""
+        self.NumW.text = ""
+        self.NumX.text = ""
+        //delay 0.1 second to let user know I am refreshing
+        let time: TimeInterval = 0.1
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + time){
+            self.loadParkingData()
+        }
+    }
+    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        
+        //load the Parking Lot status
+        loadParkingData()
+    }
+    
+    
+    
+    private func loadParkingData(){
         WatSwift.apiKey = "532bfebea989a4a5bc40da4fc7d6b1d4"
         
         WatSwift.Parking.watpark{ response in
@@ -74,9 +89,9 @@ class MyHomeViewController: UIViewController{
             self.NumN.text = String(AvailableN)
             self.NumW.text = String(AvailableW)
             self.NumX.text = String(AvailableX)
-            
         }
     }
+    
 }
 
 

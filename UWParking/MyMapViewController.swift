@@ -31,7 +31,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad(){
         super.viewDidLoad()
         requestLocationAccess()
-        
+        loadInitView()
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -75,7 +75,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func centerMapOnLocation(location: CLLocation){
-        let regionRadius: CLLocationDistance = 500
+        let regionRadius: CLLocationDistance = 1000
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         MyMapView.setRegion(coordinateRegion, animated: true)
     }
@@ -87,4 +87,17 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         let temp:[Double] = [temp_lat!, temp_long!]
         return temp
     }
+    
+    func loadInitView(){
+        var CampusLocation_gcj02: CLLocation = CLLocation(latitude: 43.4722624, longitude: -80.5447643)
+        let CampusLocation_wgs84 = CLLocationCoordinate2D(latitude: 43.4722624, longitude: -80.5447643)
+        JZLocationConverter.default.wgs84ToGcj02(CampusLocation_wgs84, result: {
+            (Gcj02:CLLocationCoordinate2D) in
+            CampusLocation_gcj02 = CLLocation(latitude: self.formatter(Gcj02)[0], longitude: self.formatter(Gcj02)[1])
+        })
+        let regionRadius: CLLocationDistance = 3000
+        let initCoordinateRegion = MKCoordinateRegion(center: CampusLocation_gcj02.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+        MyMapView.setRegion(initCoordinateRegion, animated: true)
+    }
+    
 }
