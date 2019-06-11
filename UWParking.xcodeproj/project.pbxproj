@@ -55,7 +55,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F534E17B22AF4054002BF9FE /* UWParking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UWParking.xcodeproj; sourceTree = "<group>"; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EF13A22A4F4400020114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,11 +86,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		F534E17C22AF4054002BF9FE /* Products */ = {
-			isa = PBXGroup;
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F56EF12E22A4F4400020114C = {
 			isa = PBXGroup;
 			children = (
@@ -131,7 +125,6 @@
 		F591FF3A22A50084008EB467 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F534E17B22AF4054002BF9FE /* UWParking.xcodeproj */,
 				F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */,
 				F5C1FFDB22AE15390050AA51 /* MapKit.framework */,
 			);
@@ -200,10 +193,6 @@
 			productRefGroup = F56EF13822A4F4400020114C /* Products */;
 			projectDirPath = "";
 			projectReferences = (
-				{
-					ProductGroup = F534E17C22AF4054002BF9FE /* Products */;
-					ProjectRef = F534E17B22AF4054002BF9FE /* UWParking.xcodeproj */;
-				},
 				{
 					ProductGroup = F5D9B63E22AF3FE8003ED367 /* Products */;
 					ProjectRef = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;

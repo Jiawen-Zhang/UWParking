@@ -28,10 +28,10 @@ class MyHomeViewController: UIViewController{
         WatSwift.apiKey = "532bfebea989a4a5bc40da4fc7d6b1d4"
         
         WatSwift.Parking.watpark{ response in
-            let metadata = response.metadata
+            //let metadata = response.metadata
             let data: JSON = response.data
-            print(metadata)
-            print(data)
+            //print(metadata)
+            //print(data)
             
             //get the parking lot C data from UW Open Data API
             var AvailableC = 0
