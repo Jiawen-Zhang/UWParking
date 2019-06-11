@@ -1,0 +1,16 @@
+PODS:
+  - JZLocationConverterSwift (1.0.1)
+
+DEPENDENCIES:
+  - JZLocationConverterSwift (~> 1.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - JZLocationConverterSwift
+
+SPEC CHECKSUMS:
+  JZLocationConverterSwift: 4c5107b9b1b5900e7d3bb719a7a1f78df7f3d4fc
+
+PODFILE CHECKSUM: 6d55d796e574d4180ffd7f2d4a38fd157fb0e6cd
+
+COCOAPODS: 1.7.1

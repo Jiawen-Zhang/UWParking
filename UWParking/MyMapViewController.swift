@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import CoreLocation
+import JZLocationConverterSwift
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
@@ -37,26 +38,23 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         let location:CLLocation = locations[locations.count-1]
         let currLocation = locations.last!
         if(location.horizontalAccuracy > 0){
-            let lat = Double(String(format: "%.15f", currLocation.coordinate.latitude))
-            let long = Double(String(format: "%.15f", currLocation.coordinate.longitude))
-            if(!FindMyLocation.isEmpty){
-                FindMyLocation.removeAll()
-            }
-            FindMyLocation.append(lat!)
-            FindMyLocation.append(long!)
+            let initialLocation = CLLocationCoordinate2D(latitude: currLocation.coordinate.latitude, longitude: currLocation.coordinate.longitude)
+            JZLocationConverter.default.wgs84ToGcj02(initialLocation, result: {
+                (Gcj02:CLLocationCoordinate2D) in
+                //centerMapOnLocation(location: self.formatter(Gcj02))
+                self.FindMyLocation = self.formatter(Gcj02)
+            })
+            //FindMyLocation.append(lat!)
+            //FindMyLocation.append(long!)
             //FindMyLocation[0] = lat!
             //FindMyLocation[1] = long!
-            print(FindMyLocation[0])
-            print(FindMyLocation[1])
-            print("Latitude:\(lat!)")
-            print("Longitude:\(long!)")
+            //print("Latitude:\(lat!)")
+            //print("Longitude:\(long!)")
             locationManager.stopUpdatingLocation()
             //LonLatToCity()
             //locationManager.stopUpdatingLocation()
         }
     }
-    
-    
     
     func requestLocationAccess(){
         locationManager.delegate = self
@@ -80,5 +78,13 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         let regionRadius: CLLocationDistance = 500
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         MyMapView.setRegion(coordinateRegion, animated: true)
+    }
+    
+    //formatter for CLLocationCoordinate2D -> Double Array
+    func formatter(_ p:CLLocationCoordinate2D) -> [Double] {
+        let temp_lat = Double(String(format: "%.14f", p.latitude))
+        let temp_long = Double(String(format: "%.14f", p.longitude))
+        let temp:[Double] = [temp_lat!, temp_long!]
+        return temp
     }
 }

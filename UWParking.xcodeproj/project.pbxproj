@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460877CBF664C0D57C666C7C /* Pods_UWParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96F45C25BE606E11538A6D /* Pods_UWParking.framework */; };
 		F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5654E7D22ADFAD500911350 /* MyMapViewController.swift */; };
 		F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13A22A4F4400020114C /* AppDelegate.swift */; };
@@ -55,6 +56,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5F96F45C25BE606E11538A6D /* Pods_UWParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UWParking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		844B4109898B0020CCE57F93 /* Pods-UWParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWParking.debug.xcconfig"; path = "Target Support Files/Pods-UWParking/Pods-UWParking.debug.xcconfig"; sourceTree = "<group>"; };
+		E5E3E973BC75B9DB5CCF9E39 /* Pods-UWParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWParking.release.xcconfig"; path = "Target Support Files/Pods-UWParking/Pods-UWParking.release.xcconfig"; sourceTree = "<group>"; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EF13A22A4F4400020114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -80,12 +84,23 @@
 				F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */,
 				F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */,
 				F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */,
+				460877CBF664C0D57C666C7C /* Pods_UWParking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		16103891798CBCE7658A5AEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				844B4109898B0020CCE57F93 /* Pods-UWParking.debug.xcconfig */,
+				E5E3E973BC75B9DB5CCF9E39 /* Pods-UWParking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F56EF12E22A4F4400020114C = {
 			isa = PBXGroup;
 			children = (
@@ -94,6 +109,7 @@
 				F56EF13922A4F4400020114C /* UWParking */,
 				F56EF13822A4F4400020114C /* Products */,
 				F591FF3A22A50084008EB467 /* Frameworks */,
+				16103891798CBCE7658A5AEA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -127,6 +143,7 @@
 			children = (
 				F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */,
 				F5C1FFDB22AE15390050AA51 /* MapKit.framework */,
+				5F96F45C25BE606E11538A6D /* Pods_UWParking.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -147,10 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F56EF14922A4F4410020114C /* Build configuration list for PBXNativeTarget "UWParking" */;
 			buildPhases = (
+				8FB88169CB66DF1D0C650A65 /* [CP] Check Pods Manifest.lock */,
 				F56EF13322A4F4400020114C /* Sources */,
 				F56EF13422A4F4400020114C /* Frameworks */,
 				F56EF13522A4F4400020114C /* Resources */,
 				F591FF4022A5017D008EB467 /* Embed Frameworks */,
+				DFED72778FCA6FDD31AB7B43 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -235,6 +254,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8FB88169CB66DF1D0C650A65 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-UWParking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DFED72778FCA6FDD31AB7B43 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UWParking/Pods-UWParking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-UWParking/Pods-UWParking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-UWParking/Pods-UWParking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F56EF13322A4F4400020114C /* Sources */ = {
@@ -391,6 +452,7 @@
 		};
 		F56EF14A22A4F4410020114C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 844B4109898B0020CCE57F93 /* Pods-UWParking.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -411,6 +473,7 @@
 		};
 		F56EF14B22A4F4410020114C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E5E3E973BC75B9DB5CCF9E39 /* Pods-UWParking.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
