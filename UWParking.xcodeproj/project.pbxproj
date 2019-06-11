@@ -7,43 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5654E7D22ADFAD500911350 /* MyMapViewController.swift */; };
 		F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13A22A4F4400020114C /* AppDelegate.swift */; };
 		F56EF13D22A4F4400020114C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13C22A4F4400020114C /* ViewController.swift */; };
 		F56EF14022A4F4400020114C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56EF13E22A4F4400020114C /* Main.storyboard */; };
 		F56EF14222A4F4410020114C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EF14122A4F4410020114C /* Assets.xcassets */; };
 		F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56EF14322A4F4410020114C /* LaunchScreen.storyboard */; };
-		F591FF3922A50073008EB467 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F591FF3822A50073008EB467 /* WatSwift */; };
-		F591FF3C22A5017D008EB467 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F591FF3522A50073008EB467 /* WatSwift.framework */; };
-		F591FF3D22A5017D008EB467 /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F591FF3522A50073008EB467 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964322A766E800B69732 /* MyTabBarController.swift */; };
 		F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964622A76DF800B69732 /* MyListViewController.swift */; };
 		F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */; };
 		F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDB22AE15390050AA51 /* MapKit.framework */; };
 		F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */; };
+		F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F5D9B63B22AF3FD6003ED367 /* WatSwift */; };
+		F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F591FF3422A50073008EB467 /* PBXContainerItemProxy */ = {
+		F5D9B64222AF3FE8003ED367 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+			containerPortal = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A1C857EB1D3CDE7100CA77C7;
 			remoteInfo = WatSwift;
 		};
-		F591FF3622A50073008EB467 /* PBXContainerItemProxy */ = {
+		F5D9B64422AF3FE8003ED367 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+			containerPortal = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A1C857F41D3CDE7100CA77C7;
 			remoteInfo = WatSwiftTests;
-		};
-		F591FF3E22A5017D008EB467 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A1C857EA1D3CDE7100CA77C7;
-			remoteInfo = WatSwift;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -54,7 +47,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F591FF3D22A5017D008EB467 /* WatSwift.framework in Embed Frameworks */,
+				F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -62,6 +55,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F534E17B22AF4054002BF9FE /* UWParking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; path = UWParking.xcodeproj; sourceTree = "<group>"; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EF13A22A4F4400020114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -70,14 +64,13 @@
 		F56EF14122A4F4410020114C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56EF14422A4F4410020114C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56EF14622A4F4410020114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F591FF2D22A5001B008EB467 /* WatSwift-master */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "WatSwift-master"; path = "../WatSwift-master"; sourceTree = "<group>"; };
-		F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../WatSwift-master/WatSwift.xcodeproj"; sourceTree = "<group>"; };
-		F591FF3822A50073008EB467 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
 		F5BA964322A766E800B69732 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		F5BA964622A76DF800B69732 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
 		F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
 		F5C1FFDB22AE15390050AA51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F5D9B63B22AF3FD6003ED367 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
+		F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../WatSwift-master/WatSwift.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,19 +80,23 @@
 			files = (
 				F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */,
 				F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */,
-				F591FF3C22A5017D008EB467 /* WatSwift.framework in Frameworks */,
+				F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F534E17C22AF4054002BF9FE /* Products */ = {
+			isa = PBXGroup;
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F56EF12E22A4F4400020114C = {
 			isa = PBXGroup;
 			children = (
-				F591FF3822A50073008EB467 /* WatSwift */,
-				F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */,
-				F591FF2D22A5001B008EB467 /* WatSwift-master */,
+				F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */,
+				F5D9B63B22AF3FD6003ED367 /* WatSwift */,
 				F56EF13922A4F4400020114C /* UWParking */,
 				F56EF13822A4F4400020114C /* Products */,
 				F591FF3A22A50084008EB467 /* Frameworks */,
@@ -131,22 +128,23 @@
 			path = UWParking;
 			sourceTree = "<group>";
 		};
-		F591FF3022A50073008EB467 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F591FF3522A50073008EB467 /* WatSwift.framework */,
-				F591FF3722A50073008EB467 /* WatSwiftTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		F591FF3A22A50084008EB467 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F534E17B22AF4054002BF9FE /* UWParking.xcodeproj */,
 				F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */,
 				F5C1FFDB22AE15390050AA51 /* MapKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5D9B63E22AF3FE8003ED367 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5D9B64322AF3FE8003ED367 /* WatSwift.framework */,
+				F5D9B64522AF3FE8003ED367 /* WatSwiftTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,7 +162,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				F591FF3F22A5017D008EB467 /* PBXTargetDependency */,
 			);
 			name = UWParking;
 			productName = UWParking;
@@ -204,8 +201,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = F591FF3022A50073008EB467 /* Products */;
-					ProjectRef = F591FF2F22A50073008EB467 /* WatSwift.xcodeproj */;
+					ProductGroup = F534E17C22AF4054002BF9FE /* Products */;
+					ProjectRef = F534E17B22AF4054002BF9FE /* UWParking.xcodeproj */;
+				},
+				{
+					ProductGroup = F5D9B63E22AF3FE8003ED367 /* Products */;
+					ProjectRef = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -216,18 +217,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F591FF3522A50073008EB467 /* WatSwift.framework */ = {
+		F5D9B64322AF3FE8003ED367 /* WatSwift.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = WatSwift.framework;
-			remoteRef = F591FF3422A50073008EB467 /* PBXContainerItemProxy */;
+			remoteRef = F5D9B64222AF3FE8003ED367 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		F591FF3722A50073008EB467 /* WatSwiftTests.xctest */ = {
+		F5D9B64522AF3FE8003ED367 /* WatSwiftTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = WatSwiftTests.xctest;
-			remoteRef = F591FF3622A50073008EB467 /* PBXContainerItemProxy */;
+			remoteRef = F5D9B64422AF3FE8003ED367 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -238,7 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */,
-				F591FF3922A50073008EB467 /* WatSwift in Resources */,
+				F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */,
 				F56EF14222A4F4410020114C /* Assets.xcassets in Resources */,
 				F56EF14022A4F4400020114C /* Main.storyboard in Resources */,
 			);
@@ -261,14 +262,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		F591FF3F22A5017D008EB467 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = WatSwift;
-			targetProxy = F591FF3E22A5017D008EB467 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F56EF13E22A4F4400020114C /* Main.storyboard */ = {
