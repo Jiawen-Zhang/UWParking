@@ -16,6 +16,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     var FindMyLocation = [Double]()
     
+    
     @IBOutlet weak var MyMapView: MKMapView!
     
     @IBAction func FindMe(_ sender: Any) {

@@ -30,6 +30,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Success Load Mainland China borderline")
             }
         }
+        //launchingscreen stop for 3 seconds
+        Thread.sleep(forTimeInterval: 3)
+        
         return true
     }
 
