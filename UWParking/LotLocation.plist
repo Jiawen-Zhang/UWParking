@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>title</key>
+		<string>C</string>
+		<key>description</key>
+		<string>Permit controlled/Visitor pay and display</string>
+		<key>lotType</key>
+		<string>C</string>
+		<key>latitude</key>
+		<real>43.467536</real>
+		<key>longitude</key>
+		<real>-80.53837900000001</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>N</string>
+		<key>description</key>
+		<string>Permit controlled/Visitor pay and display</string>
+		<key>lotType</key>
+		<string>N</string>
+		<key>latitude</key>
+		<real>43.47491</real>
+		<key>longitude</key>
+		<real>-80.54455900000001</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>W</string>
+		<key>description</key>
+		<string>Permit controlled/Visitor pay and display</string>
+		<key>lotType</key>
+		<string>W</string>
+		<key>latitude</key>
+		<real>43.474777</real>
+		<key>longitude</key>
+		<real>-80.547579</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>X</string>
+		<key>description</key>
+		<string>Staff/Faculty/Student/Visitor</string>
+		<key>lotType</key>
+		<string>X</string>
+		<key>latitude</key>
+		<real>43.477526</real>
+		<key>longitude</key>
+		<real>-80.545492</real>
+	</dict>
+</array>
+</plist>

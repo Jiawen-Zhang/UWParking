@@ -16,6 +16,8 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     var FindMyLocation = [Double]()
     
+    let LotLocations = LotLocation.getLots()
+    
     
     @IBOutlet weak var MyMapView: MKMapView!
     
@@ -31,8 +33,17 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     override func viewDidLoad(){
         super.viewDidLoad()
+        MyMapView.delegate = self
         requestLocationAccess()
         loadInitView()
+        addAnnotations(LotLocations)
+    }
+    
+    //add an array of Annotation
+    func addAnnotations(_ locations:[LotLocation]){
+        for lot in locations{
+            MyMapView.addAnnotation(lot)
+        }
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -101,4 +112,27 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         MyMapView.setRegion(initCoordinateRegion, animated: true)
     }
     
+}
+
+
+extension MyMapViewController: MKMapViewDelegate{
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+        guard let annotation = annotation as? LotLocation else {return nil}
+        let identifier = "marker"
+        var view: MKMarkerAnnotationView
+        
+        if let dequeuedView = MyMapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView{
+            dequeuedView.annotation = annotation
+            view = dequeuedView
+        }
+        else{
+            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+            view.canShowCallout = true
+            view.calloutOffset = CGPoint(x:-5, y:5)
+            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+        }
+        view.markerTintColor = annotation.markerTintColor
+        view.glyphText = String(annotation.type!.first!)
+        return view
+    }
 }

@@ -46,7 +46,7 @@ class MyHomeViewController: UIViewController{
             //let metadata = response.metadata
             let data: JSON = response.data
             //print(metadata)
-            //print(data)
+            print(data)
             
             //get the parking lot C data from UW Open Data API
             var AvailableC = 0
