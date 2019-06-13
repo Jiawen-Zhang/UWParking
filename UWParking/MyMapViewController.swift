@@ -10,6 +10,7 @@ import UIKit
 import MapKit
 import CoreLocation
 import JZLocationConverterSwift
+import Contacts
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
@@ -34,6 +35,9 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad(){
         super.viewDidLoad()
         MyMapView.delegate = self
+        
+        MyMapView.register(LotView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
         requestLocationAccess()
         loadInitView()
         addAnnotations(LotLocations)
@@ -53,18 +57,11 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             let initialLocation = CLLocationCoordinate2D(latitude: currLocation.coordinate.latitude, longitude: currLocation.coordinate.longitude)
             JZLocationConverter.default.wgs84ToGcj02(initialLocation, result: {
                 (Gcj02:CLLocationCoordinate2D) in
-                //centerMapOnLocation(location: self.formatter(Gcj02))
                 self.FindMyLocation = self.formatter(Gcj02)
             })
-            //FindMyLocation.append(lat!)
-            //FindMyLocation.append(long!)
-            //FindMyLocation[0] = lat!
-            //FindMyLocation[1] = long!
-            //print("Latitude:\(lat!)")
-            //print("Longitude:\(long!)")
-            locationManager.stopUpdatingLocation()
+            
             //LonLatToCity()
-            //locationManager.stopUpdatingLocation()
+            locationManager.stopUpdatingLocation()
         }
     }
     
@@ -116,10 +113,11 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
 
 
 extension MyMapViewController: MKMapViewDelegate{
-    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
+    /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
         guard let annotation = annotation as? LotLocation else {return nil}
         let identifier = "marker"
         var view: MKMarkerAnnotationView
+        //var view: MKAnnotationView
         
         if let dequeuedView = MyMapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView{
             dequeuedView.annotation = annotation
@@ -129,10 +127,35 @@ extension MyMapViewController: MKMapViewDelegate{
             view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
             view.canShowCallout = true
             view.calloutOffset = CGPoint(x:-5, y:5)
-            view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
+            let mapButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 30, height: 30)))
+            mapButton.setBackgroundImage(UIImage(named: "Direct"), for: UIControl.State())
+            view.rightCalloutAccessoryView = mapButton
+            //view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
         }
         view.markerTintColor = annotation.markerTintColor
         view.glyphText = String(annotation.type!.first!)
         return view
+    }*/
+    
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        
     }
+    
+    func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
+        let location = view.annotation as! LotLocation
+
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+        location.mapItem().openInMaps(launchOptions: launchOptions)
+        
+        /*let currentLocation: MKMapItem = MKMapItem.forCurrentLocation()
+        let destCoordinate: CLLocationCoordinate2D = location.coordinate
+        let destPlaceMark: MKPlacemark = MKPlacemark.init(coordinate: destCoordinate, addressDictionary: nil)
+        let destLocation: MKMapItem = MKMapItem.init(placemark: destPlaceMark)
+        destLocation.name = location.title
+        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving, MKLaunchOptionsShowsTrafficKey: "true"]
+        MKMapItem.openMaps(with: [currentLocation, destLocation], launchOptions: launchOptions)*/
+        
+        
+    }
+    
 }

@@ -10,6 +10,7 @@
 		460877CBF664C0D57C666C7C /* Pods_UWParking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F96F45C25BE606E11538A6D /* Pods_UWParking.framework */; };
 		F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53434FB22B0D55D00B463B7 /* LotLocation.swift */; };
 		F534350022B0D55D00B463B7 /* LotLocation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F53434FE22B0D55D00B463B7 /* LotLocation.plist */; };
+		F534350422B1F45600B463B7 /* LotViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534350322B1F45600B463B7 /* LotViews.swift */; };
 		F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5654E7D22ADFAD500911350 /* MyMapViewController.swift */; };
 		F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13A22A4F4400020114C /* AppDelegate.swift */; };
@@ -63,6 +64,7 @@
 		E5E3E973BC75B9DB5CCF9E39 /* Pods-UWParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UWParking.release.xcconfig"; path = "Target Support Files/Pods-UWParking/Pods-UWParking.release.xcconfig"; sourceTree = "<group>"; };
 		F53434FB22B0D55D00B463B7 /* LotLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotLocation.swift; sourceTree = "<group>"; };
 		F53434FE22B0D55D00B463B7 /* LotLocation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LotLocation.plist; sourceTree = "<group>"; };
+		F534350322B1F45600B463B7 /* LotViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotViews.swift; sourceTree = "<group>"; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EF13A22A4F4400020114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 				F5BA964622A76DF800B69732 /* MyListViewController.swift */,
 				F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */,
 				F5654E7D22ADFAD500911350 /* MyMapViewController.swift */,
+				F534350322B1F45600B463B7 /* LotViews.swift */,
 			);
 			path = UWParking;
 			sourceTree = "<group>";
@@ -314,6 +317,7 @@
 				F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */,
 				F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */,
 				F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */,
+				F534350422B1F45600B463B7 /* LotViews.swift in Sources */,
 				F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

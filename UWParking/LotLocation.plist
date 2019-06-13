@@ -50,5 +50,17 @@
 		<key>longitude</key>
 		<real>-80.545492</real>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>test</string>
+		<key>description</key>
+		<string>test Route</string>
+		<key>lotType</key>
+		<string>X</string>
+		<key>latitude</key>
+		<real>34.240163539</real>
+		<key>longitude</key>
+		<real>108.9045780074</real>
+	</dict>
 </array>
 </plist>

@@ -8,6 +8,7 @@
 
 import MapKit
 import JZLocationConverterSwift
+import Contacts
 
 @objc class LotLocation: NSObject, MKAnnotation{
     var title: String?
@@ -53,6 +54,35 @@ import JZLocationConverterSwift
         default:
             return .green
         }
+    }
+    
+    var imageName: String?{
+        switch type{
+        case "C":
+            return "C"
+        case "N":
+            return "N"
+        case "W":
+            return "W"
+        case "X":
+            return "X"
+        default:
+            return nil
+        }
+    }
+    
+    func mapItem() -> MKMapItem{
+        let addressDict = [CNPostalAddressStreetKey: subtitle!]
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title
+        
+       /*
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+        let mapItem = MKMapItem(placemark: placemark)
+        mapItem.name = title*/
+        
+        return mapItem
     }
     
 }
