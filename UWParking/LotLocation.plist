@@ -4,9 +4,21 @@
 <array>
 	<dict>
 		<key>title</key>
+		<string>test</string>
+		<key>description</key>
+		<string>test Route</string>
+		<key>lotType</key>
+		<string>T</string>
+		<key>latitude</key>
+		<real>34.240163539</real>
+		<key>longitude</key>
+		<real>108.9045780074</real>
+	</dict>
+	<dict>
+		<key>title</key>
 		<string>C</string>
 		<key>description</key>
-		<string>Permit controlled/Visitor pay and display</string>
+		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>C</string>
 		<key>latitude</key>
@@ -18,7 +30,7 @@
 		<key>title</key>
 		<string>N</string>
 		<key>description</key>
-		<string>Permit controlled/Visitor pay and display</string>
+		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>N</string>
 		<key>latitude</key>
@@ -30,7 +42,7 @@
 		<key>title</key>
 		<string>W</string>
 		<key>description</key>
-		<string>Permit controlled/Visitor pay and display</string>
+		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>W</string>
 		<key>latitude</key>
@@ -42,7 +54,7 @@
 		<key>title</key>
 		<string>X</string>
 		<key>description</key>
-		<string>Staff/Faculty/Student/Visitor</string>
+		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard Free on weekends beginning on Fridays at 4:30 p.m.</string>
 		<key>lotType</key>
 		<string>X</string>
 		<key>latitude</key>
@@ -52,15 +64,111 @@
 	</dict>
 	<dict>
 		<key>title</key>
-		<string>test</string>
+		<string>M</string>
 		<key>description</key>
-		<string>test Route</string>
+		<string>$6.00 Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
-		<string>X</string>
+		<string>Visitor</string>
 		<key>latitude</key>
-		<real>34.240163539</real>
+		<real>43.47323</real>
 		<key>longitude</key>
-		<real>108.9045780074</real>
+		<real>-80.54685000000001</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>D</string>
+		<key>description</key>
+		<string>$2.00 hourly Max $15 After 3:45 p.m. and weekends: $5 flat rate Reservations/Visitor Pay and display Visa or MasterCard only</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.46993</real>
+		<key>longitude</key>
+		<real>-80.54351</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>J</string>
+		<key>description</key>
+		<string>$5.00 Permit controlled/ Visitor pay and display Pay in Lot S Pay and display permits are valid in J, S, V Accept coin, WatCard, Visa or Mastercard</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.47286</real>
+		<key>longitude</key>
+		<real>-80.55022</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>S</string>
+		<key>description</key>
+		<string>$5.00 Permit controlled/ Visitor pay and display Pay in Lot S Pay and display permits are valid in J, S, V Accept coin, WatCard, Visa or Mastercard</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.47181</real>
+		<key>longitude</key>
+		<real>-80.5532</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>V</string>
+		<key>description</key>
+		<string>$5.00 Permit controlled/ Visitor pay and display Pay in Lot S Pay and display permits are valid in J, S, V Accept coin, WatCard, Visa or Mastercard</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.47134</real>
+		<key>longitude</key>
+		<real>-80.55454</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>CLV</string>
+		<key>description</key>
+		<string>$5.00 Permit controlled/ Visitor pay and display Purchase a ticket from the machine at the community centre Accept coin, WatCard, Visa, Mastercard, or tokens</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.47058</real>
+		<key>longitude</key>
+		<real>-80.56310000000001</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>H</string>
+		<key>description</key>
+		<string>$2.00 hourly Max $10 After 3:45 p.m. and weekends: $5 flat rate Transponder Controlled/Reservations/Visitor Visitor parking is available during non-co-op days Visa American Express or MasterCard</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.466959897997</real>
+		<key>longitude</key>
+		<real>-80.54057374459801</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>CGR</string>
+		<key>description</key>
+		<string>$3.00 hourly Max $9.00 Purchase ticket through the Honk Mobile App/ from the machine in the lot/ from the kiosk in the front entrance The machine requires exact change in coins</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.4658</real>
+		<key>longitude</key>
+		<real>-80.54427</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>OV</string>
+		<key>description</key>
+		<string>$5.00 daily Pay on exit with Visa or MasterCard Accept exit vouchers given by the clinics at Optometry</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.4761</real>
+		<key>longitude</key>
+		<real>-80.54387</real>
 	</dict>
 </array>
 </plist>

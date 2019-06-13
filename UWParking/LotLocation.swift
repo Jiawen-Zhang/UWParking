@@ -59,21 +59,25 @@ import Contacts
     var imageName: String?{
         switch type{
         case "C":
-            return "C"
+            return "2.5D_C"
         case "N":
-            return "N"
+            return "2.5D_N"
         case "W":
-            return "W"
+            return "2.5D_W"
         case "X":
-            return "X"
+            return "2.5D_X"
+        case "T":
+            return "2.5D_T"
+        case "Visitor":
+            return "Visitor"
         default:
             return nil
         }
     }
     
     func mapItem() -> MKMapItem{
-        let addressDict = [CNPostalAddressStreetKey: subtitle!]
-        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: addressDict)
+        //let addressDict = [CNPostalAddressStreetKey: subtitle!]
+        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = title
         
