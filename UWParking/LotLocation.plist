@@ -170,5 +170,197 @@
 		<key>longitude</key>
 		<real>-80.54387</real>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>STP</string>
+		<key>description</key>
+		<string>$6.00 daily Purchase parking pass in the  Student and Guest Services Centre  during business hours/ use the automated machine evenings and weekends</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.46707</real>
+		<key>longitude</key>
+		<real>-80.54617</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>STJ</string>
+		<key>description</key>
+		<string>Pay per entry Parking for visitors are available after 5 p.m. and on the weekends.</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.46959</real>
+		<key>longitude</key>
+		<real>-80.54696</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>REN</string>
+		<key>description</key>
+		<string>The pay-per-exit fee is $7.00. Accept debit or credit cards</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.46891</real>
+		<key>longitude</key>
+		<real>-80.54858</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>UWP</string>
+		<key>description</key>
+		<string>$5.00 Pay and display permits are valid in UWP only</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.47127</real>
+		<key>longitude</key>
+		<real>-80.53371</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>E</string>
+		<key>description</key>
+		<string>Free parking Monitored by UW Parking Staff  8 a.m. - 6 p.m. Monday to Friday Open to the public all other times</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.4693737309</real>
+		<key>longitude</key>
+		<real>-80.5340337753</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Q</string>
+		<key>description</key>
+		<string>Permit controlled/ Visitor pay and display Purchase a ticket from the machine Pay and display permits are vaild in Q lot only Accept coin, WatCard, Visa or Mastercard</string>
+		<key>lotType</key>
+		<string>Visitor</string>
+		<key>latitude</key>
+		<real>43.4756453259</real>
+		<key>longitude</key>
+		<real>-80.5402457714</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>DC; GSC</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.4731856247</real>
+		<key>longitude</key>
+		<real>-80.54266965319999</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>MKV; V1</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.47111</real>
+		<key>longitude</key>
+		<real>-80.55115000000001</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>V1; UC</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.47218</real>
+		<key>longitude</key>
+		<real>-80.54883</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>PAC; SLC</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.47164</real>
+		<key>longitude</key>
+		<real>-80.54618000000001</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>HS</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.470255882</real>
+		<key>longitude</key>
+		<real>-80.5459249341</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>T</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.4654355332</real>
+		<key>longitude</key>
+		<real>-80.54142280879999</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>DWE; SCH</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.46966</real>
+		<key>longitude</key>
+		<real>-80.53972</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>OPT</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.47584</real>
+		<key>longitude</key>
+		<real>-80.54485</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>Q</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.4750983799</real>
+		<key>longitude</key>
+		<real>-80.5417899851</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>E7; ECH</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>latitude</key>
+		<real>43.4732964348</real>
+		<key>longitude</key>
+		<real>-80.5395206684</real>
+	</dict>
 </array>
 </plist>

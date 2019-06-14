@@ -13,7 +13,7 @@
         <!--List-->
         <scene sceneID="BRK-bo-MnE">
             <objects>
-                <tableViewController id="Xo4-Kc-cna" userLabel="List" sceneMemberID="viewController">
+                <tableViewController id="Xo4-Kc-cna" userLabel="List" customClass="MyListViewController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HiD-El-PRd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,6 +34,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="FH6-9Z-LPa"/>
+                    <connections>
+                        <outlet property="tableView" destination="HiD-El-PRd" id="jde-4w-yxH"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qh-rq-8xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

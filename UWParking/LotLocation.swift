@@ -70,6 +70,8 @@ import Contacts
             return "2.5D_T"
         case "Visitor":
             return "Visitor"
+        case "Meter":
+            return "Meter"
         default:
             return nil
         }
