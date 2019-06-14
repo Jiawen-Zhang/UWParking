@@ -21,7 +21,8 @@
 		F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964322A766E800B69732 /* MyTabBarController.swift */; };
 		F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964622A76DF800B69732 /* MyListViewController.swift */; };
 		F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */; };
-		F5BC051D22B38CEC00A50578 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC051C22B38CEC00A50578 /* MyTableViewCell.swift */; };
+		F5BC053122B3A62000A50578 /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BC052F22B3A62000A50578 /* MyTableViewCell.swift */; };
+		F5BC053222B3A62000A50578 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BC053022B3A62000A50578 /* MyTableViewCell.xib */; };
 		F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDB22AE15390050AA51 /* MapKit.framework */; };
 		F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */; };
 		F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F5D9B63B22AF3FD6003ED367 /* WatSwift */; };
@@ -77,7 +78,8 @@
 		F5BA964322A766E800B69732 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		F5BA964622A76DF800B69732 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
 		F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
-		F5BC051C22B38CEC00A50578 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F5BC052F22B3A62000A50578 /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
+		F5BC053022B3A62000A50578 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		F5C1FFDB22AE15390050AA51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5D9B63B22AF3FD6003ED367 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
@@ -144,7 +146,8 @@
 				F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */,
 				F5654E7D22ADFAD500911350 /* MyMapViewController.swift */,
 				F534350322B1F45600B463B7 /* LotViews.swift */,
-				F5BC051C22B38CEC00A50578 /* MyTableViewCell.swift */,
+				F5BC052F22B3A62000A50578 /* MyTableViewCell.swift */,
+				F5BC053022B3A62000A50578 /* MyTableViewCell.xib */,
 			);
 			path = UWParking;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */,
+				F5BC053222B3A62000A50578 /* MyTableViewCell.xib in Resources */,
 				F534350022B0D55D00B463B7 /* LotLocation.plist in Resources */,
 				F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */,
 				F56EF14222A4F4410020114C /* Assets.xcassets in Resources */,
@@ -319,7 +323,7 @@
 				F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */,
 				F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */,
 				F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */,
-				F5BC051D22B38CEC00A50578 /* MyTableViewCell.swift in Sources */,
+				F5BC053122B3A62000A50578 /* MyTableViewCell.swift in Sources */,
 				F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */,
 				F534350422B1F45600B463B7 /* LotViews.swift in Sources */,
 				F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */,
