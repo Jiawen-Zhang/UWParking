@@ -12,7 +12,6 @@
 		F534350022B0D55D00B463B7 /* LotLocation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F53434FE22B0D55D00B463B7 /* LotLocation.plist */; };
 		F534350422B1F45600B463B7 /* LotViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534350322B1F45600B463B7 /* LotViews.swift */; };
 		F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		F54D5F1F22B73661006C9406 /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D5F1C22B73661006C9406 /* FilterBar.swift */; };
 		F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5654E7D22ADFAD500911350 /* MyMapViewController.swift */; };
 		F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13A22A4F4400020114C /* AppDelegate.swift */; };
 		F56EF13D22A4F4400020114C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13C22A4F4400020114C /* ViewController.swift */; };
@@ -68,7 +67,7 @@
 		F53434FB22B0D55D00B463B7 /* LotLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotLocation.swift; sourceTree = "<group>"; };
 		F53434FE22B0D55D00B463B7 /* LotLocation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LotLocation.plist; sourceTree = "<group>"; };
 		F534350322B1F45600B463B7 /* LotViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotViews.swift; sourceTree = "<group>"; };
-		F54D5F1C22B73661006C9406 /* FilterBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = SOURCE_ROOT; };
+		F54D5F2E22B78AAC006C9406 /* FoldTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoldTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EF13A22A4F4400020114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -135,7 +134,6 @@
 		F56EF13922A4F4400020114C /* UWParking */ = {
 			isa = PBXGroup;
 			children = (
-				F54D5F1C22B73661006C9406 /* FilterBar.swift */,
 				F53434FE22B0D55D00B463B7 /* LotLocation.plist */,
 				F53434FB22B0D55D00B463B7 /* LotLocation.swift */,
 				F56EF13A22A4F4400020114C /* AppDelegate.swift */,
@@ -158,6 +156,7 @@
 		F591FF3A22A50084008EB467 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F54D5F2E22B78AAC006C9406 /* FoldTableView.framework */,
 				F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */,
 				F5C1FFDB22AE15390050AA51 /* MapKit.framework */,
 				5F96F45C25BE606E11538A6D /* Pods_UWParking.framework */,
@@ -322,7 +321,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56EF13D22A4F4400020114C /* ViewController.swift in Sources */,
-				F54D5F1F22B73661006C9406 /* FilterBar.swift in Sources */,
 				F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */,
 				F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */,
 				F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */,
@@ -480,6 +478,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchScreenImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PBBSU5BL3;
 				INFOPLIST_FILE = UWParking/Info.plist;
@@ -501,6 +500,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchScreenImage;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6PBBSU5BL3;
 				INFOPLIST_FILE = UWParking/Info.plist;

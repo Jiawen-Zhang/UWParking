@@ -33,7 +33,7 @@ class MyListViewController: UITableViewController{
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 40
     }
     
     /*func loadFilterBar(){
