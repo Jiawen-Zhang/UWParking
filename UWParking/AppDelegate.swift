@@ -8,6 +8,7 @@
 
 import UIKit
 import JZLocationConverterSwift
+import DropDown
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         //launchingscreen stop for 3 seconds
         Thread.sleep(forTimeInterval: 3)
+        
+        DropDown.startListeningToKeyboard()
         
         return true
     }

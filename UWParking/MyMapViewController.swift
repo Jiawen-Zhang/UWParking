@@ -11,6 +11,7 @@ import MapKit
 import CoreLocation
 import JZLocationConverterSwift
 import Contacts
+import DropDown
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
@@ -19,8 +20,34 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     let LotLocations = LotLocation.getLots()
     
+    let dropDown = DropDown()
+    
     
     @IBOutlet weak var MyMapView: MKMapView!
+    @IBOutlet weak var LotTypeDropDown: UIButton!
+    
+    
+    func setupDropDown(){
+        dropDown.anchorView = LotTypeDropDown
+        dropDown.dataSource = ["Visitor", "Meter", "Motorcycle", "Short-term"]
+        dropDown.cellConfiguration = { (index, item) in return "\(item)" }
+    }
+
+    @IBAction func showLotTypeDropDown(_ sender: Any) {
+        dropDown.show()
+        dropDown.selectionAction = {
+            (index: Int, item: String) in
+            switch index{
+            case 0: do {
+                self.addAnnotations(self.LotLocations, type: "Visitor")
+                self.addPermitAnnotations(self.LotLocations)
+                }
+            case 1: self.addAnnotations(self.LotLocations, type: "Meter")
+            default: ()
+            }
+        }
+    }
+    
     
     @IBAction func FindMe(_ sender: Any) {
         locationManager.startUpdatingLocation()
@@ -40,16 +67,38 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         
         requestLocationAccess()
         loadInitView()
-        addAnnotations(LotLocations)
+        addAnnotations(LotLocations, type: "Visitor")
+        addPermitAnnotations(LotLocations)
+        setupDropDown()
     }
     
     //add an array of Annotation
-    func addAnnotations(_ locations:[LotLocation]){
+    /*func addAnnotations(_ locations:[LotLocation]){
         for lot in locations{
             MyMapView.addAnnotation(lot)
         }
+    }*/
+    
+    func addPermitAnnotations(_ locations: [LotLocation]){
+        for lot in locations{
+            if(lot.type == "C" || lot.type == "N" || lot.type == "W" || lot.type == "X"){
+                MyMapView.addAnnotation(lot)
+            }
+        }
     }
     
+    func addAnnotations(_ locations: [LotLocation], type: String){
+        for lot in locations{
+            if(lot.type != type){
+                MyMapView.removeAnnotation(lot)
+            }
+            if(lot.type == type){
+                MyMapView.addAnnotation(lot)
+            }
+        }
+    }
+    
+    //location manager
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location:CLLocation = locations[locations.count-1]
         let currLocation = locations.last!
@@ -65,6 +114,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
+    //request the user location
     func requestLocationAccess(){
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
@@ -83,6 +133,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         MyMapView.showsUserLocation = true
     }
     
+    //the init view of the map
     func centerMapOnLocation(location: CLLocation){
         let regionRadius: CLLocationDistance = 1000
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
@@ -108,6 +159,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         let initCoordinateRegion = MKCoordinateRegion(center: CampusLocation_gcj02.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
         MyMapView.setRegion(initCoordinateRegion, animated: true)
     }
+    
     
 }
 

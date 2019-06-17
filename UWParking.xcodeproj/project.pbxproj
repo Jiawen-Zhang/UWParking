@@ -12,6 +12,7 @@
 		F534350022B0D55D00B463B7 /* LotLocation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F53434FE22B0D55D00B463B7 /* LotLocation.plist */; };
 		F534350422B1F45600B463B7 /* LotViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534350322B1F45600B463B7 /* LotViews.swift */; };
 		F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F54D5F1F22B73661006C9406 /* FilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54D5F1C22B73661006C9406 /* FilterBar.swift */; };
 		F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5654E7D22ADFAD500911350 /* MyMapViewController.swift */; };
 		F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13A22A4F4400020114C /* AppDelegate.swift */; };
 		F56EF13D22A4F4400020114C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13C22A4F4400020114C /* ViewController.swift */; };
@@ -67,6 +68,7 @@
 		F53434FB22B0D55D00B463B7 /* LotLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotLocation.swift; sourceTree = "<group>"; };
 		F53434FE22B0D55D00B463B7 /* LotLocation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LotLocation.plist; sourceTree = "<group>"; };
 		F534350322B1F45600B463B7 /* LotViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotViews.swift; sourceTree = "<group>"; };
+		F54D5F1C22B73661006C9406 /* FilterBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterBar.swift; sourceTree = SOURCE_ROOT; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F56EF13A22A4F4400020114C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -133,6 +135,7 @@
 		F56EF13922A4F4400020114C /* UWParking */ = {
 			isa = PBXGroup;
 			children = (
+				F54D5F1C22B73661006C9406 /* FilterBar.swift */,
 				F53434FE22B0D55D00B463B7 /* LotLocation.plist */,
 				F53434FB22B0D55D00B463B7 /* LotLocation.swift */,
 				F56EF13A22A4F4400020114C /* AppDelegate.swift */,
@@ -319,6 +322,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F56EF13D22A4F4400020114C /* ViewController.swift in Sources */,
+				F54D5F1F22B73661006C9406 /* FilterBar.swift in Sources */,
 				F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */,
 				F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */,
 				F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */,

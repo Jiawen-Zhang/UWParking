@@ -26,10 +26,34 @@ class MyListViewController: UITableViewController{
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? MyTableViewCell
         
         let lot = LotLocations[indexPath.row]
+        cell?.ImageCell?.image = UIImage(named: (lot.type)!)
         cell?.LabelCell?.text = lot.title
         
         return cell!
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    /*func loadFilterBar(){
+        //add the filter bar
+        let filter: FilterBar = FilterBar()
+        filter.titles = ["Visitor", "Meter", "Motorcycle", "Short-term"]
+        filter.barTintColor = UIColor.white
+        filter.tintColor = UIColor.black
+        filter.translucent = true
+        self.view.addSubview(filter)
+        
+        let topConstraint: NSLayoutConstraint = NSLayoutConstraint(item: filter, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .bottom, multiplier: 1.0, constant: 8.0)
+        self.view.addConstraint(topConstraint)
+        filter.addTarget(self, action: "segmentChanged:", for: .valueChanged)
+        
+    }*/
+    
+    
+    //implement fold
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()

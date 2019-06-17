@@ -52,12 +52,21 @@
                                     <action selector="FindMe:" destination="c0x-67-t1t" eventType="touchUpInside" id="XOk-SZ-LfF"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fs0-jv-udy">
+                                <rect key="frame" x="16" y="44" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Car_Map"/>
+                                <connections>
+                                    <action selector="showLotTypeDropDown:" destination="c0x-67-t1t" eventType="touchUpInside" id="kSZ-lA-16Q"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JnR-to-LHA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="Map" id="ND3-9K-PIu"/>
                     <connections>
+                        <outlet property="LotTypeDropDown" destination="Fs0-jv-udy" id="lIg-ox-Hnh"/>
                         <outlet property="MyMapView" destination="xXb-6O-0Ow" id="oS1-UJ-RSN"/>
                     </connections>
                 </viewController>
@@ -292,6 +301,7 @@
     <resources>
         <image name="C" width="30" height="30"/>
         <image name="Car" width="30" height="30"/>
+        <image name="Car_Map" width="40" height="40"/>
         <image name="FindMe" width="50" height="50"/>
         <image name="Home" width="25" height="25"/>
         <image name="Info" width="25" height="23.666666030883789"/>
