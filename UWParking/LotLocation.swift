@@ -14,12 +14,14 @@ import Contacts
     var title: String?
     var subtitle: String?
     var type: String?
+    var searchKey: String?
     var coordinate: CLLocationCoordinate2D
     
-    init(title: String?, subtitle: String?, type: String?, coordinate: CLLocationCoordinate2D) {
+    init(title: String?, subtitle: String?, type: String?, searchKey: String?, coordinate: CLLocationCoordinate2D) {
         self.title = title
         self.subtitle = subtitle
         self.type = type
+        self.searchKey = searchKey
         self.coordinate = coordinate
     }
     
@@ -34,7 +36,8 @@ import Contacts
             let subtitle = dictionary?["description"] as? String
             let type = dictionary?["lotType"] as? String
             let latitude = dictionary?["latitude"] as? Double ?? 0, longitude = dictionary?["longitude"] as? Double ?? 0
-            let location = LotLocation(title: title, subtitle: subtitle, type: type, coordinate: CLLocationCoordinate2DMake(latitude, longitude))
+            let searchKey = dictionary?["searchKey"] as? String
+            let location = LotLocation(title: title, subtitle: subtitle, type: type, searchKey: searchKey, coordinate: CLLocationCoordinate2DMake(latitude, longitude))
             LotLocations.append(location)
         }
         

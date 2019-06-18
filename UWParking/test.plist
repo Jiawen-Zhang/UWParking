@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>item0</key>
+	<dict>
+		<key>title</key>
+		<string>test</string>
+		<key>description</key>
+		<string>test Route</string>
+		<key>lotType</key>
+		<string>T</string>
+		<key>searchKey</key>
+		<string>ZH</string>
+		<key>latitude</key>
+		<real>34.240163539</real>
+		<key>longitude</key>
+		<real>108.9045780074</real>
+	</dict>
+	<key>item1</key>
+	<dict>
+		<key>title</key>
+		<string>C</string>
+		<key>description</key>
+		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
+		<key>lotType</key>
+		<string>C</string>
+		<key>searchKey</key>
+		<string>this is a test search</string>
+		<key>latitude</key>
+		<real>43.467536</real>
+		<key>longitude</key>
+		<real>-80.53837900000001</real>
+	</dict>
+</dict>
+</plist>

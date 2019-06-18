@@ -86,7 +86,7 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
     func searchFilter(text: String){
         searchResults = LotLocations.filter({(lot) -> Bool in
-            return lot.type!.localizedCaseInsensitiveContains(text)
+            return lot.searchKey!.localizedCaseInsensitiveContains(text)
         })
     }
     
@@ -118,7 +118,10 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         SearchController.searchResultsUpdater = self
         tableView.tableHeaderView = SearchController.searchBar
         SearchController.dimsBackgroundDuringPresentation = false
-        SearchController.searchBar.placeholder = "Which lot are you looking for?"
+        SearchController.searchBar.placeholder = "Find the nearest parking to your dest."
+        /*if let textfield = SearchController.searchBar.subviews.first?.subviews.last as? UITextField{
+            textfield.attributedText = NSAttributedString(string: "Find the nearest parking to your destination?", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize:15)])
+        }*/
         SearchController.searchBar.searchBarStyle = .minimal
         
         //**** Importent ****

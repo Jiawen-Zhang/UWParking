@@ -9,6 +9,8 @@
 		<string>test Route</string>
 		<key>lotType</key>
 		<string>T</string>
+		<key>searchKey</key>
+		<string>ZH</string>
 		<key>latitude</key>
 		<real>34.240163539</real>
 		<key>longitude</key>
@@ -21,6 +23,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>C</string>
+		<key>searchKey</key>
+		<string>daily; HH; PAS; EV1; EV2; EV3; AL; ML; TC; SCH</string>
 		<key>latitude</key>
 		<real>43.467536</real>
 		<key>longitude</key>
@@ -33,6 +37,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>N</string>
+		<key>searchKey</key>
+		<string>daily; COM; CSB; ERC; GSC; M3</string>
 		<key>latitude</key>
 		<real>43.47491</real>
 		<key>longitude</key>
@@ -45,6 +51,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>W</string>
+		<key>searchKey</key>
+		<string>daily; CIF; WFF</string>
 		<key>latitude</key>
 		<real>43.474777</real>
 		<key>longitude</key>
@@ -57,6 +65,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard Free on weekends beginning on Fridays at 4:30 p.m.</string>
 		<key>lotType</key>
 		<string>X</string>
+		<key>searchKey</key>
+		<string>daily; BSC</string>
 		<key>latitude</key>
 		<real>43.477526</real>
 		<key>longitude</key>
@@ -69,6 +79,8 @@
 		<string>$6.00 Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; FED; UC; PAC; AHS; LHI; BMH</string>
 		<key>latitude</key>
 		<real>43.47323</real>
 		<key>longitude</key>
@@ -81,6 +93,8 @@
 		<string>$2.00 hourly Max $15 After 3:45 p.m. and weekends: $5 flat rate Reservations/Visitor Pay and display Visa or MasterCard only</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>NH; STC; B1; B2; QNC; LIB; ML</string>
 		<key>latitude</key>
 		<real>43.46993</real>
 		<key>longitude</key>
@@ -93,6 +107,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Pay in Lot S Pay and display permits are valid in J, S, V Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; V1</string>
 		<key>latitude</key>
 		<real>43.47286</real>
 		<key>longitude</key>
@@ -105,6 +121,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Pay in Lot S Pay and display permits are valid in J, S, V Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; MKV</string>
 		<key>latitude</key>
 		<real>43.47181</real>
 		<key>longitude</key>
@@ -117,6 +135,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Pay in Lot S Pay and display permits are valid in J, S, V Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; REV</string>
 		<key>latitude</key>
 		<real>43.47134</real>
 		<key>longitude</key>
@@ -129,6 +149,8 @@
 		<string>$5.00 Permit controlled/ Visitor pay and display Purchase a ticket from the machine at the community centre Accept coin, WatCard, Visa, Mastercard, or tokens</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; CLV</string>
 		<key>latitude</key>
 		<real>43.47058</real>
 		<key>longitude</key>
@@ -141,6 +163,8 @@
 		<string>$2.00 hourly Max $10 After 3:45 p.m. and weekends: $5 flat rate Transponder Controlled/Reservations/Visitor Visitor parking is available during non-co-op days Visa American Express or MasterCard</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; HH; PAS; EV1; EV2; EV3; AL; ML; TC; SCH</string>
 		<key>latitude</key>
 		<real>43.466959897997</real>
 		<key>longitude</key>
@@ -153,6 +177,8 @@
 		<string>$3.00 hourly Max $9.00 Purchase ticket through the Honk Mobile App/ from the machine in the lot/ from the kiosk in the front entrance The machine requires exact change in coins</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>CGR; MHR</string>
 		<key>latitude</key>
 		<real>43.4658</real>
 		<key>longitude</key>
@@ -165,6 +191,8 @@
 		<string>$5.00 daily Pay on exit with Visa or MasterCard Accept exit vouchers given by the clinics at Optometry</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; OPT</string>
 		<key>latitude</key>
 		<real>43.4761</real>
 		<key>longitude</key>
@@ -177,6 +205,8 @@
 		<string>$6.00 daily Purchase parking pass in the  Student and Guest Services Centre  during business hours/ use the automated machine evenings and weekends</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; STP</string>
 		<key>latitude</key>
 		<real>43.46707</real>
 		<key>longitude</key>
@@ -189,6 +219,8 @@
 		<string>Pay per entry Parking for visitors are available after 5 p.m. and on the weekends.</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>STJ</string>
 		<key>latitude</key>
 		<real>43.46959</real>
 		<key>longitude</key>
@@ -201,6 +233,8 @@
 		<string>The pay-per-exit fee is $7.00. Accept debit or credit cards</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>REN</string>
 		<key>latitude</key>
 		<real>43.46891</real>
 		<key>longitude</key>
@@ -213,6 +247,8 @@
 		<string>$5.00 Pay and display permits are valid in UWP only</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>daily; UWP</string>
 		<key>latitude</key>
 		<real>43.47127</real>
 		<key>longitude</key>
@@ -225,6 +261,8 @@
 		<string>Free parking Monitored by UW Parking Staff  8 a.m. - 6 p.m. Monday to Friday Open to the public all other times</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>free; UWP</string>
 		<key>latitude</key>
 		<real>43.4693737309</real>
 		<key>longitude</key>
@@ -237,6 +275,8 @@
 		<string>Permit controlled/ Visitor pay and display Purchase a ticket from the machine Pay and display permits are vaild in Q lot only Accept coin, WatCard, Visa or Mastercard</string>
 		<key>lotType</key>
 		<string>Visitor</string>
+		<key>searchKey</key>
+		<string>EC1; EC2; EC3; EC4; EC5</string>
 		<key>latitude</key>
 		<real>43.4756453259</real>
 		<key>longitude</key>
@@ -249,6 +289,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>DC; GSC; C2; MC; M3</string>
 		<key>latitude</key>
 		<real>43.4731856247</real>
 		<key>longitude</key>
@@ -261,6 +303,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>MKV; V1</string>
 		<key>latitude</key>
 		<real>43.47111</real>
 		<key>longitude</key>
@@ -273,6 +317,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>V1; UC</string>
 		<key>latitude</key>
 		<real>43.47218</real>
 		<key>longitude</key>
@@ -285,6 +331,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>PAC; SLC</string>
 		<key>latitude</key>
 		<real>43.47164</real>
 		<key>longitude</key>
@@ -297,6 +345,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>HS</string>
 		<key>latitude</key>
 		<real>43.470255882</real>
 		<key>longitude</key>
@@ -309,6 +359,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>MHR</string>
 		<key>latitude</key>
 		<real>43.4654355332</real>
 		<key>longitude</key>
@@ -321,6 +373,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>DWE; SCH; GH; RCH</string>
 		<key>latitude</key>
 		<real>43.46966</real>
 		<key>longitude</key>
@@ -333,6 +387,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>OPT</string>
 		<key>latitude</key>
 		<real>43.47584</real>
 		<key>longitude</key>
@@ -345,6 +401,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>EC1; EC2; EC3; EC4; EC5</string>
 		<key>latitude</key>
 		<real>43.4750983799</real>
 		<key>longitude</key>
@@ -357,6 +415,8 @@
 		<string>See the instructions on meters</string>
 		<key>lotType</key>
 		<string>Meter</string>
+		<key>searchKey</key>
+		<string>E5; E6; E7; ECH</string>
 		<key>latitude</key>
 		<real>43.4732964348</real>
 		<key>longitude</key>
