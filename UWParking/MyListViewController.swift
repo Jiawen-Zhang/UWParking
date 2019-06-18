@@ -8,33 +8,88 @@
 
 import UIKit
 
-class MyListViewController: UITableViewController{
+class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
     let LotLocations = LotLocation.getLots()
     let identifier = "cell"
+    var LotDict = [String: [LotLocation]]()
+    var SectionTitles = [String]()
+    
+    var SearchController: UISearchController!
+    var searchResults = [LotLocation]()
+    
+    func createLotDict(){
+        for lot in LotLocations{
+            let LotKey = lot.type
+            
+            if var LotValues = LotDict[LotKey!]{
+                LotValues.append(lot)
+                LotDict[LotKey!] = LotValues
+            }
+            else{
+                LotDict[LotKey!] = [lot]
+            }
+        }
+        //SectionTitles = [String](LotDict.keys)
+        SectionTitles = ["T", "C", "N", "W", "X", "Visitor", "Meter"]
+    }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return SearchController.isActive ? 1 : SectionTitles.count
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return SearchController.isActive ? "Result" : SectionTitles[section]
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return LotLocations.count
+        let LotKey = SectionTitles[section]
+        guard let LotValues = LotDict[LotKey] else {return 0}
+        return SearchController.isActive ? searchResults.count : LotValues.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: identifier, for: indexPath) as? MyTableViewCell
         
-        let lot = LotLocations[indexPath.row]
+        let LotKey = SectionTitles[indexPath.section]
+        if let LotValues = LotDict[LotKey]{
+            let lot = SearchController.isActive ? searchResults[indexPath.row] : LotValues[indexPath.row]
+            cell?.ImageCell?.image = UIImage(named: (lot.type)!)
+            cell?.LabelCell?.text = lot.title
+        }
+        
+        /*let lot = LotLocations[indexPath.row]
         cell?.ImageCell?.image = UIImage(named: (lot.type)!)
-        cell?.LabelCell?.text = lot.title
+        cell?.LabelCell?.text = lot.title*/
         
         return cell!
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 40
+    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return !SearchController.isActive
     }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    
+    //Set the Search
+    func updateSearchResults(for SearchController: UISearchController){
+        if var text = SearchController.searchBar.text{
+            text = text.trimmingCharacters(in: .whitespaces)
+            searchFilter(text: text)
+            tableView.reloadData()
+        }
+    }
+    
+    func searchFilter(text: String){
+        searchResults = LotLocations.filter({(lot) -> Bool in
+            return lot.type!.localizedCaseInsensitiveContains(text)
+        })
+    }
+    
     
     /*func loadFilterBar(){
         //add the filter bar
@@ -57,6 +112,15 @@ class MyListViewController: UITableViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //define the search controller
+        SearchController = UISearchController(searchResultsController: nil)
+        SearchController.searchResultsUpdater = self
+        tableView.tableHeaderView = SearchController.searchBar
+        SearchController.dimsBackgroundDuringPresentation = false
+        SearchController.searchBar.placeholder = "Which lot are you looking for?"
+        SearchController.searchBar.searchBarStyle = .minimal
+        
         //**** Importent ****
         //need to register the xib otherwise
         //it shows nothing
@@ -65,6 +129,8 @@ class MyListViewController: UITableViewController{
         let tableView = UITableView.init(frame: view.frame, style: .plain)
         tableView.dataSource = self
         tableView.delegate = self
+        
+        createLotDict()
     }
     
     
