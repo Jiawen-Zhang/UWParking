@@ -29,7 +29,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     func setupDropDown(){
         dropDown.anchorView = LotTypeDropDown
-        dropDown.dataSource = ["Visitor", "Meter", "Motorcycle", "Short-term"]
+        dropDown.dataSource = ["Test", "Visitor", "Meter", "Motorcycle", "Short-term"]
         dropDown.cellConfiguration = { (index, item) in return "\(item)" }
     }
 
@@ -38,11 +38,14 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         dropDown.selectionAction = {
             (index: Int, item: String) in
             switch index{
-            case 0: do {
+            case 0: self.addAnnotations(self.LotLocations, type: "T")
+            case 1: do {
                 self.addAnnotations(self.LotLocations, type: "Visitor")
                 self.addPermitAnnotations(self.LotLocations)
                 }
-            case 1: self.addAnnotations(self.LotLocations, type: "Meter")
+            case 2: self.addAnnotations(self.LotLocations, type: "Meter")
+            case 3: self.addAnnotations(self.LotLocations, type: "Motorcycle")
+            case 4: self.addAnnotations(self.LotLocations, type: "Short-term")
             default: ()
             }
         }

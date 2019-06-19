@@ -31,7 +31,7 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
             }
         }
         //SectionTitles = [String](LotDict.keys)
-        SectionTitles = ["T", "C", "N", "W", "X", "Visitor", "Meter"]
+        SectionTitles = ["T", "C", "N", "W", "X", "Visitor", "Meter", "Short-term", "Motorcycle"]
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {

@@ -75,6 +75,10 @@ import Contacts
             return "Visitor"
         case "Meter":
             return "Meter"
+        case "Motorcycle":
+            return "Motorcycle"
+        case "Short-term":
+            return "Short-term"
         default:
             return nil
         }

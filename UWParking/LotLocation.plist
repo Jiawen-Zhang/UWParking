@@ -422,5 +422,159 @@
 		<key>longitude</key>
 		<real>-80.5395206684</real>
 	</dict>
+	<dict>
+		<key>title</key>
+		<string>REN</string>
+		<key>description</key>
+		<string>See the instructions on meters</string>
+		<key>lotType</key>
+		<string>Meter</string>
+		<key>searchKey</key>
+		<string>REN</string>
+		<key>latitude</key>
+		<real>43.4696408002</real>
+		<key>longitude</key>
+		<real>-80.5482187309</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>ML; EV3</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>EV1; EV2; EV3; ML; AL</string>
+		<key>latitude</key>
+		<real>43.468597619611</real>
+		<key>longitude</key>
+		<real>-80.543191842735</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>H</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>daily; HH; PAS; EV1; EV2; EV3; AL; ML; TC; SCH</string>
+		<key>latitude</key>
+		<real>43.466832595888</real>
+		<key>longitude</key>
+		<real>-80.54061658680401</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>DWE; SCH</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>DWE; SCH; GH; RCH</string>
+		<key>latitude</key>
+		<real>43.469620169043</real>
+		<key>longitude</key>
+		<real>-80.539586294297</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>UWP</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>UWP</string>
+		<key>latitude</key>
+		<real>43.470522215549</real>
+		<key>longitude</key>
+		<real>-80.53617803929301</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>PAC; LHI; UC</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>PAC; LHI; UC; AHS; BMH; SLC</string>
+		<key>latitude</key>
+		<real>43.472745523991</real>
+		<key>longitude</key>
+		<real>-80.54655499756301</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>V1; UC</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>V1; UC; FED</string>
+		<key>latitude</key>
+		<real>43.472316128251</real>
+		<key>longitude</key>
+		<real>-80.548830851912</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>N</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>COM; OPT; ERC; CSB; M3; GSC; EC3</string>
+		<key>latitude</key>
+		<real>43.475101340233</real>
+		<key>longitude</key>
+		<real>-80.543452415788</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>E6; ECH</string>
+		<key>description</key>
+		<string></string>
+		<key>lotType</key>
+		<string>Motorcycle</string>
+		<key>searchKey</key>
+		<string>ECH; E5; E6; E7</string>
+		<key>latitude</key>
+		<real>43.473501533583</real>
+		<key>longitude</key>
+		<real>-80.53962685167799</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>NH</string>
+		<key>description</key>
+		<string>Maxstay: 15 minutes Capacity: 9</string>
+		<key>lotType</key>
+		<string>Short-term</string>
+		<key>searchKey</key>
+		<string>Short-term; NH</string>
+		<key>latitude</key>
+		<real>43.46954</real>
+		<key>longitude</key>
+		<real>-80.544</real>
+	</dict>
+	<dict>
+		<key>title</key>
+		<string>EV3</string>
+		<key>description</key>
+		<string>Maxstay: 15 minutes Capacity: 2</string>
+		<key>lotType</key>
+		<string>Short-term</string>
+		<key>searchKey</key>
+		<string>Short-term; EV1; EV2; EV3</string>
+		<key>latitude</key>
+		<real>43.4679</real>
+		<key>longitude</key>
+		<real>-80.54367999999999</real>
+	</dict>
 </array>
 </plist>
