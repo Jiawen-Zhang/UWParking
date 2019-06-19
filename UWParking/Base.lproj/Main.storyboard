@@ -23,9 +23,7 @@
                             <outlet property="delegate" destination="Xo4-Kc-cna" id="zf0-ez-mhx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="FH6-9Z-LPa">
-                        <nil key="title"/>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" title="UW Parking" id="rkZ-pm-IVQ"/>
                     <connections>
                         <outlet property="tableView" destination="HiD-El-PRd" id="jde-4w-yxH"/>
                     </connections>
@@ -62,6 +60,14 @@
                                     <action selector="showLotTypeDropDown:" destination="c0x-67-t1t" eventType="touchUpInside" id="kSZ-lA-16Q"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIT-Vu-mZm">
+                                <rect key="frame" x="222" y="44" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="showMyCarDropDown:" destination="c0x-67-t1t" eventType="touchUpInside" id="7fW-W1-v5i"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="JnR-to-LHA"/>
@@ -69,6 +75,7 @@
                     <tabBarItem key="tabBarItem" title="Map" image="Map" id="ND3-9K-PIu"/>
                     <connections>
                         <outlet property="LotTypeDropDown" destination="Fs0-jv-udy" id="lIg-ox-Hnh"/>
+                        <outlet property="MyCarDropDown" destination="jIT-Vu-mZm" id="6da-sc-hXT"/>
                         <outlet property="MyMapView" destination="xXb-6O-0Ow" id="oS1-UJ-RSN"/>
                     </connections>
                 </viewController>

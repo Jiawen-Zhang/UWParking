@@ -122,7 +122,8 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         /*if let textfield = SearchController.searchBar.subviews.first?.subviews.last as? UITextField{
             textfield.attributedText = NSAttributedString(string: "Find the nearest parking to your destination?", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize:15)])
         }*/
-        SearchController.searchBar.searchBarStyle = .minimal
+        //SearchController.searchBar.searchBarStyle = .minimal
+        SearchController.searchBar.searchBarStyle = .default
         
         //**** Importent ****
         //need to register the xib otherwise

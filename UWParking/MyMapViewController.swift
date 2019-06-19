@@ -10,7 +10,6 @@ import UIKit
 import MapKit
 import CoreLocation
 import JZLocationConverterSwift
-import Contacts
 import DropDown
 
 
@@ -20,22 +19,29 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     let LotLocations = LotLocation.getLots()
     
-    let dropDown = DropDown()
+    let lotDropDown = DropDown()
+    let carDropDown = DropDown()
     
     
     @IBOutlet weak var MyMapView: MKMapView!
     @IBOutlet weak var LotTypeDropDown: UIButton!
+    @IBOutlet weak var MyCarDropDown: UIButton!
+    
     
     
     func setupDropDown(){
-        dropDown.anchorView = LotTypeDropDown
-        dropDown.dataSource = ["Test", "Visitor", "Meter", "Motorcycle", "Short-term"]
-        dropDown.cellConfiguration = { (index, item) in return "\(item)" }
+        lotDropDown.anchorView = LotTypeDropDown
+        lotDropDown.dataSource = ["Test", "Visitor", "Meter", "Short-term", "Motorcycle"]
+        lotDropDown.cellConfiguration = { (index, item) in return "\(item)" }
+        
+        carDropDown.anchorView = MyCarDropDown
+        carDropDown.dataSource = ["My Car", "Pin My Car", "Clear Pin"]
+        carDropDown.cellConfiguration = { (index, item) in return "\(item)" }
     }
 
     @IBAction func showLotTypeDropDown(_ sender: Any) {
-        dropDown.show()
-        dropDown.selectionAction = {
+        lotDropDown.show()
+        lotDropDown.selectionAction = {
             (index: Int, item: String) in
             switch index{
             case 0: self.addAnnotations(self.LotLocations, type: "T")
@@ -49,6 +55,11 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             default: ()
             }
         }
+    }
+    
+    
+    @IBAction func showMyCarDropDown(_ sender: Any) {
+        carDropDown.show()
     }
     
     
