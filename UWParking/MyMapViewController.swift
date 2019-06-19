@@ -16,6 +16,7 @@ import DropDown
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     var FindMyLocation = [Double]()
+    var MyCarLocation = [Double]()
     
     let LotLocations = LotLocation.getLots()
     
@@ -60,11 +61,32 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     @IBAction func showMyCarDropDown(_ sender: Any) {
         carDropDown.show()
+        carDropDown.selectionAction = {
+            (index: Int, item: String) in
+            switch index{
+            case 0: self.showMyCar()
+            default: ()
+            }
+        }
+    }
+    
+    func showMyCar(){
+        locationManager.startUpdatingLocation()
+        if(!MyCarLocation.isEmpty){
+            let CarLocation = CLLocation(latitude: MyCarLocation[0], longitude: MyCarLocation[1])
+            centerMapOnLocation(location: CarLocation)
+        }
     }
     
     
     @IBAction func FindMe(_ sender: Any) {
+        print("Find me before")
+        print(FindMyLocation)
         locationManager.startUpdatingLocation()
+        
+        print("Find me after")
+        print(FindMyLocation)
+        
         if(!FindMyLocation.isEmpty){
             let initialLocation = CLLocation(latitude: FindMyLocation[0], longitude: FindMyLocation[1])
             centerMapOnLocation(location: initialLocation)
@@ -76,14 +98,20 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     override func viewDidLoad(){
         super.viewDidLoad()
         MyMapView.delegate = self
+        MyMapView.showsCompass = true
         
         MyMapView.register(LotView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
         
         requestLocationAccess()
+        locationManager.startUpdatingLocation()
+        print("View did load before")
+        print(FindMyLocation)
         loadInitView()
         addAnnotations(LotLocations, type: "Visitor")
         addPermitAnnotations(LotLocations)
         setupDropDown()
+        print("View did load after")
+        print(FindMyLocation)
     }
     
     //add an array of Annotation
