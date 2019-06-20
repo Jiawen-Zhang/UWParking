@@ -7,81 +7,184 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05E898B8E90FA569FA8843112BA49A8F /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F95C67F3A5A739F21381C3B372004B /* DropDown.swift */; };
-		0FD19C0FFC9A99369504501AC5142B19 /* JZLocationConverterSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B3776B374E09635A1AA25A4D3AEBD900 /* JZLocationConverterSwift-dummy.m */; };
-		1D3264C01673AE923396BD646C961E05 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = ECFDF73140CF0B08387696E0D2E1287F /* DropDown-dummy.m */; };
-		1D83ABFC9980EF73B97F0DCF032A2721 /* Pods-UWParking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA22821A78226B8E8C4C86479531F943 /* Pods-UWParking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29D7003C230857273F473DEB035D6165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2A75466D6F65B86F5E96D737031EAC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		2EC09019EDB0233B10EF06843146A4A9 /* JZAreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 979815161EF4F854CFFC69A69BE09DA6 /* JZAreaManager.swift */; };
-		4994AD9CBC10AC05569750569A6073F7 /* Pods-UWParking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4C7462D4426437210C8775DAF5AD0F /* Pods-UWParking-dummy.m */; };
-		878492CED35AC087DEDA326E17B91A34 /* JZLocationConverterSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8DD3AA7F51717B3B3C87C35482212F83 /* JZLocationConverterSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8C3A6039CD36A8F56BE7A8AAC64FD292 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC043BE8A6DFCF3766A3F4814047360 /* DPDUIView+Extension.swift */; };
-		8D179E99C0C7EB24CD0777542B670D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3FCC3DE53FA37641DA41C6939683E1A /* DropDownCell.xib */; };
-		9203C7B3F9AD35BBE3805A188FBBA082 /* GCJ02.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D75B84048C662DE2BDEF8E13AC02A6F /* GCJ02.json */; };
-		930E4EB00AC58D1C390CEFA02209F2E4 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A6AB33F9EBD4E043412DAFEB7675C22 /* DropDown+Appearance.swift */; };
-		A3B832498B93955CF7BAE14833A2A4A5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDFAA840425F9F9973AE0F65B9A561CF /* DPDConstants.swift */; };
-		A73864EFF34FB964D287DC07D1303573 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9C4C5B3A5FEC5C397C5165DC0D502C /* DropDownCell.swift */; };
-		B8028754B38C352C90143A832D398CD3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		C25595EE30220EB347C2654A1C4FB716 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C738D1051108DF83F0A63D3A0E582C /* DPDKeyboardListener.swift */; };
-		CBAD031CE1F85D17F312E1894F3A3345 /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 33EF4019F744CA041406CA1315A41743 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DC8BE76D295425236126490209D3DE6D /* JZLocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1E1CCD94DB1CA6662CB50A49127E3A /* JZLocationConverter.swift */; };
+		05E898B8E90FA569FA8843112BA49A8F /* DropDown.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEEA064ABB27F159EA7CE8E13641D767 /* DropDown.swift */; };
+		079D741117E617F257C5EEA275045252 /* Result-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2541AF49C7EA1C1070994532AEF1D073 /* Result-dummy.m */; };
+		0B492D27B1D1BA9E85E92A27C0B8009C /* VersionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E280ACCC6883E2B697F8BCDF1888C519 /* VersionController.swift */; };
+		0FD19C0FFC9A99369504501AC5142B19 /* JZLocationConverterSwift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F538FB945AFA54D432CE6FBA94FF6F63 /* JZLocationConverterSwift-dummy.m */; };
+		147D07C5AFA159B4178611419B840D80 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 763DD1AA340F174D2FBEA2F7A3A7FF43 /* Request.swift */; };
+		18062150EC9CD761832E3AEAD62BF46E /* CoreDataContextParent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A54762976F4F4B49ACFEB59AE931307 /* CoreDataContextParent.swift */; };
+		1B80C208F19908783025169D61AC6E39 /* CoreDataiCloudConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2CD52402F108BB82924F7966E7B30FC /* CoreDataiCloudConfig.swift */; };
+		1D3264C01673AE923396BD646C961E05 /* DropDown-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A40A0AF6A5EE10B79C3BB2A1E95E1897 /* DropDown-dummy.m */; };
+		268467436E030154AC686D17AEDA52FB /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE5A3651D3052D85B288D21212E9F779 /* Storage.swift */; };
+		29D7003C230857273F473DEB035D6165 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */; };
+		2A75466D6F65B86F5E96D737031EAC9C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */; };
+		2EC09019EDB0233B10EF06843146A4A9 /* JZAreaManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EBCFF5AE3942F5973B99F26C966560F /* JZAreaManager.swift */; };
+		31F0A55D6EEB48BEA485AB7FE75C30BA /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595141BE9D4E3E00AEA07DF83C1E91B /* Entity.swift */; };
+		3357C94AE512ACF2FD5439DF44ACA00E /* CoreDataObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4C26F40A7857353BE7B1F817D63FE1A /* CoreDataObservable.swift */; };
+		34E10FB4B902D58A08422152075DA3A1 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 851D6C0FDE676F36ACBF48F750AA3679 /* Result.swift */; };
+		3D47DD8F40A5765F97495A6741488AB3 /* RequestExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4956C8D3AB0A51DD1D98509B8108084F /* RequestExtension.swift */; };
+		3F7402568F1DAE8B35B261C645E2607F /* CoreDataiCloudStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00A4A243B291245B2C9CE5174F8874BA /* CoreDataiCloudStorage.swift */; };
+		3FC69905A2D2731B23DFE5B66D39B90F /* NSManagedObjectContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9456333F74D703D5B96E45C94F67DBB8 /* NSManagedObjectContext.swift */; };
+		403CBC034B31B3F79B7C7D0C55FB32AF /* DirUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A57755799F31BE69FE7269AC1875A13 /* DirUtils.swift */; };
+		545D66027F6C62D683865F14CC3C10E5 /* NSPredicateConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EDD9C2F92753FFB953670AD9B870D6A /* NSPredicateConvertible.swift */; };
+		583DD82CA25120A71B72064CF81C16EF /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D251F850C62D6B85DD89BA200B64364 /* Result.framework */; };
+		653CBA19C2595E6EB6CB4B84D7C6C0C4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */; };
+		68DE2FDBA6D6597C7A26250DAEC0511E /* ResultProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7923BAD6021BC441DF2796633700718 /* ResultProtocol.swift */; };
+		6D6FD9B48683EBC5A3E2EDB31972FBC1 /* CoreDataError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D8D3D1BF2CA9C19C4E47C755F3AFC74 /* CoreDataError.swift */; };
+		7668D1F2F81E50534765F0FB152A9A72 /* Context.swift in Sources */ = {isa = PBXBuildFile; fileRef = E75F9D9432037144FA97993053CE8F40 /* Context.swift */; };
+		7A8B10660AC250652E284BE3BB6F0CE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */; };
+		80FCB62DCE7FD899DCF8FDC0A9651123 /* SugarRecord-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F21F4D8B8208F5A9059CB24E7F084F3 /* SugarRecord-dummy.m */; };
+		878492CED35AC087DEDA326E17B91A34 /* JZLocationConverterSwift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2FF5BCB3A6DDEB4B6C674AE4A86BC6E /* JZLocationConverterSwift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88B078463A2046E5EBC51862B73B07B2 /* SugarRecord-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D965B12047671D5CDB309E9387D50FB6 /* SugarRecord-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8C3A6039CD36A8F56BE7A8AAC64FD292 /* DPDUIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86192F791A247BD88ACE0C986DB8BF51 /* DPDUIView+Extension.swift */; };
+		8D179E99C0C7EB24CD0777542B670D58 /* DropDownCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0513F1A72B6F81B232B29599522C6BD0 /* DropDownCell.xib */; };
+		9203C7B3F9AD35BBE3805A188FBBA082 /* GCJ02.json in Resources */ = {isa = PBXBuildFile; fileRef = 25CD0FE63BC7A80E639CEEA274A12281 /* GCJ02.json */; };
+		930E4EB00AC58D1C390CEFA02209F2E4 /* DropDown+Appearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7578E023BD8EA6C36C4EA934189B6F01 /* DropDown+Appearance.swift */; };
+		98B1DF8E8665AC4BC1910111F9D627A0 /* Pods-UWParking-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EA22821A78226B8E8C4C86479531F943 /* Pods-UWParking-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A120F9F8C2F6804583721FBCD5F7DA4F /* CoreDataOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FBF448E3FEE13DF4AE6AFD3DE2B8AC2 /* CoreDataOptions.swift */; };
+		A3B832498B93955CF7BAE14833A2A4A5 /* DPDConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3F77C376FAC0E42AAE5798E126505F5 /* DPDConstants.swift */; };
+		A73864EFF34FB964D287DC07D1303573 /* DropDownCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90A44ECB646FDFFA66C877D09830923 /* DropDownCell.swift */; };
+		AD6B9CF2A091216D2FB05950E62227DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */; };
+		AD731D342F3F3CE154A995A0BF1A06E2 /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91424F435DD8D9624C7CBB1CCAE64C82 /* Logger.swift */; };
+		AFD85A7FE4B95E54407076A9881FF451 /* CoreDataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB18BAB3064AE021D95097ADFCFD05F /* CoreDataStore.swift */; };
+		B68B791548AB3A8A0A5B8CE36D624E53 /* NSManagedObjectMemoryContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C7A6CCC2D6D20D175EC2522813FB3B /* NSManagedObjectMemoryContext.swift */; };
+		BCF36657C756ACA05FFC76BCB1404B5B /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1B543C936BF3FC4B30202088A0D8F9 /* Requestable.swift */; };
+		C25595EE30220EB347C2654A1C4FB716 /* DPDKeyboardListener.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BC93D52FF579724A26CC0EA33EDD73B /* DPDKeyboardListener.swift */; };
+		C44B2E56FD4FE40524B8F1269037625C /* Result-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4942B5B064B0BFB7D897049CEEBAE58D /* Result-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C931EC1A87118DE121290943792B55ED /* NSManagedObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3EF554F8DCB9A65A73737867C58AED /* NSManagedObject.swift */; };
+		CAD73876930C5A92CF769A7DA9D991F4 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5ED4E459057DF744BF843F063AA1B8A /* CoreData.framework */; };
+		CBAD031CE1F85D17F312E1894F3A3345 /* DropDown-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 28008039019F6E5618F685388E5125C4 /* DropDown-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD46127B076E9B40E6DFD6CAE3010E82 /* CoreDataChange.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F554D11EF6C5D0E4979BA665F54B289 /* CoreDataChange.swift */; };
+		D4ACE8A2B4488F35FB37789A70836305 /* RequestObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7C71427A59E1BDC790DD7F2CD9B212 /* RequestObservable.swift */; };
+		DC8BE76D295425236126490209D3DE6D /* JZLocationConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5D2B9D69F6D01B0803E90BB023EBC3 /* JZLocationConverter.swift */; };
+		E5FFCF2D958A4DCBF01EAB2CF6A48679 /* CoreDataDefaultStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C6D7E00D6202DA698312F591591B745 /* CoreDataDefaultStorage.swift */; };
+		E83CE30D89E37C842000615A894F6A6E /* CoreDataObjectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0622A53D05D1591B7E753529BC3CDA30 /* CoreDataObjectModel.swift */; };
+		E9BB8574818B2D211CDFCA8B02167678 /* Pods-UWParking-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B4C7462D4426437210C8775DAF5AD0F /* Pods-UWParking-dummy.m */; };
+		EB26BBA15C432CC81DCCBD73970DC923 /* NSSortDescriptorConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBF711B6CBA58807890D8BB5236719BF /* NSSortDescriptorConvertible.swift */; };
+		F595DD7C14F4F9CDB4570EF5A7E4A67C /* VersionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 689E9C012DC63E612C04BA828BADDCA2 /* VersionProvider.swift */; };
+		F8E4B5894D3F961CCC1BF68787E14923 /* StorageError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C054ECDEC31A1740C7068AB11336F81 /* StorageError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		64863A2F5840A56910F7E164D15DFCF1 /* PBXContainerItemProxy */ = {
+		2494AE2E4891D62671CEC442AA421F1F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8A1DC7C9992BBE1D1BB615909F3A1A42;
-			remoteInfo = JZLocationConverterSwift;
+			remoteGlobalIDString = A03B378CE58942D404B6090A1C0801BB;
+			remoteInfo = SugarRecord;
 		};
-		FDDB76C2BB51C2970D15F4CDB0F1F556 /* PBXContainerItemProxy */ = {
+		5993AF35CE7A1EC045334ED120947C72 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = E9F9401E9C74C0C393164FD8D86D0068;
 			remoteInfo = DropDown;
 		};
+		6153A1A07B6C4B66FFAAC5E0AE44443A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8A1DC7C9992BBE1D1BB615909F3A1A42;
+			remoteInfo = JZLocationConverterSwift;
+		};
+		83FEA67C1788F1B7339CC942B754D718 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E163AC315AD24CFBD60C178D602BFC83;
+			remoteInfo = Result;
+		};
+		B32F63D0E9F2D68167FF6C7860AC43FC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E163AC315AD24CFBD60C178D602BFC83;
+			remoteInfo = Result;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		153918AC81757115C6D0ECD24A22D991 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
-		1D1E1CCD94DB1CA6662CB50A49127E3A /* JZLocationConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JZLocationConverter.swift; path = JZLocationConverterDemo/JZLocationConverter/JZLocationConverter.swift; sourceTree = "<group>"; };
-		219846B4CC60A8DB1B2162B2915D64D1 /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		00A4A243B291245B2C9CE5174F8874BA /* CoreDataiCloudStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataiCloudStorage.swift; path = SugarRecord/Source/CoreData/Storages/CoreDataiCloudStorage.swift; sourceTree = "<group>"; };
+		0461B3F80FC05957690727254D64DB36 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Result.framework; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0513F1A72B6F81B232B29599522C6BD0 /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		0622A53D05D1591B7E753529BC3CDA30 /* CoreDataObjectModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataObjectModel.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataObjectModel.swift; sourceTree = "<group>"; };
+		0766A63B9E7A77E14E3C6226077F3CD4 /* DropDown-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-prefix.pch"; sourceTree = "<group>"; };
+		0C054ECDEC31A1740C7068AB11336F81 /* StorageError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StorageError.swift; path = SugarRecord/Source/Foundation/Errors/StorageError.swift; sourceTree = "<group>"; };
+		0D5D2B9D69F6D01B0803E90BB023EBC3 /* JZLocationConverter.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JZLocationConverter.swift; path = JZLocationConverterDemo/JZLocationConverter/JZLocationConverter.swift; sourceTree = "<group>"; };
+		15C7A6CCC2D6D20D175EC2522813FB3B /* NSManagedObjectMemoryContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSManagedObjectMemoryContext.swift; path = SugarRecord/Source/CoreData/Extensions/NSManagedObjectMemoryContext.swift; sourceTree = "<group>"; };
 		2242515D3048E0CE75A66DBE825AC5FE /* Pods-UWParking-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UWParking-frameworks.sh"; sourceTree = "<group>"; };
-		2B07E5552336ECE3F64433AF48CB816C /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
+		2541AF49C7EA1C1070994532AEF1D073 /* Result-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Result-dummy.m"; sourceTree = "<group>"; };
+		25CD0FE63BC7A80E639CEEA274A12281 /* GCJ02.json */ = {isa = PBXFileReference; includeInIndex = 1; name = GCJ02.json; path = JZLocationConverterDemo/JZLocationConverter/GCJ02.json; sourceTree = "<group>"; };
+		28008039019F6E5618F685388E5125C4 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		2D1B543C936BF3FC4B30202088A0D8F9 /* Requestable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Requestable.swift; path = SugarRecord/Source/Foundation/Protocols/Requestable.swift; sourceTree = "<group>"; };
 		2D8FA907F5FDC19ABA93AC8A0E4383A4 /* Pods-UWParking.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UWParking.modulemap"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		33EF4019F744CA041406CA1315A41743 /* DropDown-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DropDown-umbrella.h"; sourceTree = "<group>"; };
+		2FBF448E3FEE13DF4AE6AFD3DE2B8AC2 /* CoreDataOptions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataOptions.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataOptions.swift; sourceTree = "<group>"; };
 		349FCFB06EAE8CB2245B6CDFE895838D /* Pods-UWParking-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UWParking-acknowledgements.plist"; sourceTree = "<group>"; };
+		3595141BE9D4E3E00AEA07DF83C1E91B /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = SugarRecord/Source/Foundation/Protocols/Entity.swift; sourceTree = "<group>"; };
 		387E9808AF95AB141595D3FF1CFED239 /* JZLocationConverterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = JZLocationConverterSwift.framework; path = JZLocationConverterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3EBFFFFE9C6FB17A23187A5BE3189DA7 /* JZLocationConverterSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JZLocationConverterSwift-Info.plist"; sourceTree = "<group>"; };
+		3C61582BABF7F29016D67C940371E660 /* DropDown.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DropDown.xcconfig; sourceTree = "<group>"; };
+		434B0FFE9F8DCA04CF1FA3FD0B0D7026 /* SugarRecord.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SugarRecord.framework; path = SugarRecord.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		458851DA5BAAF9A899AF6E77192EDA77 /* Pods-UWParking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UWParking.release.xcconfig"; sourceTree = "<group>"; };
-		4D75B84048C662DE2BDEF8E13AC02A6F /* GCJ02.json */ = {isa = PBXFileReference; includeInIndex = 1; name = GCJ02.json; path = JZLocationConverterDemo/JZLocationConverter/GCJ02.json; sourceTree = "<group>"; };
+		4942B5B064B0BFB7D897049CEEBAE58D /* Result-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-umbrella.h"; sourceTree = "<group>"; };
+		4956C8D3AB0A51DD1D98509B8108084F /* RequestExtension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestExtension.swift; path = SugarRecord/Source/Foundation/Extensions/RequestExtension.swift; sourceTree = "<group>"; };
+		5A54762976F4F4B49ACFEB59AE931307 /* CoreDataContextParent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataContextParent.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataContextParent.swift; sourceTree = "<group>"; };
+		5A57755799F31BE69FE7269AC1875A13 /* DirUtils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DirUtils.swift; path = SugarRecord/Source/Foundation/Utils/DirUtils.swift; sourceTree = "<group>"; };
 		5B4C7462D4426437210C8775DAF5AD0F /* Pods-UWParking-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UWParking-dummy.m"; sourceTree = "<group>"; };
-		5EB4B58AEBE0E3BE7C716BD9589E6112 /* JZLocationConverterSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZLocationConverterSwift.xcconfig; sourceTree = "<group>"; };
-		6A6AB33F9EBD4E043412DAFEB7675C22 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
-		76F95C67F3A5A739F21381C3B372004B /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
-		7EC043BE8A6DFCF3766A3F4814047360 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
-		8DD3AA7F51717B3B3C87C35482212F83 /* JZLocationConverterSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZLocationConverterSwift-umbrella.h"; sourceTree = "<group>"; };
+		689E9C012DC63E612C04BA828BADDCA2 /* VersionProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersionProvider.swift; path = SugarRecord/Source/Foundation/Version/VersionProvider.swift; sourceTree = "<group>"; };
+		7578E023BD8EA6C36C4EA934189B6F01 /* DropDown+Appearance.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DropDown+Appearance.swift"; path = "DropDown/src/DropDown+Appearance.swift"; sourceTree = "<group>"; };
+		7584F65C6E0A80EC2034CBEB8CCD9525 /* Result.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Result.modulemap; sourceTree = "<group>"; };
+		763DD1AA340F174D2FBEA2F7A3A7FF43 /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = SugarRecord/Source/Foundation/Entities/Request.swift; sourceTree = "<group>"; };
+		771D39F32D77395BD5EE26991A68BB0B /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		7C6D7E00D6202DA698312F591591B745 /* CoreDataDefaultStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataDefaultStorage.swift; path = SugarRecord/Source/CoreData/Storages/CoreDataDefaultStorage.swift; sourceTree = "<group>"; };
+		7D251F850C62D6B85DD89BA200B64364 /* Result.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Result.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7EDD9C2F92753FFB953670AD9B870D6A /* NSPredicateConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSPredicateConvertible.swift; path = SugarRecord/Source/Foundation/Protocols/NSPredicateConvertible.swift; sourceTree = "<group>"; };
+		7F21F4D8B8208F5A9059CB24E7F084F3 /* SugarRecord-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SugarRecord-dummy.m"; sourceTree = "<group>"; };
+		8283879E52772C2D6DA88C58518BCD2F /* SugarRecord-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SugarRecord-prefix.pch"; sourceTree = "<group>"; };
+		8295FAF764C16962884DC9A678484D83 /* JZLocationConverterSwift.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JZLocationConverterSwift.xcconfig; sourceTree = "<group>"; };
+		829A4B219E52715871E3F23D0D6F6E28 /* Result-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Result-prefix.pch"; sourceTree = "<group>"; };
+		851D6C0FDE676F36ACBF48F750AA3679 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Result/Result.swift; sourceTree = "<group>"; };
+		86192F791A247BD88ACE0C986DB8BF51 /* DPDUIView+Extension.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "DPDUIView+Extension.swift"; path = "DropDown/helpers/DPDUIView+Extension.swift"; sourceTree = "<group>"; };
+		89BAC3E6493F5A80CAD07F63EAF87439 /* Result-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Result-Info.plist"; sourceTree = "<group>"; };
+		8BC93D52FF579724A26CC0EA33EDD73B /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
+		8EBCFF5AE3942F5973B99F26C966560F /* JZAreaManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JZAreaManager.swift; path = JZLocationConverterDemo/JZLocationConverter/JZAreaManager.swift; sourceTree = "<group>"; };
+		91424F435DD8D9624C7CBB1CCAE64C82 /* Logger.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logger.swift; path = SugarRecord/Source/Foundation/Logger/Logger.swift; sourceTree = "<group>"; };
+		9456333F74D703D5B96E45C94F67DBB8 /* NSManagedObjectContext.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSManagedObjectContext.swift; path = SugarRecord/Source/CoreData/Extensions/NSManagedObjectContext.swift; sourceTree = "<group>"; };
 		96DB5E13BBAEDEAD53C7B1D5C00036B3 /* Pods_UWParking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_UWParking.framework; path = "Pods-UWParking.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		979815161EF4F854CFFC69A69BE09DA6 /* JZAreaManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = JZAreaManager.swift; path = JZLocationConverterDemo/JZLocationConverter/JZAreaManager.swift; sourceTree = "<group>"; };
-		9839AD9558780FA2250E4B57DE5422F7 /* JZLocationConverterSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZLocationConverterSwift-prefix.pch"; sourceTree = "<group>"; };
+		992C837F6BDC4BB192CA3BACC3A4073A /* SugarRecord-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SugarRecord-Info.plist"; sourceTree = "<group>"; };
 		9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DropDown.framework; path = DropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D8D3D1BF2CA9C19C4E47C755F3AFC74 /* CoreDataError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataError.swift; path = SugarRecord/Source/CoreData/Errors/CoreDataError.swift; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AB090CC059441A3685E24FEC55E35E26 /* JZLocationConverterSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JZLocationConverterSwift.modulemap; sourceTree = "<group>"; };
+		9F554D11EF6C5D0E4979BA665F54B289 /* CoreDataChange.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataChange.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataChange.swift; sourceTree = "<group>"; };
+		9F74E2B5E3B47850A5B613145F309A8B /* DropDown-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DropDown-Info.plist"; sourceTree = "<group>"; };
+		A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		A2FF5BCB3A6DDEB4B6C674AE4A86BC6E /* JZLocationConverterSwift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZLocationConverterSwift-umbrella.h"; sourceTree = "<group>"; };
+		A40A0AF6A5EE10B79C3BB2A1E95E1897 /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		A90A44ECB646FDFFA66C877D09830923 /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
+		AE5A3651D3052D85B288D21212E9F779 /* Storage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Storage.swift; path = SugarRecord/Source/Foundation/Entities/Storage.swift; sourceTree = "<group>"; };
+		AEEA064ABB27F159EA7CE8E13641D767 /* DropDown.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDown.swift; path = DropDown/src/DropDown.swift; sourceTree = "<group>"; };
 		B0FAF552397D75A22F3766540FE4D175 /* Pods-UWParking-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UWParking-Info.plist"; sourceTree = "<group>"; };
-		B3776B374E09635A1AA25A4D3AEBD900 /* JZLocationConverterSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JZLocationConverterSwift-dummy.m"; sourceTree = "<group>"; };
-		B5C738D1051108DF83F0A63D3A0E582C /* DPDKeyboardListener.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDKeyboardListener.swift; path = DropDown/helpers/DPDKeyboardListener.swift; sourceTree = "<group>"; };
-		CC9C4C5B3A5FEC5C397C5165DC0D502C /* DropDownCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DropDownCell.swift; path = DropDown/src/DropDownCell.swift; sourceTree = "<group>"; };
-		CDFAA840425F9F9973AE0F65B9A561CF /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
-		D3FCC3DE53FA37641DA41C6939683E1A /* DropDownCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = DropDownCell.xib; path = DropDown/resources/DropDownCell.xib; sourceTree = "<group>"; };
+		B3CDF9CF2F9C3882652AF852B939339A /* JZLocationConverterSwift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JZLocationConverterSwift-prefix.pch"; sourceTree = "<group>"; };
+		C2CD52402F108BB82924F7966E7B30FC /* CoreDataiCloudConfig.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataiCloudConfig.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataiCloudConfig.swift; sourceTree = "<group>"; };
+		C3CAFC32679A3577DAD9FF2CB53F691A /* JZLocationConverterSwift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "JZLocationConverterSwift-Info.plist"; sourceTree = "<group>"; };
+		CA3EF554F8DCB9A65A73737867C58AED /* NSManagedObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSManagedObject.swift; path = SugarRecord/Source/CoreData/Extensions/NSManagedObject.swift; sourceTree = "<group>"; };
+		CBF711B6CBA58807890D8BB5236719BF /* NSSortDescriptorConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSSortDescriptorConvertible.swift; path = SugarRecord/Source/Foundation/Protocols/NSSortDescriptorConvertible.swift; sourceTree = "<group>"; };
+		D39E53617AA8C209452B171012FACD57 /* JZLocationConverterSwift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = JZLocationConverterSwift.modulemap; sourceTree = "<group>"; };
 		D441090BFF66D5191BFF75148C76E9B4 /* Pods-UWParking-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UWParking-acknowledgements.markdown"; sourceTree = "<group>"; };
-		DB1031D28EC90E8F80E10307238061A1 /* DropDown.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DropDown.modulemap; sourceTree = "<group>"; };
+		D965B12047671D5CDB309E9387D50FB6 /* SugarRecord-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SugarRecord-umbrella.h"; sourceTree = "<group>"; };
+		DC7C71427A59E1BDC790DD7F2CD9B212 /* RequestObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestObservable.swift; path = SugarRecord/Source/Foundation/Entities/RequestObservable.swift; sourceTree = "<group>"; };
 		E0FD29F34BB2645F52B1C5B12263D7F7 /* Pods-UWParking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UWParking.debug.xcconfig"; sourceTree = "<group>"; };
+		E280ACCC6883E2B697F8BCDF1888C519 /* VersionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = VersionController.swift; path = SugarRecord/Source/Foundation/Version/VersionController.swift; sourceTree = "<group>"; };
+		E3F77C376FAC0E42AAE5798E126505F5 /* DPDConstants.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DPDConstants.swift; path = DropDown/helpers/DPDConstants.swift; sourceTree = "<group>"; };
+		E4C26F40A7857353BE7B1F817D63FE1A /* CoreDataObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataObservable.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataObservable.swift; sourceTree = "<group>"; };
+		E5ED4E459057DF744BF843F063AA1B8A /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/CoreData.framework; sourceTree = DEVELOPER_DIR; };
+		E75F9D9432037144FA97993053CE8F40 /* Context.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Context.swift; path = SugarRecord/Source/Foundation/Protocols/Context.swift; sourceTree = "<group>"; };
+		E7923BAD6021BC441DF2796633700718 /* ResultProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResultProtocol.swift; path = Result/ResultProtocol.swift; sourceTree = "<group>"; };
 		EA22821A78226B8E8C4C86479531F943 /* Pods-UWParking-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UWParking-umbrella.h"; sourceTree = "<group>"; };
-		ECFDF73140CF0B08387696E0D2E1287F /* DropDown-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DropDown-dummy.m"; sourceTree = "<group>"; };
+		EA8448231D4FA307232D82521F882362 /* SugarRecord.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SugarRecord.xcconfig; sourceTree = "<group>"; };
+		EDB18BAB3064AE021D95097ADFCFD05F /* CoreDataStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CoreDataStore.swift; path = SugarRecord/Source/CoreData/Entities/CoreDataStore.swift; sourceTree = "<group>"; };
+		F06402E1BCDF5A0AA4287610E99EB467 /* SugarRecord.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SugarRecord.modulemap; sourceTree = "<group>"; };
+		F538FB945AFA54D432CE6FBA94FF6F63 /* JZLocationConverterSwift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JZLocationConverterSwift-dummy.m"; sourceTree = "<group>"; };
+		FFC837AF3328AF89D73637C576827767 /* Result.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Result.xcconfig; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,55 +204,49 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8FADEE13D523BCE600D2ADDF6CA77214 /* Frameworks */ = {
+		327945438196DCA437ADCE6D22B0EB30 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B8028754B38C352C90143A832D398CD3 /* Foundation.framework in Frameworks */,
+				7A8B10660AC250652E284BE3BB6F0CE5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7C666663239CD8CB5C14312432F75059 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAD73876930C5A92CF769A7DA9D991F4 /* CoreData.framework in Frameworks */,
+				653CBA19C2595E6EB6CB4B84D7C6C0C4 /* Foundation.framework in Frameworks */,
+				583DD82CA25120A71B72064CF81C16EF /* Result.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A7BF91F923709E84B71A31723C0A109 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6B9CF2A091216D2FB05950E62227DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09AEBAE331D260634EDCC1600F9BCFE7 /* Support Files */ = {
+		028E93E7222A66353EE4661395944ABA /* DropDown */ = {
 			isa = PBXGroup;
 			children = (
-				AB090CC059441A3685E24FEC55E35E26 /* JZLocationConverterSwift.modulemap */,
-				5EB4B58AEBE0E3BE7C716BD9589E6112 /* JZLocationConverterSwift.xcconfig */,
-				B3776B374E09635A1AA25A4D3AEBD900 /* JZLocationConverterSwift-dummy.m */,
-				3EBFFFFE9C6FB17A23187A5BE3189DA7 /* JZLocationConverterSwift-Info.plist */,
-				9839AD9558780FA2250E4B57DE5422F7 /* JZLocationConverterSwift-prefix.pch */,
-				8DD3AA7F51717B3B3C87C35482212F83 /* JZLocationConverterSwift-umbrella.h */,
+				E3F77C376FAC0E42AAE5798E126505F5 /* DPDConstants.swift */,
+				8BC93D52FF579724A26CC0EA33EDD73B /* DPDKeyboardListener.swift */,
+				86192F791A247BD88ACE0C986DB8BF51 /* DPDUIView+Extension.swift */,
+				AEEA064ABB27F159EA7CE8E13641D767 /* DropDown.swift */,
+				7578E023BD8EA6C36C4EA934189B6F01 /* DropDown+Appearance.swift */,
+				A90A44ECB646FDFFA66C877D09830923 /* DropDownCell.swift */,
+				D8EDA6112C036D66C8199227825C63F8 /* Resources */,
+				A2FBB47891900951D280C8BEC5067177 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/JZLocationConverterSwift";
-			sourceTree = "<group>";
-		};
-		29E77152250694431DBEC0B2FCB5BF24 /* JZLocationConverterSwift */ = {
-			isa = PBXGroup;
-			children = (
-				979815161EF4F854CFFC69A69BE09DA6 /* JZAreaManager.swift */,
-				1D1E1CCD94DB1CA6662CB50A49127E3A /* JZLocationConverter.swift */,
-				E9986492266D9081E040011577188910 /* Resources */,
-				09AEBAE331D260634EDCC1600F9BCFE7 /* Support Files */,
-			);
-			name = JZLocationConverterSwift;
-			path = JZLocationConverterSwift;
-			sourceTree = "<group>";
-		};
-		325C22FAD3E46CBECC1E4B0AB6218C75 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				DB1031D28EC90E8F80E10307238061A1 /* DropDown.modulemap */,
-				2B07E5552336ECE3F64433AF48CB816C /* DropDown.xcconfig */,
-				ECFDF73140CF0B08387696E0D2E1287F /* DropDown-dummy.m */,
-				219846B4CC60A8DB1B2162B2915D64D1 /* DropDown-Info.plist */,
-				153918AC81757115C6D0ECD24A22D991 /* DropDown-prefix.pch */,
-				33EF4019F744CA041406CA1315A41743 /* DropDown-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/DropDown";
+			name = DropDown;
+			path = DropDown;
 			sourceTree = "<group>";
 		};
 		33E98D20B07F6C81CE0C4D6124E04F8E /* Targets Support Files */ = {
@@ -160,74 +257,172 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		3BA0371C16296D309195426BE2BB0688 /* Resources */ = {
+		3AC53CB1F7B24B6C23B3D5F1B0361FE1 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D3FCC3DE53FA37641DA41C6939683E1A /* DropDownCell.xib */,
+				F06402E1BCDF5A0AA4287610E99EB467 /* SugarRecord.modulemap */,
+				EA8448231D4FA307232D82521F882362 /* SugarRecord.xcconfig */,
+				7F21F4D8B8208F5A9059CB24E7F084F3 /* SugarRecord-dummy.m */,
+				992C837F6BDC4BB192CA3BACC3A4073A /* SugarRecord-Info.plist */,
+				8283879E52772C2D6DA88C58518BCD2F /* SugarRecord-prefix.pch */,
+				D965B12047671D5CDB309E9387D50FB6 /* SugarRecord-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SugarRecord";
+			sourceTree = "<group>";
+		};
+		43CDBE5DFF46D39DB22E47B1D26899DC /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				E75F9D9432037144FA97993053CE8F40 /* Context.swift */,
+				9F554D11EF6C5D0E4979BA665F54B289 /* CoreDataChange.swift */,
+				5A54762976F4F4B49ACFEB59AE931307 /* CoreDataContextParent.swift */,
+				7C6D7E00D6202DA698312F591591B745 /* CoreDataDefaultStorage.swift */,
+				9D8D3D1BF2CA9C19C4E47C755F3AFC74 /* CoreDataError.swift */,
+				C2CD52402F108BB82924F7966E7B30FC /* CoreDataiCloudConfig.swift */,
+				0622A53D05D1591B7E753529BC3CDA30 /* CoreDataObjectModel.swift */,
+				E4C26F40A7857353BE7B1F817D63FE1A /* CoreDataObservable.swift */,
+				2FBF448E3FEE13DF4AE6AFD3DE2B8AC2 /* CoreDataOptions.swift */,
+				EDB18BAB3064AE021D95097ADFCFD05F /* CoreDataStore.swift */,
+				5A57755799F31BE69FE7269AC1875A13 /* DirUtils.swift */,
+				3595141BE9D4E3E00AEA07DF83C1E91B /* Entity.swift */,
+				91424F435DD8D9624C7CBB1CCAE64C82 /* Logger.swift */,
+				CA3EF554F8DCB9A65A73737867C58AED /* NSManagedObject.swift */,
+				9456333F74D703D5B96E45C94F67DBB8 /* NSManagedObjectContext.swift */,
+				15C7A6CCC2D6D20D175EC2522813FB3B /* NSManagedObjectMemoryContext.swift */,
+				7EDD9C2F92753FFB953670AD9B870D6A /* NSPredicateConvertible.swift */,
+				CBF711B6CBA58807890D8BB5236719BF /* NSSortDescriptorConvertible.swift */,
+				763DD1AA340F174D2FBEA2F7A3A7FF43 /* Request.swift */,
+				2D1B543C936BF3FC4B30202088A0D8F9 /* Requestable.swift */,
+				4956C8D3AB0A51DD1D98509B8108084F /* RequestExtension.swift */,
+				DC7C71427A59E1BDC790DD7F2CD9B212 /* RequestObservable.swift */,
+				AE5A3651D3052D85B288D21212E9F779 /* Storage.swift */,
+				0C054ECDEC31A1740C7068AB11336F81 /* StorageError.swift */,
+				E280ACCC6883E2B697F8BCDF1888C519 /* VersionController.swift */,
+				689E9C012DC63E612C04BA828BADDCA2 /* VersionProvider.swift */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		62E881AA6758A6C49FBB000E7AEF8D6C /* SugarRecord */ = {
+			isa = PBXGroup;
+			children = (
+				43CDBE5DFF46D39DB22E47B1D26899DC /* CoreData */,
+				EA86C1EF796F1950960F865375DD4EDC /* CoreData+iCloud */,
+				3AC53CB1F7B24B6C23B3D5F1B0361FE1 /* Support Files */,
+			);
+			name = SugarRecord;
+			path = SugarRecord;
+			sourceTree = "<group>";
+		};
+		696147FA759E029C2BA5484D3DB14DE4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				25CD0FE63BC7A80E639CEEA274A12281 /* GCJ02.json */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		5E3CF8E69676E02963A46932D21DE368 /* Products */ = {
+		7A6B6BE57D48A3590748928F9029FC5B /* Result */ = {
+			isa = PBXGroup;
+			children = (
+				851D6C0FDE676F36ACBF48F750AA3679 /* Result.swift */,
+				E7923BAD6021BC441DF2796633700718 /* ResultProtocol.swift */,
+				A4613364E9CFF46E4C8DFBB6B05F6AAF /* Support Files */,
+			);
+			name = Result;
+			path = Result;
+			sourceTree = "<group>";
+		};
+		8FD9C9B594C20A8A6ABFD313CBF006F1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9B6725B782188F18CB76A740433F14E4 /* DropDown.framework */,
 				387E9808AF95AB141595D3FF1CFED239 /* JZLocationConverterSwift.framework */,
 				96DB5E13BBAEDEAD53C7B1D5C00036B3 /* Pods_UWParking.framework */,
+				0461B3F80FC05957690727254D64DB36 /* Result.framework */,
+				434B0FFE9F8DCA04CF1FA3FD0B0D7026 /* SugarRecord.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7B2F52B79C0B65C27CBCD0B2B978448D /* DropDown */ = {
+		A1346DB8791ACE7BEB5F18BB2A14B097 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDFAA840425F9F9973AE0F65B9A561CF /* DPDConstants.swift */,
-				B5C738D1051108DF83F0A63D3A0E582C /* DPDKeyboardListener.swift */,
-				7EC043BE8A6DFCF3766A3F4814047360 /* DPDUIView+Extension.swift */,
-				76F95C67F3A5A739F21381C3B372004B /* DropDown.swift */,
-				6A6AB33F9EBD4E043412DAFEB7675C22 /* DropDown+Appearance.swift */,
-				CC9C4C5B3A5FEC5C397C5165DC0D502C /* DropDownCell.swift */,
-				3BA0371C16296D309195426BE2BB0688 /* Resources */,
-				325C22FAD3E46CBECC1E4B0AB6218C75 /* Support Files */,
+				D39E53617AA8C209452B171012FACD57 /* JZLocationConverterSwift.modulemap */,
+				8295FAF764C16962884DC9A678484D83 /* JZLocationConverterSwift.xcconfig */,
+				F538FB945AFA54D432CE6FBA94FF6F63 /* JZLocationConverterSwift-dummy.m */,
+				C3CAFC32679A3577DAD9FF2CB53F691A /* JZLocationConverterSwift-Info.plist */,
+				B3CDF9CF2F9C3882652AF852B939339A /* JZLocationConverterSwift-prefix.pch */,
+				A2FF5BCB3A6DDEB4B6C674AE4A86BC6E /* JZLocationConverterSwift-umbrella.h */,
 			);
-			name = DropDown;
-			path = DropDown;
+			name = "Support Files";
+			path = "../Target Support Files/JZLocationConverterSwift";
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		A2FBB47891900951D280C8BEC5067177 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				771D39F32D77395BD5EE26991A68BB0B /* DropDown.modulemap */,
+				3C61582BABF7F29016D67C940371E660 /* DropDown.xcconfig */,
+				A40A0AF6A5EE10B79C3BB2A1E95E1897 /* DropDown-dummy.m */,
+				9F74E2B5E3B47850A5B613145F309A8B /* DropDown-Info.plist */,
+				0766A63B9E7A77E14E3C6226077F3CD4 /* DropDown-prefix.pch */,
+				28008039019F6E5618F685388E5125C4 /* DropDown-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DropDown";
+			sourceTree = "<group>";
+		};
+		A4613364E9CFF46E4C8DFBB6B05F6AAF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7584F65C6E0A80EC2034CBEB8CCD9525 /* Result.modulemap */,
+				FFC837AF3328AF89D73637C576827767 /* Result.xcconfig */,
+				2541AF49C7EA1C1070994532AEF1D073 /* Result-dummy.m */,
+				89BAC3E6493F5A80CAD07F63EAF87439 /* Result-Info.plist */,
+				829A4B219E52715871E3F23D0D6F6E28 /* Result-prefix.pch */,
+				4942B5B064B0BFB7D897049CEEBAE58D /* Result-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Result";
+			sourceTree = "<group>";
+		};
+		AAD9BD2DFC5446CC0F64E58308B3BCCE /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				E5ED4E459057DF744BF843F063AA1B8A /* CoreData.framework */,
+				A0BFD46B359EDC06432BD4C36218C5E0 /* Foundation.framework */,
 			);
 			name = iOS;
+			sourceTree = "<group>";
+		};
+		CABBEDD300FD6EC4572D85FE996E39A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D251F850C62D6B85DD89BA200B64364 /* Result.framework */,
+				AAD9BD2DFC5446CC0F64E58308B3BCCE /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				DCF6F526531EEC8ACC06393829FA4C6E /* Pods */,
-				5E3CF8E69676E02963A46932D21DE368 /* Products */,
+				CABBEDD300FD6EC4572D85FE996E39A4 /* Frameworks */,
+				F1F1CFEB68DE7D3B5CF41E12636B765F /* Pods */,
+				8FD9C9B594C20A8A6ABFD313CBF006F1 /* Products */,
 				33E98D20B07F6C81CE0C4D6124E04F8E /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+		D8EDA6112C036D66C8199227825C63F8 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+				0513F1A72B6F81B232B29599522C6BD0 /* DropDownCell.xib */,
 			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DCF6F526531EEC8ACC06393829FA4C6E /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				7B2F52B79C0B65C27CBCD0B2B978448D /* DropDown */,
-				29E77152250694431DBEC0B2FCB5BF24 /* JZLocationConverterSwift */,
-			);
-			name = Pods;
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		DD07796C774FCC1D488656B1704C0673 /* Pods-UWParking */ = {
@@ -247,17 +442,56 @@
 			path = "Target Support Files/Pods-UWParking";
 			sourceTree = "<group>";
 		};
-		E9986492266D9081E040011577188910 /* Resources */ = {
+		EA86C1EF796F1950960F865375DD4EDC /* CoreData+iCloud */ = {
 			isa = PBXGroup;
 			children = (
-				4D75B84048C662DE2BDEF8E13AC02A6F /* GCJ02.json */,
+				00A4A243B291245B2C9CE5174F8874BA /* CoreDataiCloudStorage.swift */,
 			);
-			name = Resources;
+			name = "CoreData+iCloud";
+			sourceTree = "<group>";
+		};
+		F1F1CFEB68DE7D3B5CF41E12636B765F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				028E93E7222A66353EE4661395944ABA /* DropDown */,
+				FD861F2F68C9224FA32886C9B3127E47 /* JZLocationConverterSwift */,
+				7A6B6BE57D48A3590748928F9029FC5B /* Result */,
+				62E881AA6758A6C49FBB000E7AEF8D6C /* SugarRecord */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		FD861F2F68C9224FA32886C9B3127E47 /* JZLocationConverterSwift */ = {
+			isa = PBXGroup;
+			children = (
+				8EBCFF5AE3942F5973B99F26C966560F /* JZAreaManager.swift */,
+				0D5D2B9D69F6D01B0803E90BB023EBC3 /* JZLocationConverter.swift */,
+				696147FA759E029C2BA5484D3DB14DE4 /* Resources */,
+				A1346DB8791ACE7BEB5F18BB2A14B097 /* Support Files */,
+			);
+			name = JZLocationConverterSwift;
+			path = JZLocationConverterSwift;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		138EDD6CF6D97F7B0E2CD3CF9BFDC415 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B078463A2046E5EBC51862B73B07B2 /* SugarRecord-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		48C6A68B77BE8156077799B8B297C859 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				98B1DF8E8665AC4BC1910111F9D627A0 /* Pods-UWParking-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		6F7085D4B5EFCFAC3C657536547AE56C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -266,11 +500,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9E3A9DA63333BA5B97AA0027485F862 /* Headers */ = {
+		D2A448148D36E667EC2FECAF33725F9B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1D83ABFC9980EF73B97F0DCF032A2721 /* Pods-UWParking-umbrella.h in Headers */,
+				C44B2E56FD4FE40524B8F1269037625C /* Result-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,18 +521,20 @@
 /* Begin PBXNativeTarget section */
 		4CCD05CCD2FF08A5A702AC9B77B83195 /* Pods-UWParking */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CB76295D8D6536E7DE5705047925A5D9 /* Build configuration list for PBXNativeTarget "Pods-UWParking" */;
+			buildConfigurationList = B861CEDD57A6AE5121138DE354B16748 /* Build configuration list for PBXNativeTarget "Pods-UWParking" */;
 			buildPhases = (
-				C9E3A9DA63333BA5B97AA0027485F862 /* Headers */,
-				E9D83AAF8F8DF6EBF368A72C57C87C15 /* Sources */,
-				8FADEE13D523BCE600D2ADDF6CA77214 /* Frameworks */,
-				306A3974BFECCC4510D7A6B758622450 /* Resources */,
+				48C6A68B77BE8156077799B8B297C859 /* Headers */,
+				E67886653F8A4716596E63A3D04A84D0 /* Sources */,
+				9A7BF91F923709E84B71A31723C0A109 /* Frameworks */,
+				2AABEC3D5DA679C89CAD3D51A6A88DAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				2D1ED5DE5C905FE709EFD6D419C0F0D0 /* PBXTargetDependency */,
-				00085331866DE63EA8CE0D09901332B0 /* PBXTargetDependency */,
+				7CD23D8134F2C4461D17840035984943 /* PBXTargetDependency */,
+				0962645D9E8C7CD8DF6AD29D933E54B0 /* PBXTargetDependency */,
+				5008E9B45DC5E14E19EFAC63534D2FDA /* PBXTargetDependency */,
+				B41102C4218443C3F44C1B62393FDA4D /* PBXTargetDependency */,
 			);
 			name = "Pods-UWParking";
 			productName = "Pods-UWParking";
@@ -321,6 +557,43 @@
 			name = JZLocationConverterSwift;
 			productName = JZLocationConverterSwift;
 			productReference = 387E9808AF95AB141595D3FF1CFED239 /* JZLocationConverterSwift.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A03B378CE58942D404B6090A1C0801BB /* SugarRecord */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9EE1A6F27E5322533A90ECFF440459B7 /* Build configuration list for PBXNativeTarget "SugarRecord" */;
+			buildPhases = (
+				138EDD6CF6D97F7B0E2CD3CF9BFDC415 /* Headers */,
+				6158D95DC6340DF286ADFDAC872FC4B1 /* Sources */,
+				7C666663239CD8CB5C14312432F75059 /* Frameworks */,
+				DAC92CFE39EFD3433ACBAFE851C1AA86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				01E1EB22C5DB3F656151D3D86C5B844D /* PBXTargetDependency */,
+			);
+			name = SugarRecord;
+			productName = SugarRecord;
+			productReference = 434B0FFE9F8DCA04CF1FA3FD0B0D7026 /* SugarRecord.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		E163AC315AD24CFBD60C178D602BFC83 /* Result */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 944941BE0C3411F5D8B76D8624642155 /* Build configuration list for PBXNativeTarget "Result" */;
+			buildPhases = (
+				D2A448148D36E667EC2FECAF33725F9B /* Headers */,
+				D9C6D9EEAC504596FB93B379B386143D /* Sources */,
+				327945438196DCA437ADCE6D22B0EB30 /* Frameworks */,
+				3DEE5020E4C18D8307A96128D050B2CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Result;
+			productName = Result;
+			productReference = 0461B3F80FC05957690727254D64DB36 /* Result.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */ = {
@@ -358,19 +631,28 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 5E3CF8E69676E02963A46932D21DE368 /* Products */;
+			productRefGroup = 8FD9C9B594C20A8A6ABFD313CBF006F1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */,
 				8A1DC7C9992BBE1D1BB615909F3A1A42 /* JZLocationConverterSwift */,
 				4CCD05CCD2FF08A5A702AC9B77B83195 /* Pods-UWParking */,
+				E163AC315AD24CFBD60C178D602BFC83 /* Result */,
+				A03B378CE58942D404B6090A1C0801BB /* SugarRecord */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		306A3974BFECCC4510D7A6B758622450 /* Resources */ = {
+		2AABEC3D5DA679C89CAD3D51A6A88DAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3DEE5020E4C18D8307A96128D050B2CC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -382,6 +664,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9203C7B3F9AD35BBE3805A188FBBA082 /* GCJ02.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DAC92CFE39EFD3433ACBAFE851C1AA86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,6 +699,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6158D95DC6340DF286ADFDAC872FC4B1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7668D1F2F81E50534765F0FB152A9A72 /* Context.swift in Sources */,
+				CD46127B076E9B40E6DFD6CAE3010E82 /* CoreDataChange.swift in Sources */,
+				18062150EC9CD761832E3AEAD62BF46E /* CoreDataContextParent.swift in Sources */,
+				E5FFCF2D958A4DCBF01EAB2CF6A48679 /* CoreDataDefaultStorage.swift in Sources */,
+				6D6FD9B48683EBC5A3E2EDB31972FBC1 /* CoreDataError.swift in Sources */,
+				1B80C208F19908783025169D61AC6E39 /* CoreDataiCloudConfig.swift in Sources */,
+				3F7402568F1DAE8B35B261C645E2607F /* CoreDataiCloudStorage.swift in Sources */,
+				E83CE30D89E37C842000615A894F6A6E /* CoreDataObjectModel.swift in Sources */,
+				3357C94AE512ACF2FD5439DF44ACA00E /* CoreDataObservable.swift in Sources */,
+				A120F9F8C2F6804583721FBCD5F7DA4F /* CoreDataOptions.swift in Sources */,
+				AFD85A7FE4B95E54407076A9881FF451 /* CoreDataStore.swift in Sources */,
+				403CBC034B31B3F79B7C7D0C55FB32AF /* DirUtils.swift in Sources */,
+				31F0A55D6EEB48BEA485AB7FE75C30BA /* Entity.swift in Sources */,
+				AD731D342F3F3CE154A995A0BF1A06E2 /* Logger.swift in Sources */,
+				C931EC1A87118DE121290943792B55ED /* NSManagedObject.swift in Sources */,
+				3FC69905A2D2731B23DFE5B66D39B90F /* NSManagedObjectContext.swift in Sources */,
+				B68B791548AB3A8A0A5B8CE36D624E53 /* NSManagedObjectMemoryContext.swift in Sources */,
+				545D66027F6C62D683865F14CC3C10E5 /* NSPredicateConvertible.swift in Sources */,
+				EB26BBA15C432CC81DCCBD73970DC923 /* NSSortDescriptorConvertible.swift in Sources */,
+				147D07C5AFA159B4178611419B840D80 /* Request.swift in Sources */,
+				BCF36657C756ACA05FFC76BCB1404B5B /* Requestable.swift in Sources */,
+				3D47DD8F40A5765F97495A6741488AB3 /* RequestExtension.swift in Sources */,
+				D4ACE8A2B4488F35FB37789A70836305 /* RequestObservable.swift in Sources */,
+				268467436E030154AC686D17AEDA52FB /* Storage.swift in Sources */,
+				F8E4B5894D3F961CCC1BF68787E14923 /* StorageError.swift in Sources */,
+				80FCB62DCE7FD899DCF8FDC0A9651123 /* SugarRecord-dummy.m in Sources */,
+				0B492D27B1D1BA9E85E92A27C0B8009C /* VersionController.swift in Sources */,
+				F595DD7C14F4F9CDB4570EF5A7E4A67C /* VersionProvider.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D1CF668098E9427DF734FE9B875955A8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -420,28 +744,56 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9D83AAF8F8DF6EBF368A72C57C87C15 /* Sources */ = {
+		D9C6D9EEAC504596FB93B379B386143D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4994AD9CBC10AC05569750569A6073F7 /* Pods-UWParking-dummy.m in Sources */,
+				079D741117E617F257C5EEA275045252 /* Result-dummy.m in Sources */,
+				34E10FB4B902D58A08422152075DA3A1 /* Result.swift in Sources */,
+				68DE2FDBA6D6597C7A26250DAEC0511E /* ResultProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E67886653F8A4716596E63A3D04A84D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9BB8574818B2D211CDFCA8B02167678 /* Pods-UWParking-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		00085331866DE63EA8CE0D09901332B0 /* PBXTargetDependency */ = {
+		01E1EB22C5DB3F656151D3D86C5B844D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = E163AC315AD24CFBD60C178D602BFC83 /* Result */;
+			targetProxy = 83FEA67C1788F1B7339CC942B754D718 /* PBXContainerItemProxy */;
+		};
+		0962645D9E8C7CD8DF6AD29D933E54B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = JZLocationConverterSwift;
 			target = 8A1DC7C9992BBE1D1BB615909F3A1A42 /* JZLocationConverterSwift */;
-			targetProxy = 64863A2F5840A56910F7E164D15DFCF1 /* PBXContainerItemProxy */;
+			targetProxy = 6153A1A07B6C4B66FFAAC5E0AE44443A /* PBXContainerItemProxy */;
 		};
-		2D1ED5DE5C905FE709EFD6D419C0F0D0 /* PBXTargetDependency */ = {
+		5008E9B45DC5E14E19EFAC63534D2FDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Result;
+			target = E163AC315AD24CFBD60C178D602BFC83 /* Result */;
+			targetProxy = B32F63D0E9F2D68167FF6C7860AC43FC /* PBXContainerItemProxy */;
+		};
+		7CD23D8134F2C4461D17840035984943 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DropDown;
 			target = E9F9401E9C74C0C393164FD8D86D0068 /* DropDown */;
-			targetProxy = FDDB76C2BB51C2970D15F4CDB0F1F556 /* PBXContainerItemProxy */;
+			targetProxy = 5993AF35CE7A1EC045334ED120947C72 /* PBXContainerItemProxy */;
+		};
+		B41102C4218443C3F44C1B62393FDA4D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SugarRecord;
+			target = A03B378CE58942D404B6090A1C0801BB /* SugarRecord */;
+			targetProxy = 2494AE2E4891D62671CEC442AA421F1F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -512,7 +864,7 @@
 		};
 		389F86FD1A9BD9ACE585350B72B214CE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B07E5552336ECE3F64433AF48CB816C /* DropDown.xcconfig */;
+			baseConfigurationReference = 3C61582BABF7F29016D67C940371E660 /* DropDown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -545,47 +897,9 @@
 			};
 			name = Debug;
 		};
-		3F00DFB0AE80DE1077582957D2113122 /* Debug */ = {
+		3C8B5BA1E5B619D379BB83DBDEA461FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E0FD29F34BB2645F52B1C5B12263D7F7 /* Pods-UWParking.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-UWParking/Pods-UWParking-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-UWParking/Pods-UWParking.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		969B7F9A37A41BF6BFB4D39F8B9C1FA4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB4B58AEBE0E3BE7C716BD9589E6112 /* JZLocationConverterSwift.xcconfig */;
+			baseConfigurationReference = FFC837AF3328AF89D73637C576827767 /* Result.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -596,8 +910,8 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift-Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Result-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -605,9 +919,9 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MODULEMAP_FILE = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift.modulemap";
-				PRODUCT_MODULE_NAME = JZLocationConverterSwift;
-				PRODUCT_NAME = JZLocationConverterSwift;
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				PRODUCT_MODULE_NAME = Result;
+				PRODUCT_NAME = Result;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -618,7 +932,7 @@
 			};
 			name = Debug;
 		};
-		A80FCA049029CFD751848CA00E75CEF1 /* Release */ = {
+		4E06D2E713CB5FFD0C34B0EC80732D86 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 458851DA5BAAF9A899AF6E77192EDA77 /* Pods-UWParking.release.xcconfig */;
 			buildSettings = {
@@ -657,9 +971,83 @@
 			};
 			name = Release;
 		};
-		AB8C6AAE61674CF88601E492657004EC /* Release */ = {
+		55A831ED6B190C86361B70F7A770AE2C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5EB4B58AEBE0E3BE7C716BD9589E6112 /* JZLocationConverterSwift.xcconfig */;
+			baseConfigurationReference = E0FD29F34BB2645F52B1C5B12263D7F7 /* Pods-UWParking.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UWParking/Pods-UWParking-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UWParking/Pods-UWParking.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F043D166F76B2DEE131F20C920F11BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8448231D4FA307232D82521F882362 /* SugarRecord.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SugarRecord/SugarRecord-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SugarRecord/SugarRecord-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SugarRecord/SugarRecord.modulemap";
+				PRODUCT_MODULE_NAME = SugarRecord;
+				PRODUCT_NAME = SugarRecord;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		969B7F9A37A41BF6BFB4D39F8B9C1FA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8295FAF764C16962884DC9A678484D83 /* JZLocationConverterSwift.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -682,6 +1070,112 @@
 				MODULEMAP_FILE = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift.modulemap";
 				PRODUCT_MODULE_NAME = JZLocationConverterSwift;
 				PRODUCT_NAME = JZLocationConverterSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		AB8C6AAE61674CF88601E492657004EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8295FAF764C16962884DC9A678484D83 /* JZLocationConverterSwift.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/JZLocationConverterSwift/JZLocationConverterSwift.modulemap";
+				PRODUCT_MODULE_NAME = JZLocationConverterSwift;
+				PRODUCT_NAME = JZLocationConverterSwift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C2C0EFC0445063B3A20D3F4B28C0D632 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA8448231D4FA307232D82521F882362 /* SugarRecord.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SugarRecord/SugarRecord-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SugarRecord/SugarRecord-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SugarRecord/SugarRecord.modulemap";
+				PRODUCT_MODULE_NAME = SugarRecord;
+				PRODUCT_NAME = SugarRecord;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		ED22B9F285129C46F37E28AC03976F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFC837AF3328AF89D73637C576827767 /* Result.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Result/Result-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Result/Result-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Result/Result.modulemap";
+				PRODUCT_MODULE_NAME = Result;
+				PRODUCT_NAME = Result;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -755,7 +1249,7 @@
 		};
 		F5EA07F477164EEE2DF692F83A1173D3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2B07E5552336ECE3F64433AF48CB816C /* DropDown.xcconfig */;
+			baseConfigurationReference = 3C61582BABF7F29016D67C940371E660 /* DropDown.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -810,11 +1304,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CB76295D8D6536E7DE5705047925A5D9 /* Build configuration list for PBXNativeTarget "Pods-UWParking" */ = {
+		944941BE0C3411F5D8B76D8624642155 /* Build configuration list for PBXNativeTarget "Result" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3F00DFB0AE80DE1077582957D2113122 /* Debug */,
-				A80FCA049029CFD751848CA00E75CEF1 /* Release */,
+				3C8B5BA1E5B619D379BB83DBDEA461FD /* Debug */,
+				ED22B9F285129C46F37E28AC03976F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9EE1A6F27E5322533A90ECFF440459B7 /* Build configuration list for PBXNativeTarget "SugarRecord" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2C0EFC0445063B3A20D3F4B28C0D632 /* Debug */,
+				7F043D166F76B2DEE131F20C920F11BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B861CEDD57A6AE5121138DE354B16748 /* Build configuration list for PBXNativeTarget "Pods-UWParking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				55A831ED6B190C86361B70F7A770AE2C /* Debug */,
+				4E06D2E713CB5FFD0C34B0EC80732D86 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

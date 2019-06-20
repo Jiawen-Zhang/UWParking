@@ -18,6 +18,8 @@
 		F56EF14022A4F4400020114C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56EF13E22A4F4400020114C /* Main.storyboard */; };
 		F56EF14222A4F4410020114C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F56EF14122A4F4410020114C /* Assets.xcassets */; };
 		F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F56EF14322A4F4410020114C /* LaunchScreen.storyboard */; };
+		F5A3D99122BB3B5B006AF796 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A3D98E22BB3B5B006AF796 /* CoreData.framework */; };
+		F5A3D9A922BB7FC8006AF796 /* UWParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5A3D9A722BB7FC8006AF796 /* UWParking.xcdatamodeld */; };
 		F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964322A766E800B69732 /* MyTabBarController.swift */; };
 		F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964622A76DF800B69732 /* MyListViewController.swift */; };
 		F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */; };
@@ -27,7 +29,6 @@
 		F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */; };
 		F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F5D9B63B22AF3FD6003ED367 /* WatSwift */; };
 		F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; };
-		F5DEF1C522BA3CBD00FC768B /* LocationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5DEF1C322BA3CBD00FC768B /* LocationModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,8 @@
 		F56EF14122A4F4410020114C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F56EF14422A4F4410020114C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F56EF14622A4F4410020114C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5A3D98E22BB3B5B006AF796 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F5A3D9A822BB7FC8006AF796 /* UWParking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWParking.xcdatamodel; sourceTree = "<group>"; };
 		F5BA964322A766E800B69732 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		F5BA964622A76DF800B69732 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
 		F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
@@ -86,7 +89,6 @@
 		F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5D9B63B22AF3FD6003ED367 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
 		F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../WatSwift-master/WatSwift.xcodeproj"; sourceTree = "<group>"; };
-		F5DEF1C422BA3CBD00FC768B /* LocationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5A3D99122BB3B5B006AF796 /* CoreData.framework in Frameworks */,
 				F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */,
 				F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */,
 				F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */,
@@ -151,7 +154,7 @@
 				F534350322B1F45600B463B7 /* LotViews.swift */,
 				F5BC052F22B3A62000A50578 /* MyTableViewCell.swift */,
 				F5BC053022B3A62000A50578 /* MyTableViewCell.xib */,
-				F5DEF1C322BA3CBD00FC768B /* LocationModel.xcdatamodeld */,
+				F5A3D9A722BB7FC8006AF796 /* UWParking.xcdatamodeld */,
 			);
 			path = UWParking;
 			sourceTree = "<group>";
@@ -159,6 +162,7 @@
 		F591FF3A22A50084008EB467 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5A3D98E22BB3B5B006AF796 /* CoreData.framework */,
 				F54D5F2E22B78AAC006C9406 /* FoldTableView.framework */,
 				F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */,
 				F5C1FFDB22AE15390050AA51 /* MapKit.framework */,
@@ -327,11 +331,11 @@
 				F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */,
 				F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */,
 				F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */,
+				F5A3D9A922BB7FC8006AF796 /* UWParking.xcdatamodeld in Sources */,
 				F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */,
 				F5BC053122B3A62000A50578 /* MyTableViewCell.swift in Sources */,
 				F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */,
 				F534350422B1F45600B463B7 /* LotViews.swift in Sources */,
-				F5DEF1C522BA3CBD00FC768B /* LocationModel.xcdatamodeld in Sources */,
 				F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,13 +547,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F5DEF1C322BA3CBD00FC768B /* LocationModel.xcdatamodeld */ = {
+		F5A3D9A722BB7FC8006AF796 /* UWParking.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F5DEF1C422BA3CBD00FC768B /* LocationModel.xcdatamodel */,
+				F5A3D9A822BB7FC8006AF796 /* UWParking.xcdatamodel */,
 			);
-			currentVersion = F5DEF1C422BA3CBD00FC768B /* LocationModel.xcdatamodel */;
-			path = LocationModel.xcdatamodeld;
+			currentVersion = F5A3D9A822BB7FC8006AF796 /* UWParking.xcdatamodel */;
+			path = UWParking.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

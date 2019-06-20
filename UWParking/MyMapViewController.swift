@@ -12,12 +12,14 @@ import CoreLocation
 import JZLocationConverterSwift
 import DropDown
 import CoreData
+import SugarRecord
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     var FindMyLocation = [Double]()
-    var managedObjectContext: NSManagedObjectContext!
+    //var managedContext: NSManagedObjectContext!
+    //var savedLocations = [NSManagedObject]()
     var savedLocations = [Location]()
     
     let LotLocations = LotLocation.getLots()
@@ -29,6 +31,15 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var MyMapView: MKMapView!
     @IBOutlet weak var LotTypeDropDown: UIButton!
     @IBOutlet weak var MyCarDropDown: UIButton!
+    
+    //Persistent store attribute
+    lazy var db: CoreDataDefaultStorage = {
+        let store = CoreDataStore.named("cd_basic")
+        let bundle = Bundle(for: self.classForCoder)
+        let model = CoreDataObjectModel.merged([bundle])
+        let defaultStorage = try! CoreDataDefaultStorage(store: store, model: model)
+        return defaultStorage
+    }()
     
     
     let locationManager = CLLocationManager()
@@ -42,13 +53,27 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         
         requestLocationAccess()
         locationManager.startUpdatingLocation()
+        //loadSavedMyCarLocation()
         loadInitView()
         addAnnotations(LotLocations, type: "Visitor")
         addPermitAnnotations(LotLocations)
         setupDropDown()
     }
     
-    func loadSavedMyCarLocation(){
+    /*override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            savedLocations = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+    }*/
+    
+    /*func loadSavedMyCarLocation(){
         let entity = Location.entity()
         let fetchRequest = NSFetchRequest<Location>()
         fetchRequest.entity = entity
@@ -68,6 +93,94 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             print("Error")
         }
     }
+    
+    func MyCarCenterView() {
+        if savedLocations.last != nil {
+            let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude)
+            centerMapOnLocation(location: MyCarLocation)
+        }
+    }
+    
+    func showMyCar(){
+        clearMyCar()
+        MyCarCenterView()
+    }*/
+    
+    /*func showMyCar(){
+        /*let MyCarLocation = CarLocation()
+        let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
+        centerMapOnLocation(location: location)*/
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            savedLocations = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+    }
+    
+    func pinMyCar(){
+        
+    }
+    
+    func saveLocationtoPersistent(location: [Double]){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
+        let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext)
+        currLocation.setValue(location[0], forKey: "latitude")
+        currLocation.setValue(location[1], forKey: "longtitude")
+        do {
+            try managedContext.save()
+            savedLocations.append(currLocation)
+        }
+        catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }*/
+    
+    func saveLocationtoPersistent(location: [Double]){
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        /*let location = NSEntityDescription.insertNewObject(forEntityName: "Location", into: managedContext)*/
+        let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
+        let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
+        currLocation.setValue(location[0], forKey: "latitude")
+        currLocation.setValue(location[1], forKey: "longtitude")
+        do {
+            try managedContext.save()
+            savedLocations.append(currLocation)
+        }
+        catch let error as NSError {
+            print("Could not save \(error), \(error.userInfo)")
+        }
+    }
+    
+    func showMyCar(){
+        /*let MyCarLocation = CarLocation()
+         let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
+         centerMapOnLocation(location: location)*/
+        
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let managedContext = appDelegate.persistentContainer.viewContext
+        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
+        do {
+            let results = try managedContext.fetch(fetchRequest)
+            savedLocations = results as! [Location]
+            let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longtitude)
+            centerMapOnLocation(location: MyCarLocation)
+            print(savedLocations)
+            
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+    }
+    
     
     func setupDropDown(){
         lotDropDown.anchorView = LotTypeDropDown
@@ -114,13 +227,10 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             (index: Int, item: String) in
             switch index{
             case 0: self.showMyCar()
+            //case 1: self.pinMyCar()
             default: ()
             }
         }
-    }
-    
-    func showMyCar(){
-
     }
     
     
@@ -173,7 +283,17 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             JZLocationConverter.default.wgs84ToGcj02(initialLocation, result: {
                 (Gcj02:CLLocationCoordinate2D) in
                 self.FindMyLocation = self.formatter(Gcj02)
+                self.saveLocationtoPersistent(location: self.formatter(Gcj02))
             })
+            
+            /*do{
+                try managedObjectContext.save()
+            }
+            catch{
+                //fatalCoreDataError(error)
+                //Todo: need implement fatalErrorDataError
+                print("Error in locationmanager")
+            }*/
             
             //LonLatToCity()
             locationManager.stopUpdatingLocation()

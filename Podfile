@@ -6,6 +6,7 @@ target 'UWParking' do
   use_frameworks!
 pod 'JZLocationConverterSwift', '~> 1.0.1'
 pod 'DropDown', '~> 2.3.2'
+pod 'SugarRecord', '~>3.1.2'
 
   # Pods for UWParking
 
