@@ -27,6 +27,7 @@
 		F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */; };
 		F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F5D9B63B22AF3FD6003ED367 /* WatSwift */; };
 		F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; };
+		F5DEF1C522BA3CBD00FC768B /* LocationModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5DEF1C322BA3CBD00FC768B /* LocationModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +86,7 @@
 		F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		F5D9B63B22AF3FD6003ED367 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
 		F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../WatSwift-master/WatSwift.xcodeproj"; sourceTree = "<group>"; };
+		F5DEF1C422BA3CBD00FC768B /* LocationModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LocationModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +151,7 @@
 				F534350322B1F45600B463B7 /* LotViews.swift */,
 				F5BC052F22B3A62000A50578 /* MyTableViewCell.swift */,
 				F5BC053022B3A62000A50578 /* MyTableViewCell.xib */,
+				F5DEF1C322BA3CBD00FC768B /* LocationModel.xcdatamodeld */,
 			);
 			path = UWParking;
 			sourceTree = "<group>";
@@ -328,6 +331,7 @@
 				F5BC053122B3A62000A50578 /* MyTableViewCell.swift in Sources */,
 				F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */,
 				F534350422B1F45600B463B7 /* LotViews.swift in Sources */,
+				F5DEF1C522BA3CBD00FC768B /* LocationModel.xcdatamodeld in Sources */,
 				F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -537,6 +541,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F5DEF1C322BA3CBD00FC768B /* LocationModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F5DEF1C422BA3CBD00FC768B /* LocationModel.xcdatamodel */,
+			);
+			currentVersion = F5DEF1C422BA3CBD00FC768B /* LocationModel.xcdatamodel */;
+			path = LocationModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F56EF12F22A4F4400020114C /* Project object */;
 }

@@ -9,6 +9,7 @@
 import MapKit
 import JZLocationConverterSwift
 import Contacts
+import CoreData
 
 @objc class LotLocation: NSObject, MKAnnotation{
     var title: String?
@@ -90,10 +91,10 @@ import Contacts
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = title
         
-       /*
-        let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
-        let mapItem = MKMapItem(placemark: placemark)
-        mapItem.name = title*/
+        /*
+         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
+         let mapItem = MKMapItem(placemark: placemark)
+         mapItem.name = title*/
         
         return mapItem
     }

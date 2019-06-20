@@ -11,12 +11,14 @@ import MapKit
 import CoreLocation
 import JZLocationConverterSwift
 import DropDown
+import CoreData
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     var FindMyLocation = [Double]()
-    var MyCarLocation = [Double]()
+    var managedObjectContext: NSManagedObjectContext!
+    var savedLocations = [Location]()
     
     let LotLocations = LotLocation.getLots()
     
@@ -29,6 +31,43 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     @IBOutlet weak var MyCarDropDown: UIButton!
     
     
+    let locationManager = CLLocationManager()
+    
+    override func viewDidLoad(){
+        super.viewDidLoad()
+        MyMapView.delegate = self
+        MyMapView.showsCompass = true
+        
+        MyMapView.register(LotView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
+        
+        requestLocationAccess()
+        locationManager.startUpdatingLocation()
+        loadInitView()
+        addAnnotations(LotLocations, type: "Visitor")
+        addPermitAnnotations(LotLocations)
+        setupDropDown()
+    }
+    
+    func loadSavedMyCarLocation(){
+        let entity = Location.entity()
+        let fetchRequest = NSFetchRequest<Location>()
+        fetchRequest.entity = entity
+        savedLocations = try! managedObjectContext.fetch(fetchRequest)
+    }
+    
+    func clearMyCar(){
+        let location = savedLocations.last
+        if let location = location {
+            managedObjectContext.delete(location)
+        }
+        do {
+            try managedObjectContext.save()
+        } catch {
+            //fatalCoreDataError(error)
+            //Todo: need implement fatalCoreDataError
+            print("Error")
+        }
+    }
     
     func setupDropDown(){
         lotDropDown.anchorView = LotTypeDropDown
@@ -47,12 +86,22 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             switch index{
             case 0: self.addAnnotations(self.LotLocations, type: "T")
             case 1: do {
+                self.loadInitView()
                 self.addAnnotations(self.LotLocations, type: "Visitor")
                 self.addPermitAnnotations(self.LotLocations)
                 }
-            case 2: self.addAnnotations(self.LotLocations, type: "Meter")
-            case 3: self.addAnnotations(self.LotLocations, type: "Motorcycle")
-            case 4: self.addAnnotations(self.LotLocations, type: "Short-term")
+            case 2: do {
+                self.loadInitView()
+                self.addAnnotations(self.LotLocations, type: "Meter")
+                }
+            case 3: do {
+                self.loadInitView()
+                self.addAnnotations(self.LotLocations, type: "Short-term")
+                }
+            case 4: do {
+                self.loadInitView()
+                self.addAnnotations(self.LotLocations, type: "Motorcycle")
+                }
             default: ()
             }
         }
@@ -71,48 +120,18 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func showMyCar(){
-        locationManager.startUpdatingLocation()
-        if(!MyCarLocation.isEmpty){
-            let CarLocation = CLLocation(latitude: MyCarLocation[0], longitude: MyCarLocation[1])
-            centerMapOnLocation(location: CarLocation)
-        }
+
     }
     
     
     @IBAction func FindMe(_ sender: Any) {
-        print("Find me before")
-        print(FindMyLocation)
         locationManager.startUpdatingLocation()
-        
-        print("Find me after")
-        print(FindMyLocation)
-        
         if(!FindMyLocation.isEmpty){
             let initialLocation = CLLocation(latitude: FindMyLocation[0], longitude: FindMyLocation[1])
             centerMapOnLocation(location: initialLocation)
         }
     }
     
-    let locationManager = CLLocationManager()
-    
-    override func viewDidLoad(){
-        super.viewDidLoad()
-        MyMapView.delegate = self
-        MyMapView.showsCompass = true
-        
-        MyMapView.register(LotView.self, forAnnotationViewWithReuseIdentifier: MKMapViewDefaultAnnotationViewReuseIdentifier)
-        
-        requestLocationAccess()
-        locationManager.startUpdatingLocation()
-        print("View did load before")
-        print(FindMyLocation)
-        loadInitView()
-        addAnnotations(LotLocations, type: "Visitor")
-        addPermitAnnotations(LotLocations)
-        setupDropDown()
-        print("View did load after")
-        print(FindMyLocation)
-    }
     
     //add an array of Annotation
     /*func addAnnotations(_ locations:[LotLocation]){
@@ -144,6 +163,11 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let location:CLLocation = locations[locations.count-1]
         let currLocation = locations.last!
+        
+        if currLocation.timestamp.timeIntervalSinceNow < -5 {
+            return
+        }
+        
         if(location.horizontalAccuracy > 0){
             let initialLocation = CLLocationCoordinate2D(latitude: currLocation.coordinate.latitude, longitude: currLocation.coordinate.longitude)
             JZLocationConverter.default.wgs84ToGcj02(initialLocation, result: {
