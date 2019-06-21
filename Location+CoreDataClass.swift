@@ -8,8 +8,9 @@
 
 import Foundation
 import CoreData
+import MapKit
 
 @objc(Location)
-public class Location: NSManagedObject, MKAnnotation{
+public class Location: NSManagedObject{
 
 }

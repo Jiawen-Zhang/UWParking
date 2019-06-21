@@ -52,3 +52,23 @@ class LotView: MKAnnotationView{
         }
     }
 }
+
+/*class MyCarView: MKAnnotationView{
+    override var annotation: MKAnnotation?{
+        willSet{
+            guard let car = newValue as? Location else {return}
+            canShowCallout = true
+            calloutOffset = CGPoint(x: -5, y: 5)
+            let mapButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 30, height: 30)))
+            mapButton.setBackgroundImage(UIImage(named: "Direct"), for: UIControl.State())
+            rightCalloutAccessoryView = mapButton
+            image = UIImage(named: "Car_Map")
+            
+            let detailLabel = UILabel()
+            detailLabel.numberOfLines = 0
+            detailLabel.font = detailLabel.font.withSize(12)
+            detailLabel.text = "My Car"
+            detailCalloutAccessoryView = detailLabel
+        }
+    }
+}*/

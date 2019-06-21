@@ -80,6 +80,8 @@ import CoreData
             return "Motorcycle"
         case "Short-term":
             return "Short-term"
+        case "MyCar":
+            return "Car_Map"
         default:
             return nil
         }

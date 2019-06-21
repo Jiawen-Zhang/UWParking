@@ -2,10 +2,10 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Location+CoreDataClass.swift">
+      location = "group:/Users/jackzhang/Desktop/CS/IOS/UWParking/Location+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:Location+CoreDataProperties.swift">
+      location = "group:/Users/jackzhang/Desktop/CS/IOS/UWParking/Location+CoreDataProperties.swift">
    </FileRef>
    <FileRef
       location = "group:UWParking.xcodeproj">
