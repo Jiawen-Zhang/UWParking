@@ -27,8 +27,7 @@ class MyTableViewCell: UITableViewCell {
     
 }
 
-
-extension MyTableViewCell{
+/*extension MyTableViewCell{
     func getCurrentViewController() -> UIViewController?{
         let window = UIApplication.shared.keyWindow
         let navigationController = window?.rootViewController
@@ -38,4 +37,5 @@ extension MyTableViewCell{
         }
         return nil
     }
-}
+}*/
+

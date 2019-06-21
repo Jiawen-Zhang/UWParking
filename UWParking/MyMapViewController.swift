@@ -559,9 +559,15 @@ extension MyMapViewController: MKMapViewDelegate{
     
     func mapView(_ mapView: MKMapView, annotationView view: MKAnnotationView, calloutAccessoryControlTapped control: UIControl) {
         let location = view.annotation as! LotLocation
-
-        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
-        location.mapItem().openInMaps(launchOptions: launchOptions)
+        
+        if(location.type == "MyCar"){
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking]
+            location.mapItem().openInMaps(launchOptions: launchOptions)
+        }
+        else{
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            location.mapItem().openInMaps(launchOptions: launchOptions)
+        }
         
         /*let currentLocation: MKMapItem = MKMapItem.forCurrentLocation()
         let destCoordinate: CLLocationCoordinate2D = location.coordinate

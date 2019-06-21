@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
@@ -17,6 +18,8 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
     var SearchController: UISearchController!
     var searchResults = [LotLocation]()
+    
+    
     
     func createLotDict(){
 
@@ -59,29 +62,26 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
             cell?.ImageCell?.image = UIImage(named: (lot.type)!)
             cell?.LabelCell?.text = lot.title
         }
-        
-        /*let lot = LotLocations[indexPath.row]
-        cell?.ImageCell?.image = UIImage(named: (lot.type)!)
-        cell?.LabelCell?.text = lot.title*/
-        
         return cell!
     }
     
+    
+    //**** swipe left for navigation ****
     override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
         let LotKey = SectionTitles[indexPath.section]
         let LotValues = LotDict[LotKey]
         let lot = SearchController.isActive ? searchResults[indexPath.row] : LotValues![indexPath.row]
         let map = UITableViewRowAction(style: .normal, title: "Map"){
             action, index in
-            //print(lot.title)
-            /*let secondViewController = MyMapViewController()
-            self.present(secondViewController, animated: true, completion: nil)*/
+            let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
+            lot.mapItem().openInMaps(launchOptions: launchOptions)
         }
         return [map]
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        return !SearchController.isActive
+        //return !SearchController.isActive
+        return true
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
