@@ -55,15 +55,15 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fs0-jv-udy">
                                 <rect key="frame" x="16" y="44" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="Car_Map"/>
+                                <state key="normal" backgroundImage="Parking_Map"/>
                                 <connections>
                                     <action selector="showLotTypeDropDown:" destination="c0x-67-t1t" eventType="touchUpInside" id="kSZ-lA-16Q"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jIT-Vu-mZm">
-                                <rect key="frame" x="222" y="44" width="40" height="40"/>
+                                <rect key="frame" x="16" y="92" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" backgroundImage="Car_Map"/>
                                 <connections>
                                     <action selector="showMyCarDropDown:" destination="c0x-67-t1t" eventType="touchUpInside" id="7fW-W1-v5i"/>
                                 </connections>
@@ -317,6 +317,7 @@
         <image name="List" width="25" height="25"/>
         <image name="Map" width="25" height="25"/>
         <image name="N" width="30" height="30"/>
+        <image name="Parking_Map" width="40" height="40"/>
         <image name="Refresh" width="50" height="50"/>
         <image name="W" width="30" height="30"/>
         <image name="X" width="30" height="30"/>

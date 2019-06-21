@@ -19,6 +19,7 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
     var searchResults = [LotLocation]()
     
     func createLotDict(){
+
         for lot in LotLocations{
             let LotKey = lot.type
             
@@ -64,6 +65,19 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         cell?.LabelCell?.text = lot.title*/
         
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let LotKey = SectionTitles[indexPath.section]
+        let LotValues = LotDict[LotKey]
+        let lot = SearchController.isActive ? searchResults[indexPath.row] : LotValues![indexPath.row]
+        let map = UITableViewRowAction(style: .normal, title: "Map"){
+            action, index in
+            //print(lot.title)
+            /*let secondViewController = MyMapViewController()
+            self.present(secondViewController, animated: true, completion: nil)*/
+        }
+        return [map]
     }
     
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
@@ -136,6 +150,6 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         
         createLotDict()
     }
-    
-    
 }
+
+

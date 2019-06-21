@@ -26,3 +26,16 @@ class MyTableViewCell: UITableViewCell {
     }
     
 }
+
+
+extension MyTableViewCell{
+    func getCurrentViewController() -> UIViewController?{
+        let window = UIApplication.shared.keyWindow
+        let navigationController = window?.rootViewController
+        if navigationController is UINavigationController{
+            let navigation = navigationController as! UINavigationController
+            return navigation.topViewController!
+        }
+        return nil
+    }
+}

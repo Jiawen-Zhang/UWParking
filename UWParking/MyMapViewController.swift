@@ -496,7 +496,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         MyMapView.showsUserLocation = true
     }
     
-    //the init view of the map
+    
     func centerMapOnLocation(location: CLLocation){
         let regionRadius: CLLocationDistance = 1000
         let coordinateRegion = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
@@ -511,9 +511,10 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         return temp
     }
     
+    //the init view of the map
     func loadInitView(){
-        var CampusLocation_gcj02: CLLocation = CLLocation(latitude: 43.4722624, longitude: -80.5447643)
-        let CampusLocation_wgs84 = CLLocationCoordinate2D(latitude: 43.4722624, longitude: -80.5447643)
+        var CampusLocation_gcj02: CLLocation = CLLocation(latitude: 43.4722001169, longitude: -80.5461788177)
+        let CampusLocation_wgs84 = CLLocationCoordinate2D(latitude: 43.4722001169, longitude: -80.5461788177)
         JZLocationConverter.default.wgs84ToGcj02(CampusLocation_wgs84, result: {
             (Gcj02:CLLocationCoordinate2D) in
             CampusLocation_gcj02 = CLLocation(latitude: self.formatter(Gcj02)[0], longitude: self.formatter(Gcj02)[1])
@@ -574,3 +575,4 @@ extension MyMapViewController: MKMapViewDelegate{
     }
     
 }
+
