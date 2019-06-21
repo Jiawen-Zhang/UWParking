@@ -21,6 +21,8 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     //var managedContext: NSManagedObjectContext!
     //var savedLocations = [NSManagedObject]()
     var savedLocations = [Location]()
+    var MyCar = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0))
+    var MyCarFlag = false
     
     
     let LotLocations = LotLocation.getLots()
@@ -46,8 +48,13 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         requestLocationAccess()
         loadSavedMyCarLocation()
         if(!savedLocations.isEmpty){
-            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longtitude))
-            MyMapView.addAnnotation(setMyCarAsLot)
+            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude))
+            MyMapView.addAnnotation(setMyCarAsLot)*/
+            let latitude = savedLocations.last!.latitude
+            let longitude = savedLocations.last!.longitude
+            MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+            MyMapView.addAnnotation(MyCar)
+            MyCarFlag = true
         }
         locationManager.startUpdatingLocation()
         loadInitView()
@@ -129,7 +136,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
         let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext)
         currLocation.setValue(location[0], forKey: "latitude")
-        currLocation.setValue(location[1], forKey: "longtitude")
+        currLocation.setValue(location[1], forKey: "longitude")
         do {
             try managedContext.save()
             savedLocations.append(currLocation)
@@ -146,10 +153,10 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
         let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
         currLocation.setValue(location[0], forKey: "latitude")
-        currLocation.setValue(location[1], forKey: "longtitude")
+        currLocation.setValue(location[1], forKey: "longitude")
         do {
             try managedContext.save()
-            //savedLocations.append(currLocation)
+            savedLocations.append(currLocation)
         }
         catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
@@ -161,26 +168,62 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
          let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
          centerMapOnLocation(location: location)*/
         
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        if(MyCarFlag){
+            let MyCarLocation = CLLocation(latitude: MyCar.coordinate.latitude, longitude: MyCar.coordinate.longitude)
+            centerMapOnLocation(location: MyCarLocation)
+        }
+        
+        /*let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
         do {
             let results = try managedContext.fetch(fetchRequest)
             savedLocations = results as! [Location]
-            let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longtitude)
-            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longtitude))
+            let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude)
+            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude))
             MyMapView.addAnnotation(setMyCarAsLot)*/
             centerMapOnLocation(location: MyCarLocation)
             //print(savedLocations)
             
         } catch let error as NSError {
             print("Could not fetch \(error), \(error.userInfo)")
-        }
+        }*/
         
     }
     
     
     func pinMyCar(){
+        
+        if(!MyCarFlag){
+            locationManager.startUpdatingLocation()
+            if(!savedLocations.isEmpty){
+                
+                //print("In Pin My Car")
+                //print(savedLocations)
+                
+                let latitude = savedLocations.last!.latitude
+                let longitude = savedLocations.last!.longitude
+                
+                //print("latitude: \(latitude)")
+                //print("lonitude: \(longitude)")
+                
+                
+                MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                MyMapView.addAnnotation(MyCar)
+                
+                let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
+                centerMapOnLocation(location: MyCarLocation)
+                
+                saveLocationtoPersistent(location: [latitude, longitude])
+                
+                MyCarFlag = true
+            }
+        }
+        else{
+            let MyCarLocation = CLLocation(latitude: MyCar.coordinate.latitude, longitude: MyCar.coordinate.longitude)
+            centerMapOnLocation(location: MyCarLocation)
+        }
+       /*
         /*let MyCarLocation = CarLocation()
          let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
          centerMapOnLocation(location: location)*/
@@ -190,28 +233,61 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         //let managedContext = appDelegate.persistentContainer.viewContext
         if(!savedLocations.isEmpty){
             let latitude = savedLocations.last!.latitude
-            let longtitude = savedLocations.last!.longtitude
+            let longitude = savedLocations.last!.longitude
             
-            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longtitude))
+            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
             print(setMyCarAsLot.title)
             print(setMyCarAsLot.type)
             print(setMyCarAsLot.coordinate)
             
-            MyMapView.addAnnotation(setMyCarAsLot)
+            MyMapView.addAnnotation(setMyCarAsLot)*/
             
-            let MyCarLocation = CLLocation(latitude: latitude, longitude: longtitude)
+            let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
             centerMapOnLocation(location: MyCarLocation)
             
-            saveLocationtoPersistent(location: [latitude, longtitude])
-        }
+            saveLocationtoPersistent(location: [latitude, longitude])
+        }*/
+    
     }
     
     
     func clearMyCar(){
+        
+        if(MyCarFlag){
+            
+            MyMapView.removeAnnotation(MyCar)
+            MyCar.coordinate = CLLocationCoordinate2D(latitude: 0, longitude: 0)
+            
+            let appDelegate = UIApplication.shared.delegate as! AppDelegate
+            let managedContext = appDelegate.persistentContainer.viewContext
+            let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
+            do {
+                let results = try managedContext.fetch(fetchRequest)
+                savedLocations = results as! [Location]
+                if(!savedLocations.isEmpty){
+                    //print(savedLocations)
+                    
+                    /*for location in savedLocations{
+                        managedContext.delete(location)
+                    }*/
+                }
+            } catch let error as NSError {
+                print("Could not clear \(error), \(error.userInfo)")
+            }
+            
+            do {
+                try managedContext.save()
+            } catch let error as NSError {
+                print("Could not save \(error), \(error.userInfo)")
+            }
+            
+            MyCarFlag = false
+        }
+     /*
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
         /*for location in savedLocations{
-            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longtitude))
+            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
             MyMapView.removeAnnotation(setMyCarAsLot)
             managedContext.delete(location)
         }*/
@@ -222,16 +298,16 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             savedLocations = results as! [Location]
             if(!savedLocations.isEmpty){
                 for location in savedLocations{
-                    let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longtitude))
+                    /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
                     print(setMyCarAsLot.title)
                     print(setMyCarAsLot.type)
-                    print(setMyCarAsLot.coordinate)
+                    print(setMyCarAsLot.coordinate)*/
                     MyMapView.removeAnnotation(setMyCarAsLot)
                     managedContext.delete(location)
                 }
             }
             /*if(!savedLocations.isEmpty){
-                let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longtitude)
+                let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude)
                 centerMapOnLocation(location: MyCarLocation)
             }*/
         } catch let error as NSError {
@@ -242,13 +318,13 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             try managedContext.save()
         } catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
-        }
+        }*/
     }
     
     
     func removeCar(){
         for location in savedLocations{
-            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longtitude))
+            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
             MyMapView.removeAnnotation(setMyCarAsLot)
         }
     }
@@ -372,7 +448,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 /*let currLocation = Location()
                 let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
                 currLocation.latitude = self.formatter(Gcj02)[0]
-                currLocation.longtitude = self.formatter(Gcj02)[1]
+                currLocation.longitude = self.formatter(Gcj02)[1]
                 self.savedLocations.append(currLocation)*/
                 
                 let appDelegate = UIApplication.shared.delegate as! AppDelegate
@@ -380,8 +456,10 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
                 let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
                 currLocation.setValue(self.formatter(Gcj02)[0], forKey: "latitude")
-                currLocation.setValue(self.formatter(Gcj02)[1], forKey: "longtitude")
+                currLocation.setValue(self.formatter(Gcj02)[1], forKey: "longitude")
                 self.savedLocations.append(currLocation)
+                
+                //self.saveLocationtoPersistent(location: self.formatter(Gcj02))
                 
             })
             

@@ -2,7 +2,7 @@
 //  Location+CoreDataProperties.swift
 //  
 //
-//  Created by Jack Zhang on 2019-06-20.
+//  Created by Jack Zhang on 2019-06-21.
 //
 //
 
@@ -17,6 +17,6 @@ extension Location {
     }
 
     @NSManaged public var latitude: Double
-    @NSManaged public var longtitude: Double
+    @NSManaged public var longitude: Double
 
 }
