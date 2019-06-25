@@ -128,9 +128,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-qY-o8d">
-                                <rect key="frame" x="90" y="165" width="107" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-qY-o8d">
+                                <rect key="frame" x="90" y="165" width="107" height="26.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -254,6 +253,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XSF-qY-o8d" firstAttribute="top" secondItem="4cn-QZ-JEW" secondAttribute="top" constant="77" id="NbK-dH-k4i"/>
+                            <constraint firstItem="XSF-qY-o8d" firstAttribute="leading" secondItem="4cn-QZ-JEW" secondAttribute="leading" constant="90" id="Uqu-Ws-kT2"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="4cn-QZ-JEW"/>
                     </view>
                     <navigationItem key="navigationItem" title="UW Parking" id="dGi-Lr-cFM"/>
