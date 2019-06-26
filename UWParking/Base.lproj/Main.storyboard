@@ -44,9 +44,12 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Pq-jKS">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Pq-jKS">
                                 <rect key="frame" x="16" y="663" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="7TR-lS-h7f"/>
+                                    <constraint firstAttribute="height" constant="50" id="oEY-RH-amb"/>
+                                </constraints>
                                 <state key="normal" backgroundImage="FindMe"/>
                                 <connections>
                                     <action selector="FindMe:" destination="c0x-67-t1t" eventType="touchUpInside" id="XOk-SZ-LfF"/>
@@ -70,6 +73,10 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JnR-to-LHA" firstAttribute="bottom" secondItem="6R3-Pq-jKS" secondAttribute="bottom" constant="16" id="2Mu-FL-pgm"/>
+                            <constraint firstItem="6R3-Pq-jKS" firstAttribute="leading" secondItem="JnR-to-LHA" secondAttribute="leading" constant="16" id="cMg-6A-jtd"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="JnR-to-LHA"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Map" image="Map" id="ND3-9K-PIu"/>

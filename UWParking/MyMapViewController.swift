@@ -156,7 +156,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         currLocation.setValue(location[1], forKey: "longitude")
         do {
             try managedContext.save()
-            savedLocations.append(currLocation)
+            //savedLocations.append(currLocation)
         }
         catch let error as NSError {
             print("Could not save \(error), \(error.userInfo)")
@@ -196,7 +196,21 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         
         if(!MyCarFlag){
             locationManager.startUpdatingLocation()
-            if(!savedLocations.isEmpty){
+            if(!FindMyLocation.isEmpty){
+                let latitude = FindMyLocation[0]
+                let longitude = FindMyLocation[1]
+
+                MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+                MyMapView.addAnnotation(MyCar)
+                
+                let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
+                centerMapOnLocation(location: MyCarLocation)
+                
+                saveLocationtoPersistent(location: [latitude, longitude])
+                
+                MyCarFlag = true
+            }
+            /*if(!savedLocations.isEmpty){
                 
                 //print("In Pin My Car")
                 //print(savedLocations)
@@ -217,7 +231,8 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 saveLocationtoPersistent(location: [latitude, longitude])
                 
                 MyCarFlag = true
-            }
+                
+            }*/
         }
         else{
             let MyCarLocation = CLLocation(latitude: MyCar.coordinate.latitude, longitude: MyCar.coordinate.longitude)
@@ -263,14 +278,24 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
             do {
                 let results = try managedContext.fetch(fetchRequest)
-                savedLocations = results as! [Location]
+                /*savedLocations = results as! [Location]
                 if(!savedLocations.isEmpty){
                     //print(savedLocations)
                     
                     /*for location in savedLocations{
                         managedContext.delete(location)
                     }*/
+                }*/
+                
+                savedLocations = results as! [Location]
+                if(!savedLocations.isEmpty){
+                    //print(savedLocations)
+                    
+                    for location in savedLocations{
+                        managedContext.delete(location)
+                    }
                 }
+                
             } catch let error as NSError {
                 print("Could not clear \(error), \(error.userInfo)")
             }
@@ -451,13 +476,13 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 currLocation.longitude = self.formatter(Gcj02)[1]
                 self.savedLocations.append(currLocation)*/
                 
-                let appDelegate = UIApplication.shared.delegate as! AppDelegate
+                /*let appDelegate = UIApplication.shared.delegate as! AppDelegate
                 let managedContext = appDelegate.persistentContainer.viewContext
                 let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
                 let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
                 currLocation.setValue(self.formatter(Gcj02)[0], forKey: "latitude")
                 currLocation.setValue(self.formatter(Gcj02)[1], forKey: "longitude")
-                self.savedLocations.append(currLocation)
+                self.savedLocations.append(currLocation)*/
                 
                 //self.saveLocationtoPersistent(location: self.formatter(Gcj02))
                 
