@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="q06-qp-8Hc">
-    <device id="retina5_9" orientation="portrait">
+    <device id="retina6_1" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -15,7 +15,7 @@
             <objects>
                 <tableViewController id="Xo4-Kc-cna" userLabel="List" customClass="MyListViewController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="HiD-El-PRd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <connections>
@@ -37,15 +37,14 @@
             <objects>
                 <viewController id="c0x-67-t1t" customClass="MyMapViewController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="WH5-Ht-Fce">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXb-6O-0Ow">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="729"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXb-6O-0Ow">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
                             </mapView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R3-Pq-jKS">
-                                <rect key="frame" x="16" y="663" width="50" height="50"/>
+                                <rect key="frame" x="16" y="747" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="7TR-lS-h7f"/>
                                     <constraint firstAttribute="height" constant="50" id="oEY-RH-amb"/>
@@ -74,8 +73,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="xXb-6O-0Ow" firstAttribute="trailing" secondItem="JnR-to-LHA" secondAttribute="trailing" id="1oM-Og-k3e"/>
                             <constraint firstItem="JnR-to-LHA" firstAttribute="bottom" secondItem="6R3-Pq-jKS" secondAttribute="bottom" constant="16" id="2Mu-FL-pgm"/>
+                            <constraint firstItem="xXb-6O-0Ow" firstAttribute="bottom" secondItem="JnR-to-LHA" secondAttribute="bottom" id="ACR-ti-KB7"/>
+                            <constraint firstItem="xXb-6O-0Ow" firstAttribute="top" secondItem="WH5-Ht-Fce" secondAttribute="top" id="HdI-75-Ce7"/>
                             <constraint firstItem="6R3-Pq-jKS" firstAttribute="leading" secondItem="JnR-to-LHA" secondAttribute="leading" constant="16" id="cMg-6A-jtd"/>
+                            <constraint firstItem="xXb-6O-0Ow" firstAttribute="leading" secondItem="JnR-to-LHA" secondAttribute="leading" id="gcs-3C-S0V"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="JnR-to-LHA"/>
                     </view>
@@ -95,7 +98,7 @@
             <objects>
                 <viewController id="GNL-Xy-4dO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkZ-hO-oHK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="YFp-46-ZW4"/>
@@ -132,11 +135,11 @@
             <objects>
                 <viewController id="PWC-u9-woW" customClass="MyHomeViewController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ovr-IZ-9fq">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HIg-Up-eG0" userLabel="View1">
-                                <rect key="frame" x="90" y="168.66666666666666" width="196" height="80"/>
+                                <rect key="frame" x="90" y="210.5" width="235" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XSF-qY-o8d">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
@@ -175,7 +178,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aBf-Mu-d7f" userLabel="View2">
-                                <rect key="frame" x="90" y="268.66666666666669" width="196" height="80"/>
+                                <rect key="frame" x="90" y="310.5" width="235" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c8g-8z-PLx">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
@@ -214,7 +217,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FoM-gF-gZr" userLabel="View3">
-                                <rect key="frame" x="90" y="368.66666666666669" width="196" height="80"/>
+                                <rect key="frame" x="90" y="410.5" width="235" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nNB-Iv-ops">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
@@ -253,7 +256,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5mZ-5K-Qzw" userLabel="View4">
-                                <rect key="frame" x="90" y="468.66666666666669" width="196" height="80.000000000000057"/>
+                                <rect key="frame" x="90" y="510.5" width="235" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Parking Lot" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ezb-jy-IfV">
                                         <rect key="frame" x="0.0" y="0.0" width="107" height="30"/>
@@ -292,7 +295,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ccu-Ue-oLw">
-                                <rect key="frame" x="163" y="603.66666666666663" width="50" height="50"/>
+                                <rect key="frame" x="163" y="645.5" width="89" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="NE4-o2-JTS"/>
                                     <constraint firstAttribute="height" constant="50" id="o5y-Dd-XdA"/>
@@ -348,7 +351,7 @@
                     <tabBarItem key="tabBarItem" title="List" image="List" id="Q23-2l-dFh"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jXF-fq-hzL">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -367,7 +370,7 @@
                     <tabBarItem key="tabBarItem" title="Home" image="Home" id="d4a-k1-y2J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="rv4-2P-9Xk">
-                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
