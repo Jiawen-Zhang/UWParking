@@ -311,7 +311,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wR-IP-1h5" userLabel="ViewButton">
-                                <rect key="frame" x="13" y="366" width="349" height="50"/>
+                                <rect key="frame" x="13" y="366" width="349" height="55"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFw-Cz-evR">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -336,10 +336,10 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeE-MN-XHA">
-                                        <rect key="frame" x="299" y="0.0" width="50" height="50"/>
+                                        <rect key="frame" x="294" y="0.0" width="55" height="55"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="50" id="CVD-ve-54a"/>
-                                            <constraint firstAttribute="height" constant="50" id="me2-nI-g5Z"/>
+                                            <constraint firstAttribute="width" constant="55" id="CVD-ve-54a"/>
+                                            <constraint firstAttribute="height" constant="55" id="me2-nI-g5Z"/>
                                         </constraints>
                                         <state key="normal" backgroundImage="Twitter"/>
                                         <connections>
@@ -355,7 +355,7 @@
                                     <constraint firstAttribute="trailing" secondItem="FeE-MN-XHA" secondAttribute="trailing" id="JDB-r0-zPI"/>
                                     <constraint firstItem="XFw-Cz-evR" firstAttribute="leading" secondItem="4wR-IP-1h5" secondAttribute="leading" id="XB7-fW-4pN"/>
                                     <constraint firstItem="XFw-Cz-evR" firstAttribute="top" secondItem="4wR-IP-1h5" secondAttribute="top" id="dJG-R0-wiV"/>
-                                    <constraint firstAttribute="height" constant="50" id="feG-5I-jj1"/>
+                                    <constraint firstAttribute="height" constant="55" id="feG-5I-jj1"/>
                                     <constraint firstItem="q2X-81-1JZ" firstAttribute="leading" secondItem="XFw-Cz-evR" secondAttribute="trailing" constant="99" id="v2a-UT-KiL"/>
                                 </constraints>
                             </view>
