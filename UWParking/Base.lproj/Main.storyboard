@@ -96,12 +96,12 @@
         <!--Parking Info-->
         <scene sceneID="PbK-oK-ttK">
             <objects>
-                <viewController id="GNL-Xy-4dO" sceneMemberID="viewController">
+                <viewController id="GNL-Xy-4dO" customClass="MyInfoViewController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HkZ-hO-oHK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-QW-blN">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5RO-QW-blN" userLabel="ViewInfo">
                                 <rect key="frame" x="13" y="113" width="349" height="213"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6CR-8T-49O">
@@ -310,15 +310,71 @@
                                     <constraint firstItem="Heb-dG-oWn" firstAttribute="leading" secondItem="5RO-QW-blN" secondAttribute="leading" id="uaL-7T-lAC"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wR-IP-1h5" userLabel="ViewButton">
+                                <rect key="frame" x="13" y="381" width="349" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFw-Cz-evR">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="7wd-mQ-Vnj"/>
+                                            <constraint firstAttribute="height" constant="50" id="xTP-9N-ris"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="service"/>
+                                        <connections>
+                                            <action selector="HomepageTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="6pY-bh-pB4"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q2X-81-1JZ">
+                                        <rect key="frame" x="149" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="3Wy-N0-zls"/>
+                                            <constraint firstAttribute="height" constant="50" id="KnG-EB-aTJ"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="facebook"/>
+                                        <connections>
+                                            <action selector="FacebookTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="T2K-iS-Ui6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FeE-MN-XHA">
+                                        <rect key="frame" x="299" y="0.0" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="CVD-ve-54a"/>
+                                            <constraint firstAttribute="height" constant="50" id="me2-nI-g5Z"/>
+                                        </constraints>
+                                        <state key="normal" backgroundImage="Twitter"/>
+                                        <connections>
+                                            <action selector="TwitterTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="4QE-G3-iXx"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="FeE-MN-XHA" firstAttribute="top" secondItem="4wR-IP-1h5" secondAttribute="top" id="1L1-Dy-iSd"/>
+                                    <constraint firstItem="q2X-81-1JZ" firstAttribute="top" secondItem="4wR-IP-1h5" secondAttribute="top" id="1S8-bG-Cjr"/>
+                                    <constraint firstAttribute="width" constant="349" id="6mK-gn-68O"/>
+                                    <constraint firstAttribute="trailing" secondItem="FeE-MN-XHA" secondAttribute="trailing" id="JDB-r0-zPI"/>
+                                    <constraint firstItem="XFw-Cz-evR" firstAttribute="leading" secondItem="4wR-IP-1h5" secondAttribute="leading" id="XB7-fW-4pN"/>
+                                    <constraint firstItem="XFw-Cz-evR" firstAttribute="top" secondItem="4wR-IP-1h5" secondAttribute="top" id="dJG-R0-wiV"/>
+                                    <constraint firstAttribute="height" constant="50" id="feG-5I-jj1"/>
+                                    <constraint firstItem="q2X-81-1JZ" firstAttribute="leading" secondItem="XFw-Cz-evR" secondAttribute="trailing" constant="99" id="v2a-UT-KiL"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5RO-QW-blN" firstAttribute="top" secondItem="YFp-46-ZW4" secondAttribute="top" constant="25" id="OqL-Ci-jbb"/>
-                            <constraint firstItem="5RO-QW-blN" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="Qbb-Gh-8K0"/>
+                            <constraint firstItem="5RO-QW-blN" firstAttribute="top" secondItem="YFp-46-ZW4" secondAttribute="top" constant="25" id="BQ7-Ai-x1e"/>
+                            <constraint firstItem="5RO-QW-blN" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="QbE-jx-Xhb"/>
+                            <constraint firstItem="4wR-IP-1h5" firstAttribute="centerY" secondItem="HkZ-hO-oHK" secondAttribute="centerY" id="UlX-y1-BB9"/>
+                            <constraint firstItem="4wR-IP-1h5" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="ezP-Md-is7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YFp-46-ZW4"/>
                     </view>
                     <navigationItem key="navigationItem" title="Parking Info" id="0YH-RQ-iQe"/>
+                    <connections>
+                        <outlet property="Facebook" destination="q2X-81-1JZ" id="A9C-3L-Dvz"/>
+                        <outlet property="Homepage" destination="XFw-Cz-evR" id="B3H-cD-TZG"/>
+                        <outlet property="Twitter" destination="FeE-MN-XHA" id="wol-5s-f7o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jw7-bp-ofP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -723,7 +779,10 @@
         <image name="N" width="30" height="30"/>
         <image name="Parking_Map" width="40" height="40"/>
         <image name="Refresh" width="50" height="50"/>
+        <image name="Twitter" width="50" height="50"/>
         <image name="W" width="30" height="30"/>
         <image name="X" width="30" height="30"/>
+        <image name="facebook" width="50" height="50"/>
+        <image name="service" width="50" height="50"/>
     </resources>
 </document>
