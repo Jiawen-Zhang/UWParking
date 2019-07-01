@@ -311,7 +311,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4wR-IP-1h5" userLabel="ViewButton">
-                                <rect key="frame" x="13" y="381" width="349" height="50"/>
+                                <rect key="frame" x="13" y="366" width="349" height="50"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFw-Cz-evR">
                                         <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
@@ -364,8 +364,8 @@
                         <constraints>
                             <constraint firstItem="5RO-QW-blN" firstAttribute="top" secondItem="YFp-46-ZW4" secondAttribute="top" constant="25" id="BQ7-Ai-x1e"/>
                             <constraint firstItem="5RO-QW-blN" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="QbE-jx-Xhb"/>
-                            <constraint firstItem="4wR-IP-1h5" firstAttribute="centerY" secondItem="HkZ-hO-oHK" secondAttribute="centerY" id="UlX-y1-BB9"/>
                             <constraint firstItem="4wR-IP-1h5" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="ezP-Md-is7"/>
+                            <constraint firstItem="4wR-IP-1h5" firstAttribute="top" secondItem="5RO-QW-blN" secondAttribute="bottom" constant="40" id="vkh-3d-QvJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YFp-46-ZW4"/>
                     </view>
