@@ -68,10 +68,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     //**** Notifications after user pin his/her car ****
     func setNotification(_ timeInterval: Double){
         let content = UNMutableNotificationContent()
-        let content_10 = UNMutableNotificationContent()
         content.title = "Remind Timer"
-        content_10.title = "Remind Timer"
-        content_10.body = "10 Minutes Remaining"
         //for test purpose set time as 10 secs
         //let alertTimeInterval = (timeInterval - 5) * 10
         var alertTimeInterval: Double
@@ -79,25 +76,35 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             alertTimeInterval = timeInterval * 60
             content.body = "Time Up"
         }
-        else{
+        else if(timeInterval <= 10){
             alertTimeInterval = (timeInterval - 5) * 60
             content.body = "5 Minutes Remaining"
         }
-        let alertTimeInterval_10 = (timeInterval - 10) * 60
+        else{
+            alertTimeInterval = (timeInterval - 5) * 60
+            content.body = "5 Minutes Remaining"
+            
+            //10 minutes reminder
+            let content_10 = UNMutableNotificationContent()
+            content_10.title = "Remind Timer"
+            content_10.body = "10 Minutes Remaining"
+            let alertTimeInterval_10 = (timeInterval - 10) * 60
+            let trigger_10 = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval_10, repeats: false)
+            let identifier_10 = "Notification_10"
+            let request_10 = UNNotificationRequest(identifier: identifier_10, content: content_10, trigger: trigger_10)
+            UNUserNotificationCenter.current().add(request_10){ error in
+                if (error == nil){
+                    print("Time Interval Notification scheduled: \(identifier_10)")
+                }
+            }
+        }
+        
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval, repeats: false)
-        let trigger_10 = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval_10, repeats: false)
         let identifier = "Notification"
-        let identifier_10 = "Notification_10"
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request){ error in
             if (error == nil){
                 print("Time Interval Notification scheduled: \(identifier)")
-            }
-        }
-        let request_10 = UNNotificationRequest(identifier: identifier_10, content: content_10, trigger: trigger_10)
-        UNUserNotificationCenter.current().add(request_10){ error in
-            if (error == nil){
-                print("Time Interval Notification scheduled: \(identifier_10)")
             }
         }
     }
