@@ -13,6 +13,7 @@ import JZLocationConverterSwift
 import DropDown
 import CoreData
 import UserNotifications
+import SCLAlertView
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
@@ -63,12 +64,14 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         setupDropDown()
     }
     
-    func setNotification(){
-        //**** Notifications after user pin his/her car ****
+    
+    //**** Notifications after user pin his/her car ****
+    func setNotification(_ timeInterval: Double){
         let content = UNMutableNotificationContent()
         content.title = "Remind Timer"
         content.body = "5 minutes remaining"
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let alertTimeInterval = (timeInterval - 5) * 10
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval, repeats: false)
         let identifier = "Notification"
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
         UNUserNotificationCenter.current().add(request){ error in
@@ -76,6 +79,20 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 print("Time Interval Notification scheduled: \(identifier)")
             }
         }
+    }
+    
+    
+    func setTimer(){
+        let alert = SCLAlertView()
+        let timefield = alert.addTextField("Parking Duration in Minutes")
+        alert.addButton("Set"){
+            let newTime: String? = timefield.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+            let newTimeDouble = Double(newTime!)
+            if(newTimeDouble != nil){
+                self.setNotification(newTimeDouble!)
+            }
+        }
+        alert.showEdit("Parking Duration", subTitle: "Please enter your parking duration in minutes", closeButtonTitle: "Cancel")
     }
     
     
@@ -226,7 +243,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 
                 MyCarFlag = true
                 
-                setNotification()
+                setTimer()
             }
             /*if(!savedLocations.isEmpty){
                 

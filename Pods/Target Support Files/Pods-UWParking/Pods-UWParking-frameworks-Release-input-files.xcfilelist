@@ -1,5 +1,4 @@
 ${PODS_ROOT}/Target Support Files/Pods-UWParking/Pods-UWParking-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/JZLocationConverterSwift/JZLocationConverterSwift.framework
-${BUILT_PRODUCTS_DIR}/Result/Result.framework
-${BUILT_PRODUCTS_DIR}/SugarRecord/SugarRecord.framework
+${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework

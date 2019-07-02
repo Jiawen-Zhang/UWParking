@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A03B378CE58942D404B6090A1C0801BB"
-               BuildableName = "SugarRecord.framework"
-               BlueprintName = "SugarRecord"
+               BlueprintIdentifier = "E0152970E5467A11DF89E7D22C63B47C"
+               BuildableName = "SCLAlertView.framework"
+               BlueprintName = "SCLAlertView"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
