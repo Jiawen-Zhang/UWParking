@@ -10,6 +10,7 @@ import UIKit
 import JZLocationConverterSwift
 import DropDown
 import CoreData
+import UserNotifications
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -32,6 +33,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 print("Success Load Mainland China borderline")
             }
         }
+        
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound, .badge]){
+            (accepted, error) in
+            if (!accepted){
+                print("Notifications denied")
+            }
+        }
+        
         //launchingscreen stop for 3 seconds
         Thread.sleep(forTimeInterval: 3)
         

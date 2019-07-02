@@ -20,15 +20,11 @@ class ViewController: UIViewController {
         WatSwift.apiKey = "532bfebea989a4a5bc40da4fc7d6b1d4";
         
         WatSwift.FoodServices.menu{ response in
-            let metadata = response.metadata
-            let data: JSON = response.data
             if let outletName = response.data["outlets"][0]["outlet_name"].string{
                 print(outletName)
             }
         }
-        
     }
-
 
 }
 

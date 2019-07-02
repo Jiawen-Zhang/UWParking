@@ -12,7 +12,7 @@ import CoreLocation
 import JZLocationConverterSwift
 import DropDown
 import CoreData
-import SugarRecord
+import UserNotifications
 
 
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
@@ -62,6 +62,22 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         addPermitAnnotations(LotLocations)
         setupDropDown()
     }
+    
+    func setNotification(){
+        //**** Notifications after user pin his/her car ****
+        let content = UNMutableNotificationContent()
+        content.title = "Remind Timer"
+        content.body = "5 minutes remaining"
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 10, repeats: false)
+        let identifier = "Notification"
+        let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
+        UNUserNotificationCenter.current().add(request){ error in
+            if (error == nil){
+                print("Time Interval Notification scheduled: \(identifier)")
+            }
+        }
+    }
+    
     
     /*override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -209,6 +225,8 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 saveLocationtoPersistent(location: [latitude, longitude])
                 
                 MyCarFlag = true
+                
+                setNotification()
             }
             /*if(!savedLocations.isEmpty){
                 
