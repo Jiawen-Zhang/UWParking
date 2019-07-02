@@ -69,8 +69,17 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     func setNotification(_ timeInterval: Double){
         let content = UNMutableNotificationContent()
         content.title = "Remind Timer"
-        content.body = "5 minutes remaining"
-        let alertTimeInterval = (timeInterval - 5) * 10
+        //for test purpose set time as 10 secs
+        //let alertTimeInterval = (timeInterval - 5) * 10
+        var alertTimeInterval: Double
+        if (timeInterval <= 5){
+            alertTimeInterval = timeInterval * 60
+            content.body = "Time Up"
+        }
+        else{
+            alertTimeInterval = (timeInterval - 5) * 60
+            content.body = "5 minutes remaining"
+        }
         let trigger = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval, repeats: false)
         let identifier = "Notification"
         let request = UNNotificationRequest(identifier: identifier, content: content, trigger: trigger)
