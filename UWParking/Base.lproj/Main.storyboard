@@ -663,7 +663,6 @@
                                 <rect key="frame" x="162" y="603.66666666666663" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="Dcc-m1-IXb"/>
-                                    <constraint firstAttribute="width" secondItem="ccu-Ue-oLw" secondAttribute="height" multiplier="1:1" id="J0v-td-i0d"/>
                                     <constraint firstAttribute="height" constant="50" id="tv3-Kp-edQ"/>
                                 </constraints>
                                 <state key="normal" backgroundImage="Refresh"/>
@@ -689,7 +688,6 @@
                             <constraint firstItem="HIg-Up-eG0" firstAttribute="centerX" secondItem="Ovr-IZ-9fq" secondAttribute="centerX" id="aeb-L5-TI9"/>
                             <constraint firstItem="HIg-Up-eG0" firstAttribute="centerY" secondItem="4cn-QZ-JEW" secondAttribute="centerY" constant="-200" id="eQd-Ku-hwd"/>
                             <constraint firstItem="aBf-Mu-d7f" firstAttribute="height" secondItem="HIg-Up-eG0" secondAttribute="height" id="g8I-4t-95W"/>
-                            <constraint firstItem="4cn-QZ-JEW" firstAttribute="trailing" secondItem="ccu-Ue-oLw" secondAttribute="trailing" constant="162" id="gLI-Wu-bzL"/>
                             <constraint firstItem="aBf-Mu-d7f" firstAttribute="centerY" secondItem="4cn-QZ-JEW" secondAttribute="centerY" constant="-100" id="qIS-hu-kF2"/>
                             <constraint firstItem="4cn-QZ-JEW" firstAttribute="trailing" secondItem="FoM-gF-gZr" secondAttribute="trailing" constant="89" id="qoh-L3-6vx"/>
                             <constraint firstItem="FoM-gF-gZr" firstAttribute="width" secondItem="HIg-Up-eG0" secondAttribute="width" id="rIK-WW-r69"/>
