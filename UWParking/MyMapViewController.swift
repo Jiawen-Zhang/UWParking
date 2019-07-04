@@ -68,7 +68,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     //**** Notifications after user pin his/her car ****
     func setNotification(_ timeInterval: Double){
         let content = UNMutableNotificationContent()
-        content.title = "Remind Timer"
+        content.title = "Kind Remind"
         //for test purpose set time as 10 secs
         //let alertTimeInterval = (timeInterval - 5) * 10
         var alertTimeInterval: Double
@@ -86,7 +86,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             
             //10 minutes reminder
             let content_10 = UNMutableNotificationContent()
-            content_10.title = "Remind Timer"
+            content_10.title = "Kind Remind"
             content_10.body = "10 Minutes Remaining"
             let alertTimeInterval_10 = (timeInterval - 10) * 60
             let trigger_10 = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval_10, repeats: false)
