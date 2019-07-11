@@ -19,8 +19,6 @@ import SCLAlertView
 class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     var FindMyLocation = [Double]()
-    //var managedContext: NSManagedObjectContext!
-    //var savedLocations = [NSManagedObject]()
     var savedLocations = [Location]()
     var MyCar = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: 0, longitude: 0))
     var MyCarFlag = false
@@ -49,8 +47,6 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         requestLocationAccess()
         loadSavedMyCarLocation()
         if(!savedLocations.isEmpty){
-            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude))
-            MyMapView.addAnnotation(setMyCarAsLot)*/
             let latitude = savedLocations.last!.latitude
             let longitude = savedLocations.last!.longitude
             MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
@@ -124,89 +120,6 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     
-    /*override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
-        do {
-            let results = try managedContext.fetch(fetchRequest)
-            savedLocations = results as! [NSManagedObject]
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
-    }*/
-    
-    /*func loadSavedMyCarLocation(){
-        let entity = Location.entity()
-        let fetchRequest = NSFetchRequest<Location>()
-        fetchRequest.entity = entity
-        savedLocations = try! managedObjectContext.fetch(fetchRequest)
-    }
-    
-    func clearMyCar(){
-        let location = savedLocations.last
-        if let location = location {
-            managedObjectContext.delete(location)
-        }
-        do {
-            try managedObjectContext.save()
-        } catch {
-            //fatalCoreDataError(error)
-            //Todo: need implement fatalCoreDataError
-            print("Error")
-        }
-    }
-    
-    func MyCarCenterView() {
-        if savedLocations.last != nil {
-            let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude)
-            centerMapOnLocation(location: MyCarLocation)
-        }
-    }
-    
-    func showMyCar(){
-        clearMyCar()
-        MyCarCenterView()
-    }*/
-    
-    /*func showMyCar(){
-        /*let MyCarLocation = CarLocation()
-        let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
-        centerMapOnLocation(location: location)*/
-        
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
-        do {
-            let results = try managedContext.fetch(fetchRequest)
-            savedLocations = results as! [NSManagedObject]
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }
-        
-    }
-    
-    func pinMyCar(){
-        
-    }
-    
-    func saveLocationtoPersistent(location: [Double]){
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
-        let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext)
-        currLocation.setValue(location[0], forKey: "latitude")
-        currLocation.setValue(location[1], forKey: "longitude")
-        do {
-            try managedContext.save()
-            savedLocations.append(currLocation)
-        }
-        catch let error as NSError {
-            print("Could not save \(error), \(error.userInfo)")
-        }
-    }*/
-    
     func saveLocationtoPersistent(location: [Double]){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
@@ -225,31 +138,10 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     }
     
     func showMyCar(){
-        /*let MyCarLocation = CarLocation()
-         let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
-         centerMapOnLocation(location: location)*/
-        
         if(MyCarFlag){
             let MyCarLocation = CLLocation(latitude: MyCar.coordinate.latitude, longitude: MyCar.coordinate.longitude)
             centerMapOnLocation(location: MyCarLocation)
         }
-        
-        /*let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
-        do {
-            let results = try managedContext.fetch(fetchRequest)
-            savedLocations = results as! [Location]
-            let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude)
-            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude))
-            MyMapView.addAnnotation(setMyCarAsLot)*/
-            centerMapOnLocation(location: MyCarLocation)
-            //print(savedLocations)
-            
-        } catch let error as NSError {
-            print("Could not fetch \(error), \(error.userInfo)")
-        }*/
-        
     }
     
     
@@ -273,59 +165,11 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
                 
                 setTimer()
             }
-            /*if(!savedLocations.isEmpty){
-                
-                //print("In Pin My Car")
-                //print(savedLocations)
-                
-                let latitude = savedLocations.last!.latitude
-                let longitude = savedLocations.last!.longitude
-                
-                //print("latitude: \(latitude)")
-                //print("lonitude: \(longitude)")
-                
-                
-                MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                MyMapView.addAnnotation(MyCar)
-                
-                let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
-                centerMapOnLocation(location: MyCarLocation)
-                
-                saveLocationtoPersistent(location: [latitude, longitude])
-                
-                MyCarFlag = true
-                
-            }*/
         }
         else{
             let MyCarLocation = CLLocation(latitude: MyCar.coordinate.latitude, longitude: MyCar.coordinate.longitude)
             centerMapOnLocation(location: MyCarLocation)
         }
-       /*
-        /*let MyCarLocation = CarLocation()
-         let location = CLLocation(latitude: MyCarLocation.latitude, longitude: MyCarLocation.longitude)
-         centerMapOnLocation(location: location)*/
-        removeCar()
-        locationManager.startUpdatingLocation()
-        //let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        //let managedContext = appDelegate.persistentContainer.viewContext
-        if(!savedLocations.isEmpty){
-            let latitude = savedLocations.last!.latitude
-            let longitude = savedLocations.last!.longitude
-            
-            /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: latitude, longitude: longitude))
-            print(setMyCarAsLot.title)
-            print(setMyCarAsLot.type)
-            print(setMyCarAsLot.coordinate)
-            
-            MyMapView.addAnnotation(setMyCarAsLot)*/
-            
-            let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
-            centerMapOnLocation(location: MyCarLocation)
-            
-            saveLocationtoPersistent(location: [latitude, longitude])
-        }*/
-    
     }
     
     
@@ -341,19 +185,8 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
             do {
                 let results = try managedContext.fetch(fetchRequest)
-                /*savedLocations = results as! [Location]
-                if(!savedLocations.isEmpty){
-                    //print(savedLocations)
-                    
-                    /*for location in savedLocations{
-                        managedContext.delete(location)
-                    }*/
-                }*/
-                
                 savedLocations = results as! [Location]
                 if(!savedLocations.isEmpty){
-                    //print(savedLocations)
-                    
                     for location in savedLocations{
                         managedContext.delete(location)
                     }
@@ -371,42 +204,6 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             
             MyCarFlag = false
         }
-     /*
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let managedContext = appDelegate.persistentContainer.viewContext
-        /*for location in savedLocations{
-            let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
-            MyMapView.removeAnnotation(setMyCarAsLot)
-            managedContext.delete(location)
-        }*/
-        
-        let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: "Location")
-        do {
-            let results = try managedContext.fetch(fetchRequest)
-            savedLocations = results as! [Location]
-            if(!savedLocations.isEmpty){
-                for location in savedLocations{
-                    /*let setMyCarAsLot = LotLocation(title: "My Car", subtitle: "", type: "MyCar", searchKey: "My Car", coordinate: CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude))
-                    print(setMyCarAsLot.title)
-                    print(setMyCarAsLot.type)
-                    print(setMyCarAsLot.coordinate)*/
-                    MyMapView.removeAnnotation(setMyCarAsLot)
-                    managedContext.delete(location)
-                }
-            }
-            /*if(!savedLocations.isEmpty){
-                let MyCarLocation = CLLocation(latitude: savedLocations.last!.latitude, longitude: savedLocations.last!.longitude)
-                centerMapOnLocation(location: MyCarLocation)
-            }*/
-        } catch let error as NSError {
-            print("Could not clear \(error), \(error.userInfo)")
-        }
-        
-        do {
-            try managedContext.save()
-        } catch let error as NSError {
-            print("Could not save \(error), \(error.userInfo)")
-        }*/
     }
     
     
@@ -490,14 +287,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             centerMapOnLocation(location: initialLocation)
         }
     }
-    
-    
-    //add an array of Annotation
-    /*func addAnnotations(_ locations:[LotLocation]){
-        for lot in locations{
-            MyMapView.addAnnotation(lot)
-        }
-    }*/
+
     
     func addPermitAnnotations(_ locations: [LotLocation]){
         for lot in locations{
@@ -532,34 +322,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             JZLocationConverter.default.wgs84ToGcj02(initialLocation, result: {
                 (Gcj02:CLLocationCoordinate2D) in
                 self.FindMyLocation = self.formatter(Gcj02)
-                //self.saveLocationtoPersistent(location: self.formatter(Gcj02))
-                /*let currLocation = Location()
-                let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
-                currLocation.latitude = self.formatter(Gcj02)[0]
-                currLocation.longitude = self.formatter(Gcj02)[1]
-                self.savedLocations.append(currLocation)*/
-                
-                /*let appDelegate = UIApplication.shared.delegate as! AppDelegate
-                let managedContext = appDelegate.persistentContainer.viewContext
-                let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
-                let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
-                currLocation.setValue(self.formatter(Gcj02)[0], forKey: "latitude")
-                currLocation.setValue(self.formatter(Gcj02)[1], forKey: "longitude")
-                self.savedLocations.append(currLocation)*/
-                
-                //self.saveLocationtoPersistent(location: self.formatter(Gcj02))
-                
             })
-            
-            /*do{
-                try managedObjectContext.save()
-            }
-            catch{
-                //fatalCoreDataError(error)
-                //Todo: need implement fatalErrorDataError
-                print("Error in locationmanager")
-            }*/
-            
             //LonLatToCity()
             locationManager.stopUpdatingLocation()
         }
@@ -617,30 +380,6 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
 
 
 extension MyMapViewController: MKMapViewDelegate{
-    /*func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView?{
-        guard let annotation = annotation as? LotLocation else {return nil}
-        let identifier = "marker"
-        var view: MKMarkerAnnotationView
-        //var view: MKAnnotationView
-        
-        if let dequeuedView = MyMapView.dequeueReusableAnnotationView(withIdentifier: identifier) as? MKMarkerAnnotationView{
-            dequeuedView.annotation = annotation
-            view = dequeuedView
-        }
-        else{
-            view = MKMarkerAnnotationView(annotation: annotation, reuseIdentifier: identifier)
-            view.canShowCallout = true
-            view.calloutOffset = CGPoint(x:-5, y:5)
-            let mapButton = UIButton(frame: CGRect(origin: CGPoint.zero, size: CGSize(width: 30, height: 30)))
-            mapButton.setBackgroundImage(UIImage(named: "Direct"), for: UIControl.State())
-            view.rightCalloutAccessoryView = mapButton
-            //view.rightCalloutAccessoryView = UIButton(type: .detailDisclosure)
-        }
-        view.markerTintColor = annotation.markerTintColor
-        view.glyphText = String(annotation.type!.first!)
-        return view
-    }*/
-    
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
         
     }
@@ -656,16 +395,6 @@ extension MyMapViewController: MKMapViewDelegate{
             let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
             location.mapItem().openInMaps(launchOptions: launchOptions)
         }
-        
-        /*let currentLocation: MKMapItem = MKMapItem.forCurrentLocation()
-        let destCoordinate: CLLocationCoordinate2D = location.coordinate
-        let destPlaceMark: MKPlacemark = MKPlacemark.init(coordinate: destCoordinate, addressDictionary: nil)
-        let destLocation: MKMapItem = MKMapItem.init(placemark: destPlaceMark)
-        destLocation.name = location.title
-        let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving, MKLaunchOptionsShowsTrafficKey: "true"]
-        MKMapItem.openMaps(with: [currentLocation, destLocation], launchOptions: launchOptions)*/
-        
-        
     }
     
 }

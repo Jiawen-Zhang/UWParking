@@ -104,26 +104,7 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         })
     }
     
-    
-    /*func loadFilterBar(){
-        //add the filter bar
-        let filter: FilterBar = FilterBar()
-        filter.titles = ["Visitor", "Meter", "Motorcycle", "Short-term"]
-        filter.barTintColor = UIColor.white
-        filter.tintColor = UIColor.black
-        filter.translucent = true
-        self.view.addSubview(filter)
-        
-        let topConstraint: NSLayoutConstraint = NSLayoutConstraint(item: filter, attribute: .top, relatedBy: .equal, toItem: self.topLayoutGuide, attribute: .bottom, multiplier: 1.0, constant: 8.0)
-        self.view.addConstraint(topConstraint)
-        filter.addTarget(self, action: "segmentChanged:", for: .valueChanged)
-        
-    }*/
-    
-    
-    //implement fold
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -133,9 +114,6 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         tableView.tableHeaderView = SearchController.searchBar
         SearchController.dimsBackgroundDuringPresentation = false
         SearchController.searchBar.placeholder = "Find the nearest parking to your dest."
-        /*if let textfield = SearchController.searchBar.subviews.first?.subviews.last as? UITextField{
-            textfield.attributedText = NSAttributedString(string: "Find the nearest parking to your destination?", attributes: [NSAttributedString.Key.font:UIFont.systemFont(ofSize:15)])
-        }*/
         //SearchController.searchBar.searchBarStyle = .minimal
         SearchController.searchBar.searchBarStyle = .default
         

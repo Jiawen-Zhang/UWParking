@@ -88,16 +88,9 @@ import CoreData
     }
     
     func mapItem() -> MKMapItem{
-        //let addressDict = [CNPostalAddressStreetKey: subtitle!]
         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
         let mapItem = MKMapItem(placemark: placemark)
         mapItem.name = title
-        
-        /*
-         let placemark = MKPlacemark(coordinate: coordinate, addressDictionary: nil)
-         let mapItem = MKMapItem(placemark: placemark)
-         mapItem.name = title*/
-        
         return mapItem
     }
     
