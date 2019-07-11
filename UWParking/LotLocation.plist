@@ -4,20 +4,6 @@
 <array>
 	<dict>
 		<key>title</key>
-		<string>test</string>
-		<key>description</key>
-		<string>test Route</string>
-		<key>lotType</key>
-		<string>T</string>
-		<key>searchKey</key>
-		<string>ZH</string>
-		<key>latitude</key>
-		<real>34.240163539</real>
-		<key>longitude</key>
-		<real>108.9045780074</real>
-	</dict>
-	<dict>
-		<key>title</key>
 		<string>C</string>
 		<key>description</key>
 		<string>$5.00 Permit controlled/ Visitor pay and display Accept coin, WatCard, Visa or Mastercard</string>

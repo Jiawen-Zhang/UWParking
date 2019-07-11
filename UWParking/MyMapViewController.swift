@@ -64,7 +64,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     //**** Notifications after user pin his/her car ****
     func setNotification(_ timeInterval: Double){
         let content = UNMutableNotificationContent()
-        content.title = "Kind Remind"
+        content.title = "Kind Reminder"
         //for test purpose set time as 10 secs
         //let alertTimeInterval = (timeInterval - 5) * 10
         var alertTimeInterval: Double
@@ -123,7 +123,6 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     func saveLocationtoPersistent(location: [Double]){
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         let managedContext = appDelegate.persistentContainer.viewContext
-        /*let location = NSEntityDescription.insertNewObject(forEntityName: "Location", into: managedContext)*/
         let entity = NSEntityDescription.entity(forEntityName: "Location", in: managedContext)
         let currLocation = NSManagedObject(entity: entity!, insertInto: managedContext) as! Location
         currLocation.setValue(location[0], forKey: "latitude")
@@ -229,7 +228,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     func setupDropDown(){
         lotDropDown.anchorView = LotTypeDropDown
-        lotDropDown.dataSource = ["Test", "Visitor", "Meter", "Short-term", "Motorcycle"]
+        lotDropDown.dataSource = ["Visitor", "Meter", "Short-term", "Motorcycle"]
         lotDropDown.cellConfiguration = { (index, item) in return "\(item)" }
         
         carDropDown.anchorView = MyCarDropDown
@@ -242,21 +241,20 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         lotDropDown.selectionAction = {
             (index: Int, item: String) in
             switch index{
-            case 0: self.addAnnotations(self.LotLocations, type: "T")
-            case 1: do {
+            case 0: do {
                 self.loadInitView()
                 self.addAnnotations(self.LotLocations, type: "Visitor")
                 self.addPermitAnnotations(self.LotLocations)
                 }
-            case 2: do {
+            case 1: do {
                 self.loadInitView()
                 self.addAnnotations(self.LotLocations, type: "Meter")
                 }
-            case 3: do {
+            case 2: do {
                 self.loadInitView()
                 self.addAnnotations(self.LotLocations, type: "Short-term")
                 }
-            case 4: do {
+            case 3: do {
                 self.loadInitView()
                 self.addAnnotations(self.LotLocations, type: "Motorcycle")
                 }

@@ -35,7 +35,7 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
             }
         }
         //SectionTitles = [String](LotDict.keys)
-        SectionTitles = ["T", "C", "N", "W", "X", "Visitor", "Meter", "Short-term", "Motorcycle"]
+        SectionTitles = ["C", "N", "W", "X", "Visitor", "Meter", "Short-term", "Motorcycle"]
     }
     
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -71,7 +71,7 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
         let LotKey = SectionTitles[indexPath.section]
         let LotValues = LotDict[LotKey]
         let lot = SearchController.isActive ? searchResults[indexPath.row] : LotValues![indexPath.row]
-        let map = UITableViewRowAction(style: .normal, title: "Map"){
+        let map = UITableViewRowAction(style: .normal, title: "Navigation"){
             action, index in
             let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeDriving]
             lot.mapItem().openInMaps(launchOptions: launchOptions)

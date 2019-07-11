@@ -70,8 +70,6 @@ import CoreData
             return "2.5D_W"
         case "X":
             return "2.5D_X"
-        case "T":
-            return "2.5D_T"
         case "Visitor":
             return "Visitor"
         case "Meter":
