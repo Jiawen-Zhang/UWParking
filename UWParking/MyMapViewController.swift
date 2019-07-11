@@ -82,7 +82,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             
             //10 minutes reminder
             let content_10 = UNMutableNotificationContent()
-            content_10.title = "Kind Remind"
+            content_10.title = "Kind Reminder"
             content_10.body = "10 Minutes Remaining"
             let alertTimeInterval_10 = (timeInterval - 10) * 60
             let trigger_10 = UNTimeIntervalNotificationTrigger(timeInterval: alertTimeInterval_10, repeats: false)
