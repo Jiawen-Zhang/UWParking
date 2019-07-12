@@ -192,25 +192,29 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="519-888-4567 x33100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TVr-Of-8eq">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B4g-hw-Qf9">
                                                 <rect key="frame" x="108" y="0.0" width="177" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="iml-9d-qAW"/>
-                                                    <constraint firstAttribute="width" constant="177" id="sS6-Ax-zjW"/>
+                                                    <constraint firstAttribute="height" constant="21" id="eF0-r3-2nH"/>
+                                                    <constraint firstAttribute="width" constant="177" id="x3M-GY-dTn"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="519-888-4567 x33100">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="PhoneTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="YEz-UK-CNQ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="B4g-hw-Qf9" secondAttribute="trailing" id="1oV-Bp-iGt"/>
+                                            <constraint firstItem="B4g-hw-Qf9" firstAttribute="top" secondItem="T10-gh-IYP" secondAttribute="top" id="FOW-ko-5jr"/>
                                             <constraint firstAttribute="height" constant="21" id="ZF5-uO-jBj"/>
                                             <constraint firstItem="VyX-uH-rVl" firstAttribute="top" secondItem="T10-gh-IYP" secondAttribute="top" id="kS1-QX-dpE"/>
-                                            <constraint firstItem="TVr-Of-8eq" firstAttribute="top" secondItem="T10-gh-IYP" secondAttribute="top" id="vCg-lq-elA"/>
                                             <constraint firstItem="VyX-uH-rVl" firstAttribute="leading" secondItem="T10-gh-IYP" secondAttribute="leading" id="w4I-MH-hAb"/>
                                             <constraint firstAttribute="width" constant="285" id="wuf-9A-VGx"/>
-                                            <constraint firstAttribute="trailing" secondItem="TVr-Of-8eq" secondAttribute="trailing" id="zBo-9f-Xz7"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4Q-sI-vqe" userLabel="View3">
@@ -232,25 +236,29 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="uparking@uwaterloo.ca" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v8t-DK-ARG">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG0-go-Ktc">
                                                 <rect key="frame" x="108" y="0.0" width="180" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="180" id="nck-P6-5bz"/>
-                                                    <constraint firstAttribute="height" constant="21" id="xHc-AV-tQ7"/>
+                                                    <constraint firstAttribute="width" constant="180" id="Dzo-nf-e2X"/>
+                                                    <constraint firstAttribute="height" constant="21" id="ETd-B4-hvr"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="uparking@uwaterloo.ca">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="EmailTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="4Na-5k-3tB"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="21" id="0SY-YO-v4a"/>
-                                            <constraint firstItem="v8t-DK-ARG" firstAttribute="top" secondItem="h4Q-sI-vqe" secondAttribute="top" id="CNE-Pv-zYe"/>
+                                            <constraint firstAttribute="trailing" secondItem="lG0-go-Ktc" secondAttribute="trailing" id="FXl-2o-VVS"/>
                                             <constraint firstItem="gyH-iK-kfq" firstAttribute="top" secondItem="h4Q-sI-vqe" secondAttribute="top" id="PWD-4c-cGk"/>
                                             <constraint firstItem="gyH-iK-kfq" firstAttribute="leading" secondItem="h4Q-sI-vqe" secondAttribute="leading" id="XVN-rB-FDQ"/>
-                                            <constraint firstAttribute="trailing" secondItem="v8t-DK-ARG" secondAttribute="trailing" id="YLD-59-7Ru"/>
                                             <constraint firstAttribute="width" constant="288" id="fm5-qH-Iah"/>
+                                            <constraint firstItem="lG0-go-Ktc" firstAttribute="top" secondItem="h4Q-sI-vqe" secondAttribute="top" id="ngm-D0-mav"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Heb-dG-oWn" userLabel="View4">
@@ -272,25 +280,29 @@
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="GSC 1112" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hjY-uE-A52">
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5L-aa-CWQ">
                                                 <rect key="frame" x="108" y="0.0" width="72" height="21"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="21" id="JYD-EM-Irx"/>
-                                                    <constraint firstAttribute="width" constant="72" id="oGJ-ws-gdw"/>
+                                                    <constraint firstAttribute="width" constant="72" id="aAP-Xd-h9m"/>
+                                                    <constraint firstAttribute="height" constant="21" id="kod-e5-9YA"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
+                                                <state key="normal" title="GSC 1112">
+                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="NaviTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="hCA-nr-uxE"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="180" id="4Qg-Ft-wQY"/>
-                                            <constraint firstAttribute="trailing" secondItem="hjY-uE-A52" secondAttribute="trailing" id="Jdn-P5-7Xg"/>
                                             <constraint firstAttribute="height" constant="21" id="UzK-Ik-Ilc"/>
-                                            <constraint firstItem="hjY-uE-A52" firstAttribute="top" secondItem="Heb-dG-oWn" secondAttribute="top" id="m4e-nG-hmx"/>
+                                            <constraint firstAttribute="trailing" secondItem="L5L-aa-CWQ" secondAttribute="trailing" id="eza-JX-KhM"/>
                                             <constraint firstItem="zaN-Gc-2hi" firstAttribute="leading" secondItem="Heb-dG-oWn" secondAttribute="leading" id="sWZ-Ew-29k"/>
                                             <constraint firstItem="zaN-Gc-2hi" firstAttribute="top" secondItem="Heb-dG-oWn" secondAttribute="top" id="vXF-Ik-QeN"/>
+                                            <constraint firstItem="L5L-aa-CWQ" firstAttribute="top" secondItem="Heb-dG-oWn" secondAttribute="top" id="wbl-if-x1r"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -371,8 +383,11 @@
                     </view>
                     <navigationItem key="navigationItem" title="Parking Info" id="0YH-RQ-iQe"/>
                     <connections>
+                        <outlet property="Email" destination="lG0-go-Ktc" id="qQP-IH-Hfk"/>
                         <outlet property="Facebook" destination="q2X-81-1JZ" id="A9C-3L-Dvz"/>
                         <outlet property="Homepage" destination="XFw-Cz-evR" id="B3H-cD-TZG"/>
+                        <outlet property="Navi" destination="L5L-aa-CWQ" id="gJj-dX-twc"/>
+                        <outlet property="Phone" destination="B4g-hw-Qf9" id="VhH-AJ-RQK"/>
                         <outlet property="Twitter" destination="FeE-MN-XHA" id="wol-5s-f7o"/>
                     </connections>
                 </viewController>
