@@ -93,7 +93,7 @@
             </objects>
             <point key="canvasLocation" x="2100" y="-231.2807881773399"/>
         </scene>
-        <!--Parking Info-->
+        <!--Information-->
         <scene sceneID="PbK-oK-ttK">
             <objects>
                 <viewController id="GNL-Xy-4dO" customClass="MyInfoViewController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
@@ -371,23 +371,40 @@
                                     <constraint firstItem="q2X-81-1JZ" firstAttribute="leading" secondItem="XFw-Cz-evR" secondAttribute="trailing" constant="99" id="v2a-UT-KiL"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wac-Ps-g9k">
+                                <rect key="frame" x="134.66666666666666" y="656" width="106" height="33"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="106" id="MfS-li-TSk"/>
+                                    <constraint firstAttribute="height" constant="33" id="UTP-eq-keW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Privacy Policy">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="PolicyTapped:" destination="GNL-Xy-4dO" eventType="touchUpInside" id="fgj-ge-mqM"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="Wac-Ps-g9k" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="4FF-Jg-Vae"/>
                             <constraint firstItem="5RO-QW-blN" firstAttribute="top" secondItem="YFp-46-ZW4" secondAttribute="top" constant="25" id="BQ7-Ai-x1e"/>
+                            <constraint firstItem="YFp-46-ZW4" firstAttribute="bottom" secondItem="Wac-Ps-g9k" secondAttribute="bottom" constant="40" id="IWc-4r-Pp9"/>
                             <constraint firstItem="5RO-QW-blN" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="QbE-jx-Xhb"/>
                             <constraint firstItem="4wR-IP-1h5" firstAttribute="centerX" secondItem="HkZ-hO-oHK" secondAttribute="centerX" id="ezP-Md-is7"/>
                             <constraint firstItem="4wR-IP-1h5" firstAttribute="top" secondItem="5RO-QW-blN" secondAttribute="bottom" constant="40" id="vkh-3d-QvJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="YFp-46-ZW4"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Parking Info" id="0YH-RQ-iQe"/>
+                    <navigationItem key="navigationItem" title="Information" id="0YH-RQ-iQe"/>
                     <connections>
                         <outlet property="Email" destination="lG0-go-Ktc" id="qQP-IH-Hfk"/>
                         <outlet property="Facebook" destination="q2X-81-1JZ" id="A9C-3L-Dvz"/>
                         <outlet property="Homepage" destination="XFw-Cz-evR" id="B3H-cD-TZG"/>
                         <outlet property="Navi" destination="L5L-aa-CWQ" id="gJj-dX-twc"/>
                         <outlet property="Phone" destination="B4g-hw-Qf9" id="VhH-AJ-RQK"/>
+                        <outlet property="Policy" destination="Wac-Ps-g9k" id="4Z1-GU-ezM"/>
                         <outlet property="Twitter" destination="FeE-MN-XHA" id="wol-5s-f7o"/>
                     </connections>
                 </viewController>

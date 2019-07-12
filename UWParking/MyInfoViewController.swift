@@ -13,6 +13,14 @@ import MapKit
 
 class MyInfoViewController: UIViewController{
     
+    @IBOutlet weak var Policy: UIButton!
+    
+    
+    @IBAction func PolicyTapped(_ sender: Any) {
+        let url:URL?=URL.init(string: "http://jiawenzhang.com/2019/07/12/Privacy_Policy/")
+        UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+    }
+    
     @IBOutlet weak var Phone: UIButton!
     
     @IBAction func PhoneTapped(_ sender: Any) {
