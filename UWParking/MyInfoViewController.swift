@@ -17,7 +17,7 @@ class MyInfoViewController: UIViewController{
     
     
     @IBAction func PolicyTapped(_ sender: Any) {
-        let url:URL?=URL.init(string: "http://jiawenzhang.com/2019/07/12/Privacy_Policy/")
+        let url:URL?=URL.init(string: "https://jiawenzhang.com/2019/07/12/Privacy_Policy/")
         UIApplication.shared.open(url!, options: [:], completionHandler: nil)
     }
     
