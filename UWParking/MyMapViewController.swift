@@ -105,16 +105,39 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         }
     }
     
+    func addPin(){
+        let latitude = FindMyLocation[0]
+        let longitude = FindMyLocation[1]
+        
+        MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        MyMapView.addAnnotation(MyCar)
+        
+        let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
+        centerMapOnLocation(location: MyCarLocation)
+        
+        saveLocationtoPersistent(location: [latitude, longitude])
+        
+        MyCarFlag = true
+    }
+    
     
     func setTimer(){
         let alert = SCLAlertView()
         let timefield = alert.addTextField("Parking Duration in Minutes")
         alert.addButton("Set"){
+            
+            self.addPin()
+            
             let newTime: String? = timefield.text!.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
             let newTimeDouble = Double(newTime!)
             if(newTimeDouble != nil){
                 self.setNotification(newTimeDouble!)
             }
+        }
+        alert.addButton("Pin Without Setting"){
+            
+            self.addPin()
+            
         }
         alert.showEdit("Parking Duration", subTitle: "Please enter your parking duration in minutes", closeButtonTitle: "Cancel")
     }
@@ -149,19 +172,6 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
         if(!MyCarFlag){
             locationManager.startUpdatingLocation()
             if(!FindMyLocation.isEmpty){
-                let latitude = FindMyLocation[0]
-                let longitude = FindMyLocation[1]
-
-                MyCar.coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
-                MyMapView.addAnnotation(MyCar)
-                
-                let MyCarLocation = CLLocation(latitude: latitude, longitude: longitude)
-                centerMapOnLocation(location: MyCarLocation)
-                
-                saveLocationtoPersistent(location: [latitude, longitude])
-                
-                MyCarFlag = true
-                
                 setTimer()
             }
         }
