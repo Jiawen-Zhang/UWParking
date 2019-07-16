@@ -372,8 +372,8 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
     
     //the init view of the map
     func loadInitView(){
-        var CampusLocation_gcj02: CLLocation = CLLocation(latitude: 43.4722001169, longitude: -80.5461788177)
-        let CampusLocation_wgs84 = CLLocationCoordinate2D(latitude: 43.4722001169, longitude: -80.5461788177)
+        var CampusLocation_gcj02: CLLocation = CLLocation(latitude: 43.4721611869, longitude: -80.5480161309)
+        let CampusLocation_wgs84 = CLLocationCoordinate2D(latitude: 43.4721611869, longitude: -80.5480161309)
         JZLocationConverter.default.wgs84ToGcj02(CampusLocation_wgs84, result: {
             (Gcj02:CLLocationCoordinate2D) in
             CampusLocation_gcj02 = CLLocation(latitude: self.formatter(Gcj02)[0], longitude: self.formatter(Gcj02)[1])
