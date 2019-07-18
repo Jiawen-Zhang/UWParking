@@ -11,7 +11,8 @@
 		F53434FF22B0D55D00B463B7 /* LotLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = F53434FB22B0D55D00B463B7 /* LotLocation.swift */; };
 		F534350022B0D55D00B463B7 /* LotLocation.plist in Resources */ = {isa = PBXBuildFile; fileRef = F53434FE22B0D55D00B463B7 /* LotLocation.plist */; };
 		F534350422B1F45600B463B7 /* LotViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = F534350322B1F45600B463B7 /* LotViews.swift */; };
-		F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F539620322DE2D030009DF21 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F539620222DE2D030009DF21 /* WatSwift.framework */; };
+		F539620422DE2D030009DF21 /* WatSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F539620222DE2D030009DF21 /* WatSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5654E7E22ADFAD500911350 /* MyMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5654E7D22ADFAD500911350 /* MyMapViewController.swift */; };
 		F56EF13B22A4F4400020114C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13A22A4F4400020114C /* AppDelegate.swift */; };
 		F56EF13D22A4F4400020114C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56EF13C22A4F4400020114C /* ViewController.swift */; };
@@ -28,26 +29,7 @@
 		F5BC053222B3A62000A50578 /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F5BC053022B3A62000A50578 /* MyTableViewCell.xib */; };
 		F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDB22AE15390050AA51 /* MapKit.framework */; };
 		F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */; };
-		F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */ = {isa = PBXBuildFile; fileRef = F5D9B63B22AF3FD6003ED367 /* WatSwift */; };
-		F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5D9B64322AF3FE8003ED367 /* WatSwift.framework */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		F5D9B64222AF3FE8003ED367 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A1C857EB1D3CDE7100CA77C7;
-			remoteInfo = WatSwift;
-		};
-		F5D9B64422AF3FE8003ED367 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = A1C857F41D3CDE7100CA77C7;
-			remoteInfo = WatSwiftTests;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		F591FF4022A5017D008EB467 /* Embed Frameworks */ = {
@@ -56,7 +38,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				F534E18022AF40EA002BF9FE /* WatSwift.framework in Embed Frameworks */,
+				F539620422DE2D030009DF21 /* WatSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,6 +52,7 @@
 		F53434FB22B0D55D00B463B7 /* LotLocation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LotLocation.swift; sourceTree = "<group>"; };
 		F53434FE22B0D55D00B463B7 /* LotLocation.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = LotLocation.plist; sourceTree = "<group>"; };
 		F534350322B1F45600B463B7 /* LotViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LotViews.swift; sourceTree = "<group>"; };
+		F539620222DE2D030009DF21 /* WatSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = WatSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F54D5F2E22B78AAC006C9406 /* FoldTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FoldTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5654E7D22ADFAD500911350 /* MyMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMapViewController.swift; sourceTree = "<group>"; };
 		F56EF13722A4F4400020114C /* UWParking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UWParking.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -89,8 +72,6 @@
 		F5BC053022B3A62000A50578 /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		F5C1FFDB22AE15390050AA51 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		F5C1FFDD22AE190D0050AA51 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		F5D9B63B22AF3FD6003ED367 /* WatSwift */ = {isa = PBXFileReference; lastKnownFileType = folder; path = WatSwift; sourceTree = "<group>"; };
-		F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WatSwift.xcodeproj; path = "../WatSwift-master/WatSwift.xcodeproj"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,8 +82,8 @@
 				F5A3D99122BB3B5B006AF796 /* CoreData.framework in Frameworks */,
 				F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */,
 				F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */,
-				F5D9B64622AF3FEF003ED367 /* WatSwift.framework in Frameworks */,
 				460877CBF664C0D57C666C7C /* Pods_UWParking.framework in Frameworks */,
+				F539620322DE2D030009DF21 /* WatSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -121,8 +102,7 @@
 		F56EF12E22A4F4400020114C = {
 			isa = PBXGroup;
 			children = (
-				F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */,
-				F5D9B63B22AF3FD6003ED367 /* WatSwift */,
+				F539620222DE2D030009DF21 /* WatSwift.framework */,
 				F56EF13922A4F4400020114C /* UWParking */,
 				F56EF13822A4F4400020114C /* Products */,
 				F591FF3A22A50084008EB467 /* Frameworks */,
@@ -172,15 +152,6 @@
 				5F96F45C25BE606E11538A6D /* Pods_UWParking.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		F5D9B63E22AF3FE8003ED367 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F5D9B64322AF3FE8003ED367 /* WatSwift.framework */,
-				F5D9B64522AF3FE8003ED367 /* WatSwiftTests.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,35 +211,12 @@
 			mainGroup = F56EF12E22A4F4400020114C;
 			productRefGroup = F56EF13822A4F4400020114C /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = F5D9B63E22AF3FE8003ED367 /* Products */;
-					ProjectRef = F5D9B63D22AF3FE8003ED367 /* WatSwift.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				F56EF13622A4F4400020114C /* UWParking */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		F5D9B64322AF3FE8003ED367 /* WatSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = WatSwift.framework;
-			remoteRef = F5D9B64222AF3FE8003ED367 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		F5D9B64522AF3FE8003ED367 /* WatSwiftTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = WatSwiftTests.xctest;
-			remoteRef = F5D9B64422AF3FE8003ED367 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F56EF13522A4F4400020114C /* Resources */ = {
@@ -278,7 +226,6 @@
 				F56EF14522A4F4410020114C /* LaunchScreen.storyboard in Resources */,
 				F5BC053222B3A62000A50578 /* MyTableViewCell.xib in Resources */,
 				F534350022B0D55D00B463B7 /* LotLocation.plist in Resources */,
-				F5D9B63C22AF3FD6003ED367 /* WatSwift in Resources */,
 				F56EF14222A4F4410020114C /* Assets.xcassets in Resources */,
 				F56EF14022A4F4400020114C /* Main.storyboard in Resources */,
 			);

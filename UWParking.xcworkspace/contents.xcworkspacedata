@@ -11,6 +11,9 @@
       location = "group:UWParking.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../WatSwift-master/WatSwift.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
 </Workspace>
