@@ -8,6 +8,7 @@
 
 import UIKit
 import MapKit
+import SCLAlertView
 
 class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
@@ -18,6 +19,8 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
     var SearchController: UISearchController!
     var searchResults = [LotLocation]()
+    
+    var selectIndex: IndexPath?
     
     
     
@@ -62,7 +65,42 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
             cell?.ImageCell?.image = UIImage(named: (lot.type)!)
             cell?.LabelCell?.text = lot.title
         }
+        
+        if(selectIndex == indexPath){
+            cell?.accessoryType = .checkmark
+        }
+        else{
+            cell?.accessoryType = .none
+        }
+        
         return cell!
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if(selectIndex == nil){
+            selectIndex = indexPath
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = .checkmark
+        }
+        else{
+            let called = tableView.cellForRow(at: selectIndex!)
+            called?.accessoryType = .none
+            selectIndex = indexPath
+            let cell = tableView.cellForRow(at: indexPath)
+            cell?.accessoryType = .checkmark
+        }
+        
+        let LotKey = SectionTitles[indexPath.section]
+        if let LotValues = LotDict[LotKey]{
+            let lot = SearchController.isActive ? searchResults[indexPath.row] : LotValues[indexPath.row]
+            
+            let alert = SCLAlertView()
+            alert.showEdit(lot.title!, subTitle: lot.subtitle!, closeButtonTitle: "Cancel", colorStyle:0xd4237a, circleIconImage: UIImage(named: "ListAlertIcon"))
+            
+        }
+        
+        
     }
     
     

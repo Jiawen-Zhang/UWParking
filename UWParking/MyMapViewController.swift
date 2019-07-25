@@ -139,7 +139,7 @@ class MyMapViewController: UIViewController, CLLocationManagerDelegate{
             self.addPin()
             
         }
-        alert.showEdit("Parking Duration", subTitle: "Please enter your parking duration in minutes", closeButtonTitle: "Cancel")
+        alert.showEdit("Parking Duration", subTitle: "Please enter your parking duration in minutes", closeButtonTitle: "Cancel", colorStyle:0xd4237a)
     }
     
     
