@@ -10,9 +10,6 @@ The reason why I develop this app is that parking in the UW campus always troubl
 ## Functions of the App
 
 **The app shows the real-time status of the four main parking lots by connecting to the UW open data API.**
-<div style="align: center">
-<img src="https://i.postimg.cc/V6jnyKvh/IMG-D54-EBA09-E73-C-1.jpg"/>
-</div>
 
 <img src='https://i.postimg.cc/V6jnyKvh/IMG-D54-EBA09-E73-C-1.jpg' align='right'/>
 
