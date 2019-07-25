@@ -18,7 +18,7 @@ The reason why I develop this app is that parking in the UW campus always troubl
 In addition to these four parking lots, this app provides the information of Visitor, Meter, Short-term and Motorcycle parking lots.
 
 **The information can be viewed on the map by tapping any lot which includes location, restriction, and price.**  
-![MapView](https://i.postimg.cc/CM9s26kK/IMG-37-B9-E3-A82631-1.jpg)  
+![MapView](https://i.postimg.cc/CM9s26kK/IMG-37-B9-E3-A82631-1.jpg?center)  
 
 **You can record the location of your car and set a parking duration.**  
 ![RecordLocation](https://i.postimg.cc/6qZnwtnp/IMG-7938-A82-ED155-1.jpg)  
