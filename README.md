@@ -7,7 +7,7 @@ V Parking is aimed at marking parking smart in the University of Waterloo campus
 
 The reason why I develop this app is that parking in the UW campus always troubles my girl, therefore, I made this app to help anyone who needs to park here.
 
-## Functions of the Apps
+## Functions of the App
 
 **The app shows the real-time status of the four main parking lots by connecting to the UW open data API.**  
 <div align=center>[![HomePage](https://i.postimg.cc/V6jnyKvh/IMG-D54-EBA09-E73-C-1.jpg)](https://postimg.cc/sQgv79pP)  
@@ -15,7 +15,7 @@ The reason why I develop this app is that parking in the UW campus always troubl
 In addition to these four parking lots, this app provides the information of Visitor, Meter, Short-term and Motorcycle parking lots.
 
 **The information can be viewed on the map by tapping any lot which includes location, restriction, and price.**  
-<div align=center>![MapView](https://i.postimg.cc/CM9s26kK/IMG-37-B9-E3-A82631-1.jpg)  
+![MapView](https://i.postimg.cc/CM9s26kK/IMG-37-B9-E3-A82631-1.jpg)  
 
 **You can record the location of your car and set a parking duration.**  
 <div align=center>![RecordLocation](https://i.postimg.cc/6qZnwtnp/IMG-7938-A82-ED155-1.jpg)  
