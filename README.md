@@ -11,8 +11,7 @@ The reason why I develop this app is that parking in the UW campus always troubl
 
 **The app shows the real-time status of the four main parking lots by connecting to the UW open data API.**
 
-<img src='https://i.postimg.cc/V6jnyKvh/IMG-D54-EBA09-E73-C-1.jpg' align='right'/>
-
+<img src='https://i.postimg.cc/V6jnyKvh/IMG-D54-EBA09-E73-C-1.jpg' align='center'/>  
 
 In addition to these four parking lots, this app provides the information of Visitor, Meter, Short-term and Motorcycle parking lots.
 
