@@ -97,7 +97,6 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
             
             let alert = SCLAlertView()
             alert.showEdit(lot.title!, subTitle: lot.subtitle!, closeButtonTitle: "Cancel", colorStyle:0xd4237a, circleIconImage: UIImage(named: "ListAlertIcon"))
-            
         }
     }
     
