@@ -8,6 +8,7 @@ pod 'JZLocationConverterSwift', '~> 1.0.1'
 pod 'DropDown', '~> 2.3.2'
 pod 'SCLAlertView', '~>0.8'
 pod 'SegueManager', '~>4.0.0'
+pod 'UIColor_Hex_Swift', '~>5.1.0'
 
   # Pods for UWParking
 

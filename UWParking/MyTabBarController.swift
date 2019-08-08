@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UIColor_Hex_Swift
 //import WatSwift
 
 
@@ -18,7 +19,9 @@ class MyTabBarController: UITabBarController {
         // Do any additional setup after loading the view, typically from a nib.
         
         //change the tab bar item selected tint
-        self.tabBar.tintColor = UIColor.purple
+        let pink = UIColor("#d4237a")
+        //self.tabBar.tintColor = UIColor.purple
+        self.tabBar.tintColor = pink
         
     }
     

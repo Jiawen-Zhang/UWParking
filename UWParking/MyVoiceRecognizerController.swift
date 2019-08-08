@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import UIColor_Hex_Swift
 
 
 class MyVoiceRecognizerController: UIViewController{
@@ -15,6 +16,8 @@ class MyVoiceRecognizerController: UIViewController{
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let pink = UIColor("#d4237a")
+        self.navigationController?.navigationBar.tintColor = pink
     }
     
 }

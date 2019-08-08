@@ -136,11 +136,11 @@
 				F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */,
 				F5654E7D22ADFAD500911350 /* MyMapViewController.swift */,
 				F5BC052F22B3A62000A50578 /* MyTableViewCell.swift */,
+				F534A0DF22FABCC60022F7D6 /* MyVoiceRecognizerController.swift */,
 				F580850A22CA053D003113EB /* MyInfoViewController.swift */,
 				F534350322B1F45600B463B7 /* LotViews.swift */,
 				F5BC053022B3A62000A50578 /* MyTableViewCell.xib */,
 				F5A3D9A722BB7FC8006AF796 /* UWParking.xcdatamodeld */,
-				F534A0DF22FABCC60022F7D6 /* MyVoiceRecognizerController.swift */,
 			);
 			path = UWParking;
 			sourceTree = "<group>";
