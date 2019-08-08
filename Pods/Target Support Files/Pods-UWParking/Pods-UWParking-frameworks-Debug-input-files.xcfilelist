@@ -1,4 +1,6 @@
 ${PODS_ROOT}/Target Support Files/Pods-UWParking/Pods-UWParking-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
 ${BUILT_PRODUCTS_DIR}/JZLocationConverterSwift/JZLocationConverterSwift.framework
+${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
 ${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
+${BUILT_PRODUCTS_DIR}/SegueManager/SegueManager.framework

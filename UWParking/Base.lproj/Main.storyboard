@@ -23,14 +23,52 @@
                             <outlet property="delegate" destination="Xo4-Kc-cna" id="zf0-ez-mhx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Parking Lots" id="rkZ-pm-IVQ"/>
+                    <navigationItem key="navigationItem" title="Parking Lots" id="rkZ-pm-IVQ">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="xmV-Nq-oip">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8SB-N2-Jy9">
+                                <rect key="frame" x="329" y="7" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Voice"/>
+                                <connections>
+                                    <action selector="VoiceRecognizerTapped:" destination="Xo4-Kc-cna" eventType="touchUpInside" id="RAg-X2-jK9"/>
+                                </connections>
+                            </button>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
+                        <outlet property="VoiceRecognizer" destination="8SB-N2-Jy9" id="IBV-wZ-wsq"/>
                         <outlet property="tableView" destination="HiD-El-PRd" id="jde-4w-yxH"/>
+                        <segue destination="WEQ-w2-eEV" kind="show" identifier="pushVoiceRecognizer" id="ZUF-aR-hcs"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Qh-rq-8xQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3042.4000000000001" y="-895.56650246305423"/>
+        </scene>
+        <!--Voice Recognizer-->
+        <scene sceneID="AC8-sw-vhx">
+            <objects>
+                <viewController id="WEQ-w2-eEV" userLabel="Voice Recognizer" customClass="MyVoiceRecognizerController" customModule="UWParking" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="opz-gd-5C8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segue Succeed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmV-su-nED">
+                                <rect key="frame" x="153" y="260" width="120" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="J6K-sz-NdC"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Swi-V6-NLF"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="daj-sC-fFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4028" y="-892.61083743842369"/>
         </scene>
         <!--Map-->
         <scene sceneID="RHc-Vd-fks">
@@ -807,6 +845,7 @@
         <image name="Parking_Map" width="40" height="40"/>
         <image name="Refresh" width="50" height="50"/>
         <image name="Twitter" width="50" height="50"/>
+        <image name="Voice" width="30" height="30"/>
         <image name="W" width="30" height="30"/>
         <image name="X" width="30" height="30"/>
         <image name="facebook" width="50" height="50"/>

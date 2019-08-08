@@ -1,0 +1,6 @@
+framework module SegueManager {
+  umbrella header "SegueManager-umbrella.h"
+
+  export *
+  module * { export * }
+}

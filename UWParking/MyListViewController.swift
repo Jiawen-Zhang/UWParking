@@ -9,6 +9,7 @@
 import UIKit
 import MapKit
 import SCLAlertView
+import SegueManager
 
 class MyListViewController: UITableViewController, UISearchResultsUpdating{
     
@@ -138,6 +139,33 @@ class MyListViewController: UITableViewController, UISearchResultsUpdating{
             return lot.searchKey!.localizedCaseInsensitiveContains(text)
         })
     }
+    
+    
+    //***Segue***
+    lazy var segueManager: SegueManager = { return SegueManager(viewController: self) }()
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        segueManager.prepare(for: segue)
+    }
+    
+    
+    
+    /*@IBOutlet weak var VoiceRecognizer: UIBarButtonItem!
+    
+    @IBAction func VoiceRecognizerTapped(_ sender: UIBarButtonItem) {
+        
+        segueManager.performSegue(withIdentifier: "pushVoiceRecognizer") { (detail: MyVoiceRecognizerController) in
+        }
+    }*/
+    
+    @IBOutlet weak var VoiceRecognizer: UIButton!
+    
+    @IBAction func VoiceRecognizerTapped(_ sender: UIButton) {
+        segueManager.performSegue(withIdentifier: "pushVoiceRecognizer") { (detail: MyVoiceRecognizerController) in
+        }
+    }
+    
+    
     
 
     override func viewDidLoad() {
