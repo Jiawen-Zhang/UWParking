@@ -28,6 +28,10 @@
 	<true/>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>V Parking requires access to your location to plan route for you and store your car location.</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>V Parking requires access the microphone to support voice search.</string>
+	<key>NSSpeechRecognitionUsageDescription</key>
+	<string>V Parking will send the speech data to Apple to process your requests.</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -54,7 +54,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Segue Succeed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KmV-su-nED">
-                                <rect key="frame" x="153" y="260" width="120" height="128"/>
+                                <rect key="frame" x="127" y="145" width="120" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iaa-vq-XMn" userLabel="WaveformView" customClass="SFWaveformView" customModule="SpeechRecognizerButton">
+                                <rect key="frame" x="0.0" y="498" width="375" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9lX-iR-EVe" customClass="SFButton" customModule="SpeechRecognizerButton">
+                                <rect key="frame" x="164" y="391" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="Button"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="pushToTalk" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="cancelOnDrag" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="4Be-7L-W7f">
+                                <rect key="frame" x="179" y="406" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="color" red="0.99519230769230771" green="0.99038461538461542" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </activityIndicatorView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGZ-EM-Jl9">
+                                <rect key="frame" x="16" y="281" width="343" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -65,6 +91,11 @@
                         <viewLayoutGuide key="safeArea" id="J6K-sz-NdC"/>
                     </view>
                     <navigationItem key="navigationItem" id="Swi-V6-NLF"/>
+                    <connections>
+                        <outlet property="Button" destination="9lX-iR-EVe" id="U4M-oQ-8He"/>
+                        <outlet property="Label" destination="QGZ-EM-Jl9" id="oBD-A1-5kB"/>
+                        <outlet property="WaveformView" destination="iaa-vq-XMn" id="s9h-bo-DhH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="daj-sC-fFM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -833,6 +864,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Button" width="50" height="50"/>
         <image name="C" width="30" height="30"/>
         <image name="Car" width="30" height="30"/>
         <image name="Car_Map" width="40" height="40"/>
