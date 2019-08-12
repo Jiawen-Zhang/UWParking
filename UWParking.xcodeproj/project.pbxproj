@@ -23,6 +23,8 @@
 		F580850B22CA053D003113EB /* MyInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F580850A22CA053D003113EB /* MyInfoViewController.swift */; };
 		F5A3D99122BB3B5B006AF796 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5A3D98E22BB3B5B006AF796 /* CoreData.framework */; };
 		F5A3D9A922BB7FC8006AF796 /* UWParking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F5A3D9A722BB7FC8006AF796 /* UWParking.xcdatamodeld */; };
+		F5B913CB23011BC6007DBEA6 /* SpeechRecognizerButton.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5B913CA23011BC6007DBEA6 /* SpeechRecognizerButton.framework */; };
+		F5B913CC23011BC6007DBEA6 /* SpeechRecognizerButton.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5B913CA23011BC6007DBEA6 /* SpeechRecognizerButton.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		F5BA964422A766E800B69732 /* MyTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964322A766E800B69732 /* MyTabBarController.swift */; };
 		F5BA964722A76DF800B69732 /* MyListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA964622A76DF800B69732 /* MyListViewController.swift */; };
 		F5BADB0322A7BDA600F30236 /* MyHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */; };
@@ -39,6 +41,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				F5B913CC23011BC6007DBEA6 /* SpeechRecognizerButton.framework in Embed Frameworks */,
 				F539620422DE2D030009DF21 /* WatSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -67,6 +70,7 @@
 		F580850A22CA053D003113EB /* MyInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyInfoViewController.swift; sourceTree = "<group>"; };
 		F5A3D98E22BB3B5B006AF796 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F5A3D9A822BB7FC8006AF796 /* UWParking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UWParking.xcdatamodel; sourceTree = "<group>"; };
+		F5B913CA23011BC6007DBEA6 /* SpeechRecognizerButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SpeechRecognizerButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BA964322A766E800B69732 /* MyTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBarController.swift; sourceTree = "<group>"; };
 		F5BA964622A76DF800B69732 /* MyListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListViewController.swift; sourceTree = "<group>"; };
 		F5BADB0122A7BDA600F30236 /* MyHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyHomeViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5B913CB23011BC6007DBEA6 /* SpeechRecognizerButton.framework in Frameworks */,
 				F5A3D99122BB3B5B006AF796 /* CoreData.framework in Frameworks */,
 				F5C1FFDE22AE190D0050AA51 /* CoreLocation.framework in Frameworks */,
 				F5C1FFDC22AE153A0050AA51 /* MapKit.framework in Frameworks */,
@@ -104,6 +109,7 @@
 		F56EF12E22A4F4400020114C = {
 			isa = PBXGroup;
 			children = (
+				F5B913CA23011BC6007DBEA6 /* SpeechRecognizerButton.framework */,
 				F539620222DE2D030009DF21 /* WatSwift.framework */,
 				F56EF13922A4F4400020114C /* UWParking */,
 				F56EF13822A4F4400020114C /* Products */,

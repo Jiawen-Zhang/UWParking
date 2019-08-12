@@ -11,6 +11,9 @@
       location = "group:UWParking.xcodeproj">
    </FileRef>
    <FileRef
+      location = "group:../SpeechRecognizerButton-master/SpeechRecognizerButton.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:../WatSwift-master/WatSwift.xcodeproj">
    </FileRef>
    <FileRef

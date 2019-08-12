@@ -4,5 +4,4 @@ ${BUILT_PRODUCTS_DIR}/JZLocationConverterSwift/JZLocationConverterSwift.framewor
 ${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
 ${BUILT_PRODUCTS_DIR}/SCLAlertView/SCLAlertView.framework
 ${BUILT_PRODUCTS_DIR}/SegueManager/SegueManager.framework
-${BUILT_PRODUCTS_DIR}/SpeechRecognizerButton/SpeechRecognizerButton.framework
 ${BUILT_PRODUCTS_DIR}/UIColor_Hex_Swift/UIColor_Hex_Swift.framework

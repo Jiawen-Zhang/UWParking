@@ -1,6 +1,0 @@
-framework module SpeechRecognizerButton {
-  umbrella header "SpeechRecognizerButton-umbrella.h"
-
-  export *
-  module * { export * }
-}
