@@ -52,6 +52,18 @@ class MyVoiceRecognizerController: UIViewController{
             }
         }
     }
+    
+    func lemmatizeString() {
+        tagger.string = inputString
+        
+        let range = NSRange(location: 0, length: inputString.utf16.count)
+        
+        tagger.enumerateTags(in: range, unit: NSLinguisticTaggerUnit.word, scheme: NSLinguisticTagScheme.lemma, options: options) { (tag, tokenRange, _) in
+            if let lemma = tag?.rawValue {
+                print(lemma)
+            }
+        }
+    }
 
     
     
@@ -67,7 +79,11 @@ class MyVoiceRecognizerController: UIViewController{
         Button.waveformView = WaveformView
         
         //*** Test for NLP ***
+        print("Part of Speech")
         partOfSpeech()
+        print("LemmatizeString")
+        lemmatizeString()
+        
         
         //self.Button
         
